@@ -1,18 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import { PlusCircle, MinusCircle, Landmark } from "lucide-react";
+import ToolPageLayout from "@/components/tools/ToolPageLayout";
+import { PlusCircle, MinusCircle, Calculator, Landmark } from "lucide-react";
 
-export default function EmiCalculator() {
+export default function HomeLoanEligibilityPage() {
   const [loanAmount, setLoanAmount] = useState<number>(1000000); // 10 Lakhs default
   const [interestRate, setInterestRate] = useState<number>(6.5); // 6.5% default
   const [tenureYrs, setTenureYrs] = useState<number>(5); // 5 Yr default
   const [showAmortization, setShowAmortization] = useState(false);
 
-  // Formula: EMI = [P x R x (1+R)^N]/[(1+R)^N-1]
+  // EMI Formula: EMI = [P x R x (1+R)^N] / [(1+R)^N - 1]
   const r = interestRate / 12 / 100;
   const n = tenureYrs * 12;
-
+  
   const monthlyEmi = r > 0 && n > 0
     ? Math.round((loanAmount * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1))
     : 0;
@@ -20,7 +21,7 @@ export default function EmiCalculator() {
   const totalPayment = monthlyEmi * n;
   const totalInterest = Math.max(0, totalPayment - loanAmount);
 
-  // Donut chart angles
+  // Donut chart stroke calculations
   const principalPct = totalPayment > 0 ? (loanAmount / totalPayment) * 100 : 80;
   const interestPct = 100 - principalPct;
   const radius = 70;
@@ -32,15 +33,15 @@ export default function EmiCalculator() {
   const ratePct = ((interestRate - 5.0) / (15.0 - 5.0)) * 100;
   const tenurePct = ((tenureYrs - 1) / (30 - 1)) * 100;
 
-  return (
-    <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm space-y-8 text-slate-900">
+  const calculatorUI = (
+    <div className="space-y-8 text-slate-900">
       
       {/* Title */}
       <h2 className="text-2xl font-black text-slate-800 font-display">EMI Calculator</h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
-        {/* Left Column: Sliders */}
+        {/* Left Column: Labeled Sliders with Highlighted Value Pills & Smooth Dynamic Fills */}
         <div className="lg:col-span-7 space-y-6">
           
           {/* Loan Amount */}
@@ -111,8 +112,8 @@ export default function EmiCalculator() {
 
         </div>
 
-        {/* Right Column: Donut Chart */}
-        <div className="lg:col-span-5 flex flex-col items-center justify-center space-y-4">
+        {/* Right Column: Dynamic Real-time SVG Donut Chart Breakdown */}
+        <div className="lg:col-span-5 flex flex-col items-center justify-center space-y-4 pt-4 lg:pt-0">
           
           {/* Legend */}
           <div className="flex items-center space-x-6 text-xs font-bold text-slate-600">
@@ -126,7 +127,7 @@ export default function EmiCalculator() {
             </div>
           </div>
 
-          {/* SVG Donut Chart */}
+          {/* SVG Donut Chart with Center Percentage Display */}
           <div className="relative w-56 h-56 flex items-center justify-center">
             <svg className="w-56 h-56 transform -rotate-90" viewBox="0 0 200 200">
               <circle
@@ -199,26 +200,52 @@ export default function EmiCalculator() {
         </button>
       </div>
 
-      {/* Amortization Table */}
-      {showAmortization && (
-        <div className="space-y-3 pt-4 border-t border-slate-100 animate-in fade-in">
-          <div className="grid grid-cols-4 text-xs font-black uppercase text-slate-500 border-b border-slate-200 pb-2">
-            <span>Year</span>
-            <span>Principal Paid</span>
-            <span>Interest Paid</span>
-            <span>Balance Loan</span>
-          </div>
-          {Array.from({ length: Math.min(tenureYrs, 10) }, (_, i) => i + 1).map((year) => (
-            <div key={year} className="grid grid-cols-4 text-xs font-bold text-slate-800 py-2 border-b border-slate-100">
-              <span>Year {year}</span>
-              <span className="text-emerald-600">₹ {Math.round(loanAmount * (year / tenureYrs)).toLocaleString("en-IN")}</span>
-              <span className="text-blue-600">₹ {Math.round(totalInterest / tenureYrs).toLocaleString("en-IN")}</span>
-              <span>₹ {Math.max(0, Math.round(loanAmount - (loanAmount * (year / tenureYrs)))).toLocaleString("en-IN")}</span>
-            </div>
-          ))}
-        </div>
-      )}
-
     </div>
+  );
+
+  const amortizationTable = (
+    <div className="space-y-3 pt-2">
+      <div className="grid grid-cols-4 text-xs font-black uppercase text-slate-500 border-b border-slate-200 pb-2">
+        <span>Year</span>
+        <span>Principal Paid</span>
+        <span>Interest Paid</span>
+        <span>Balance Loan</span>
+      </div>
+      {Array.from({ length: Math.min(tenureYrs, 10) }, (_, i) => i + 1).map((year) => (
+        <div key={year} className="grid grid-cols-4 text-xs font-bold text-slate-800 py-2 border-b border-slate-100">
+          <span>Year {year}</span>
+          <span className="text-emerald-600">₹ {Math.round(loanAmount * (year / tenureYrs)).toLocaleString("en-IN")}</span>
+          <span className="text-blue-600">₹ {Math.round(totalInterest / tenureYrs).toLocaleString("en-IN")}</span>
+          <span>₹ {Math.max(0, Math.round(loanAmount - (loanAmount * (year / tenureYrs)))).toLocaleString("en-IN")}</span>
+        </div>
+      ))}
+    </div>
+  );
+
+  const faqs = [
+    {
+      question: "How do Indian banks calculate home loan EMI?",
+      answer: "Banks use the Equated Monthly Installment (EMI) formula: EMI = [P x R x (1+R)^N]/[(1+R)^N-1], where P is Principal, R is Monthly Interest Rate, and N is Loan Tenure in Months."
+    },
+    {
+      question: "Can I pre-pay my home loan early in Gujarat?",
+      answer: "Yes, RBI guidelines mandate zero prepayment penalties on floating interest rate home loans for individual borrowers across all banks and NBFCs."
+    }
+  ];
+
+  return (
+    <ToolPageLayout
+      toolSlug="home-loan-eligibility"
+      title="Home Loan EMI Calculator 2026"
+      categoryTag="Mortgage & Banking Tools"
+      introParagraph="Calculate your exact monthly loan EMI, principal vs interest breakdown, and amortization schedule. Adjust loan amount, interest rate, and tenure to evaluate borrowing plans for properties across Ahmedabad and Gandhinagar."
+      calculatorComponent={calculatorUI}
+      amortizationDetails={showAmortization ? amortizationTable : undefined}
+      promoTitle="AI Home Valuation Engine"
+      promoDesc="Get Groq Llama-3.3 market valuations for properties in Ahmedabad & Gandhinagar."
+      promoButtonText="Run AI Valuation"
+      promoHref="/valuation"
+      faqs={faqs}
+    />
   );
 }

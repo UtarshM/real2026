@@ -35,7 +35,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-full antialiased scroll-smooth light-theme" suppressHydrationWarning>
-      <body className="min-h-full flex flex-col font-sans transition-colors duration-300" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans transition-colors duration-300 bg-white text-slate-900" suppressHydrationWarning>
         <AuthProvider>
           <PriceDropAlertBanner />
           <Navbar />

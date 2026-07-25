@@ -482,3 +482,29 @@ model AuditLog {
   ipAddress String?
   createdAt DateTime @default(now())
 }
+
+enum RequirementStatus {
+  NEW
+  CONTACTED
+  CLOSED
+}
+
+model Requirement {
+  id               String            @id @default(uuid())
+  purpose          Purpose           @default(BUY)
+  propertyType     PropertyType      @default(RESIDENTIAL)
+  category         String?
+  bhk              String?
+  city             String            @default("Ahmedabad")
+  locality         String?
+  minBudget        Float?
+  maxBudget        Float?
+  name             String
+  phone            String
+  email            String
+  contactTime      String?
+  notes            String?
+  status           RequirementStatus @default(NEW)
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+}

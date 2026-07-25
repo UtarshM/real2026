@@ -14,6 +14,7 @@ interface SearchListingsProps {
   defaultQuery?: string;
   defaultBhk?: string;
   defaultMaxBudget?: number;
+  initialProperties?: any[];
 }
 
 export default function SearchListings({
@@ -23,20 +24,31 @@ export default function SearchListings({
   defaultQuery,
   defaultBhk,
   defaultMaxBudget,
+  initialProperties,
 }: SearchListingsProps) {
   // Properties state initialized with all properties (including user-posted ones)
-  const [properties, setProperties] = useState<any[]>([]);
+  const [properties, setProperties] = useState<any[]>(initialProperties || []);
 
   useEffect(() => {
-    const rawProps = getAllProperties();
-    const formatted = rawProps.map((p: any) => ({
-      ...p,
-      purpose: (p.purpose || "BUY").toUpperCase() as "BUY" | "RENT",
-      type: (p.type || "RESIDENTIAL").toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
-      category: p.category || p.subType || "Flat/Apartment",
-    }));
-    setProperties(formatted);
-  }, []);
+    if (!initialProperties || initialProperties.length === 0) {
+      const rawProps = getAllProperties();
+      const formatted = rawProps.map((p: any) => ({
+        ...p,
+        purpose: (p.purpose || "BUY").toUpperCase() as "BUY" | "RENT",
+        type: (p.type || "RESIDENTIAL").toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
+        category: p.category || p.subType || "Flat/Apartment",
+      }));
+      setProperties(formatted);
+    } else {
+      const formatted = initialProperties.map((p: any) => ({
+        ...p,
+        purpose: (p.purpose || "BUY").toUpperCase() as "BUY" | "RENT",
+        type: (p.type || "RESIDENTIAL").toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
+        category: p.category || p.subType || "Flat/Apartment",
+      }));
+      setProperties(formatted);
+    }
+  }, [initialProperties]);
 
   // Filtering Parameters
   const [purpose, setPurpose] = useState<"BUY" | "RENT">(defaultPurpose || "BUY");
@@ -443,7 +455,7 @@ export default function SearchListings({
                       {/* CTAs */}
                       <div className="flex items-center space-x-3 pt-3 border-t border-slate-850">
                         <Link 
-                          href={`/property/${p.id}`}
+                          href={`/property/${p.slug || p.id}`}
                           className="flex-1 text-center"
                         >
                           <Button variant="outline" size="sm" className="w-full">View Details</Button>

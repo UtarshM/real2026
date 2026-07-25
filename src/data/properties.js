@@ -1004,19 +1004,51 @@ export const initialProperties = [
   }
 ];
 
+export function generateSlug(name = "", locality = "", city = "", existingSlugs = []) {
+  const baseRaw = `${name} ${locality} ${city}`
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+  const base = baseRaw || "property";
+  if (!existingSlugs.includes(base)) return base;
+
+  let counter = 2;
+  while (existingSlugs.includes(`${base}-${counter}`)) {
+    counter++;
+  }
+  return `${base}-${counter}`;
+}
+
 export const getAllProperties = () => {
-  if (typeof window === "undefined") {
-    return initialProperties;
+  let list = initialProperties;
+  if (typeof window !== "undefined") {
+    try {
+      const customProps = localStorage.getItem("posted_properties");
+      if (customProps) {
+        const parsed = JSON.parse(customProps);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          list = [...parsed, ...initialProperties];
+        }
+      }
+    } catch (e) {
+      list = initialProperties;
+    }
   }
-  try {
-    const customProps = localStorage.getItem("posted_properties");
-    if (!customProps) return initialProperties;
-    const parsed = JSON.parse(customProps);
-    if (!Array.isArray(parsed) || parsed.length === 0) return initialProperties;
-    return [...parsed, ...initialProperties];
-  } catch (e) {
-    return initialProperties;
-  }
+
+  const existingSlugs = [];
+  return list.map((p) => {
+    const slug = p.slug || generateSlug(p.name, p.locality, p.city, existingSlugs);
+    existingSlugs.push(slug);
+    return { ...p, slug };
+  });
+};
+
+export const getPropertyBySlugOrId = (slugOrId) => {
+  const all = getAllProperties();
+  return all.find((p) => String(p.slug) === String(slugOrId) || String(p.id) === String(slugOrId));
 };
 
 

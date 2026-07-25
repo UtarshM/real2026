@@ -19,7 +19,7 @@ interface PropertyDetailPageProps {
 
 export default function PropertyDetailPage({ params }: PropertyDetailPageProps) {
   const resolvedParams = React.use(params);
-  const propertyId = Number(resolvedParams.id);
+  const paramVal = resolvedParams.id;
 
   const [property, setProperty] = useState<any>(null);
   const [activeTab, setActiveTab] = useState(0);
@@ -34,17 +34,25 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
   useEffect(() => {
     queueMicrotask(() => {
       const all = getAllProperties();
-      const found = all.find(p => Number(p.id) === propertyId);
+      // Lookup by slug or id
+      const found = all.find(p => String(p.slug) === String(paramVal) || String(p.id) === String(paramVal));
       if (found) {
+        // If accessed via numeric ID, redirect to slug URL
+        if (/^\d+$/.test(paramVal) && found.slug && found.slug !== paramVal) {
+          window.location.replace(`/property/${found.slug}`);
+          return;
+        }
         setProperty(found);
         try {
-          const existing: number[] = JSON.parse(localStorage.getItem("recently_viewed") || "[]");
-          const updated = Array.from(new Set([found.id, ...existing]));
-          localStorage.setItem("recently_viewed", JSON.stringify(updated));
-        } catch {}
+          const viewed = JSON.parse(localStorage.getItem("recently_viewed_properties") || "[]");
+          const updated = [found, ...viewed.filter((p: any) => p.id !== found.id)].slice(0, 6);
+          localStorage.setItem("recently_viewed_properties", JSON.stringify(updated));
+        } catch (err) {
+          console.warn("LocalStorage save error:", err);
+        }
       }
     });
-  }, [propertyId]);
+  }, [paramVal]);
 
   if (!property) {
     return (

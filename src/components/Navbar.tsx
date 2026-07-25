@@ -24,7 +24,7 @@ export default function Navbar() {
   const { data: session } = useSession();
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [theme, setTheme] = useState<"dark" | "light">("light");
   const [showStampDutyModal, setShowStampDutyModal] = useState(false);
   const [showCompareModal, setShowCompareModal] = useState(false);
   const [showReraModal, setShowReraModal] = useState(false);
@@ -44,9 +44,11 @@ export default function Navbar() {
     if (saved === "dark") {
       setTheme("dark");
       document.documentElement.classList.remove("light-theme");
+      document.documentElement.classList.add("dark");
     } else {
       setTheme("light");
       document.documentElement.classList.add("light-theme");
+      document.documentElement.classList.remove("dark");
     }
   }, []);
 
@@ -56,8 +58,10 @@ export default function Navbar() {
     localStorage.setItem("addressbox_theme", newTheme);
     if (newTheme === "light") {
       document.documentElement.classList.add("light-theme");
+      document.documentElement.classList.remove("dark");
     } else {
       document.documentElement.classList.remove("light-theme");
+      document.documentElement.classList.add("dark");
     }
   };
 
@@ -164,6 +168,15 @@ export default function Navbar() {
               <span>AI Valuation</span>
             </Link>
 
+            {/* Post Requirement CTA */}
+            <Link
+              href="/requirements"
+              className="flex items-center space-x-1.5 px-3 py-2 text-xs font-bold text-blue-500 bg-blue-500/10 border border-blue-500/30 rounded-xl hover:bg-blue-500/20 transition"
+            >
+              <FileText className="w-4 h-4" />
+              <span>Post Requirement</span>
+            </Link>
+
             {/* Saved Favorites Shortcut */}
             <Link
               href="/dashboard"
@@ -173,185 +186,91 @@ export default function Navbar() {
               <Heart className="w-5 h-5" />
             </Link>
 
-            {/* Tools & Calculators Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setActiveMenu(activeMenu === "tools" ? null : "tools")}
-                onMouseEnter={() => setActiveMenu("tools")}
-                className="flex items-center space-x-1 px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white rounded-xl hover:bg-slate-800/60 transition cursor-pointer"
-              >
-                <Calculator className="w-4 h-4 text-blue-400" />
-                <span>Tools & Calculators</span>
-                <ChevronDown className="w-3.5 h-3.5 text-slate-500" />
+
+
+            {/* Profile & Menu Combo Pill */}
+            <div className="relative group">
+              <button className="flex items-center space-x-2.5 bg-white border border-slate-300 dark:border-slate-700 hover:border-orange-500 rounded-full px-3.5 py-1.5 shadow-sm transition cursor-pointer text-slate-800 dark:text-white">
+                <Menu className="w-4 h-4 text-slate-700 dark:text-slate-300" />
+                <span className="w-px h-4 bg-slate-300 dark:bg-slate-700" />
+                <div className="w-6 h-6 rounded-full bg-orange-500/10 text-orange-600 flex items-center justify-center">
+                  <User className="w-3.5 h-3.5" />
+                </div>
               </button>
 
-              {activeMenu === "tools" && (
-                <div
-                  onMouseLeave={() => setActiveMenu(null)}
-                  className="absolute right-0 top-full mt-2 w-80 bg-white border border-slate-200 rounded-2xl shadow-2xl p-3.5 z-50 animate-in fade-in zoom-in-95 duration-150 space-y-1 text-slate-900"
+              {/* Popover Menu matching screenshot */}
+              <div className="absolute right-0 top-full mt-2 w-60 bg-white border border-slate-200 rounded-2xl shadow-2xl p-2 z-50 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition text-slate-800 space-y-0.5">
+                <Link
+                  href="/dashboard"
+                  className="block px-4 py-2.5 text-xs font-black text-slate-800 hover:bg-orange-50 hover:text-orange-600 rounded-xl transition border-b border-slate-100"
                 >
-                  <div className="text-[10px] font-black uppercase text-slate-600 px-3 py-1.5 tracking-wider">Financial & Calculators</div>
-                  <button
-                    onClick={() => { setShowStampDutyModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Calculator className="w-4 h-4 text-emerald-600" />
-                    <span>Gujarat Stamp Duty Calculator</span>
-                  </button>
+                  My Activity
+                </Link>
 
-                  <button
-                    onClick={() => { setShowLoanModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Landmark className="w-4 h-4 text-blue-600" />
-                    <span>Home Loan Eligibility</span>
-                  </button>
+                <Link
+                  href="/dashboard"
+                  className="block px-4 py-2.5 text-xs font-black text-slate-800 hover:bg-orange-50 hover:text-orange-600 rounded-xl transition border-b border-slate-100"
+                >
+                  Shortlisted Properties
+                </Link>
 
-                  <button
-                    onClick={() => { setShowCurrencyModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Globe className="w-4 h-4 text-emerald-600" />
-                    <span>NRI Multi-Currency Converter</span>
-                  </button>
+                <Link
+                  href="/dashboard"
+                  className="block px-4 py-2.5 text-xs font-black text-slate-800 hover:bg-orange-50 hover:text-orange-600 rounded-xl transition border-b border-slate-100"
+                >
+                  Contacted Properties
+                </Link>
 
-                  <button
-                    onClick={() => { setShowYieldModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <TrendingUp className="w-4 h-4 text-blue-600" />
-                    <span>Rental Yield & ROI Estimator</span>
-                  </button>
+                <Link
+                  href="/dashboard"
+                  className="block px-4 py-2.5 text-xs font-black text-slate-800 hover:bg-orange-50 hover:text-orange-600 rounded-xl transition border-b border-slate-100"
+                >
+                  My Profile
+                </Link>
 
-                  <div className="pt-2.5 border-t border-slate-200 text-[10px] font-black uppercase text-slate-600 px-3 py-1.5 tracking-wider">Property Insights & Legal</div>
-                  
-                  <button
-                    onClick={() => { setShowCompareModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Layers className="w-4 h-4 text-purple-600" />
-                    <span>Property Comparison Matrix</span>
-                  </button>
+                <Link
+                  href="/requirements"
+                  className="block px-4 py-2.5 text-xs font-black text-slate-800 hover:bg-orange-50 hover:text-orange-600 rounded-xl transition border-b border-slate-100"
+                >
+                  Share Requirements
+                </Link>
 
-                  <button
-                    onClick={() => { setShowReraModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    <span>RERA Gujarat Checker</span>
-                  </button>
-
-                  <button
-                    onClick={() => { setShowCommuteModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Navigation className="w-4 h-4 text-blue-600" />
-                    <span>Commute & Transit Calculator</span>
-                  </button>
-
-                  <button
-                    onClick={() => { setShowFloorPlanModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Layout className="w-4 h-4 text-emerald-600" />
-                    <span>Floor Plan Dimensions</span>
-                  </button>
-
-                  <button
-                    onClick={() => { setShowLegalModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <FileCheck className="w-4 h-4 text-blue-600" />
-                    <span>Legal Title Clearance</span>
-                  </button>
-
-                  <div className="pt-2.5 border-t border-slate-200 text-[10px] font-black uppercase text-slate-600 px-3 py-1.5 tracking-wider">Offers & Community</div>
-
-                  <button
-                    onClick={() => { setShowOfferModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Tag className="w-4 h-4 text-emerald-600" />
-                    <span>Make Digital Price Offer</span>
-                  </button>
-
-                  <button
-                    onClick={() => { setShowPortfolioModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Building className="w-4 h-4 text-blue-600" />
-                    <span>Developer Portfolios</span>
-                  </button>
-
-                  <button
-                    onClick={() => { setShowReviewModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Star className="w-4 h-4 text-amber-500" />
-                    <span>Verified Buyer Reviews</span>
-                  </button>
-
-                  <button
-                    onClick={() => { setShowShareModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 hover:text-orange-600 hover:bg-orange-50 transition text-left cursor-pointer"
-                  >
-                    <Share2 className="w-4 h-4 text-indigo-600" />
-                    <span>Share Property Card</span>
-                  </button>
-                </div>
-              )}
-            </div>
-
-            {session ? (
-              <div className="flex items-center space-x-3">
-                
-                {/* Alert Bell */}
-                <button className="p-2.5 text-slate-400 hover:text-white rounded-xl hover:bg-slate-800/40 transition cursor-pointer">
-                  <Bell className="w-5 h-5" />
-                </button>
-
-                {/* Profile Trigger */}
-                <div className="relative group">
-                  <button className="flex items-center space-x-2 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:border-orange-500 rounded-xl px-4 py-2 text-xs font-bold text-slate-800 dark:text-white transition cursor-pointer">
-                    <User className="w-4 h-4 text-orange-500" />
-                    <span>{session.user?.name || "Account"}</span>
-                  </button>
-                  <div className="absolute right-0 top-full mt-2 w-52 bg-white border border-slate-200 rounded-2xl p-4 shadow-xl flex flex-col space-y-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition text-slate-900 z-50">
-                    <Link
-                      href="/dashboard"
-                      className="text-slate-800 hover:text-orange-600 hover:bg-orange-50 px-3 py-2.5 rounded-lg text-xs font-extrabold transition flex items-center space-x-2"
-                    >
-                      <FileText className="w-4 h-4 text-orange-500" />
-                      <span>My Dashboard</span>
-                    </Link>
+                <div className="p-1 pt-2">
+                  {session ? (
                     <button
                       onClick={handleSignOut}
-                      className="w-full text-left text-red-600 hover:text-red-700 hover:bg-red-50 px-3 py-2.5 rounded-lg text-xs font-extrabold transition flex items-center space-x-2 cursor-pointer"
+                      className="w-full bg-orange-500 hover:bg-orange-600 text-white font-black text-xs uppercase py-2.5 rounded-xl shadow-md transition cursor-pointer text-center"
                     >
-                      <LogOut className="w-4 h-4 text-red-500" />
-                      <span>Sign Out</span>
+                      Sign Out
                     </button>
-                  </div>
+                  ) : (
+                    <Link
+                      href="/login"
+                      className="block w-full bg-orange-500 hover:bg-orange-600 text-white font-black text-xs uppercase py-2.5 rounded-xl shadow-md transition cursor-pointer text-center"
+                    >
+                      Login
+                    </Link>
+                  )}
                 </div>
               </div>
-            ) : (
-              <div className="flex items-center space-x-3">
-                <Link href="/login">
-                  <Button variant="ghost" size="sm">Sign In</Button>
-                </Link>
-                <Link href="/signup">
-                  <Button variant="primary" size="sm">Sign Up</Button>
-                </Link>
-              </div>
-            )}
+            </div>
 
-            {/* Post Property Free CTA */}
-            <Link href="/post-property">
-              <Button variant="accent" size="sm" className="relative">
-                <span>Post Property</span>
-                <span className="absolute -top-1.5 -right-1.5 bg-red-500 text-white text-[8px] font-extrabold px-1 rounded-md animate-bounce shadow">FREE</span>
-              </Button>
-            </Link>
+            {/* Post Property Button Pill */}
+            <div className="relative">
+              <Link
+                href="/post-property"
+                className="flex items-center space-x-2 bg-white border border-slate-300 dark:border-slate-700 hover:border-orange-500 rounded-full px-4 py-1.5 shadow-sm text-slate-800 font-extrabold text-xs transition"
+              >
+                <div className="w-5 h-5 rounded-md border border-orange-500 text-orange-500 flex items-center justify-center font-bold text-xs">
+                  +
+                </div>
+                <span className="w-px h-4 bg-slate-300 dark:bg-slate-700" />
+                <span className="text-slate-800 dark:text-slate-200">Post Property</span>
+              </Link>
+              <span className="absolute -top-2 -right-1 bg-orange-500 text-white text-[9px] font-black px-2 py-0.5 rounded-full shadow-md">
+                Free
+              </span>
+            </div>
 
           </div>
 

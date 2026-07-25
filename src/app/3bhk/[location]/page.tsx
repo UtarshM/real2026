@@ -28,7 +28,7 @@ export default async function ThreeBhkLocationPage({ params }: ThreeBhkLocationP
 
   const filtered = initialProperties.filter(p => 
     p.bhk === 3 || 
-    p.title.toLowerCase().includes("3 bhk") || 
+    p.name.toLowerCase().includes("3 bhk") || 
     p.locality.toLowerCase().includes(formattedLoc) ||
     p.city.toLowerCase().includes(formattedLoc)
   );
@@ -48,7 +48,7 @@ export default async function ThreeBhkLocationPage({ params }: ThreeBhkLocationP
   const faqSchema = generateFaqSchema(faqs);
 
   return (
-    <div className="bg-slate-950 min-h-screen text-white font-sans py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-900 dark:text-white font-sans py-12 px-4 sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -61,19 +61,19 @@ export default async function ThreeBhkLocationPage({ params }: ThreeBhkLocationP
       <div className="max-w-7xl mx-auto space-y-8">
         
         {/* Breadcrumb */}
-        <div className="flex items-center space-x-2 text-xs text-slate-400">
-          <Link href="/" className="hover:text-orange-400">Home</Link>
-          <ChevronRight className="w-3 h-3 text-slate-600" />
-          <Link href="/buy" className="hover:text-orange-400">Buy Properties</Link>
-          <ChevronRight className="w-3 h-3 text-slate-600" />
-          <span className="text-orange-400 font-bold">3 BHK in {capitalized}</span>
+        <div className="flex items-center space-x-2 text-xs text-slate-500 dark:text-slate-400">
+          <Link href="/" className="hover:text-orange-500">Home</Link>
+          <ChevronRight className="w-3 h-3 text-slate-400" />
+          <Link href="/buy" className="hover:text-orange-500">Buy Properties</Link>
+          <ChevronRight className="w-3 h-3 text-slate-400" />
+          <span className="text-orange-600 dark:text-orange-400 font-bold">3 BHK in {capitalized}</span>
         </div>
 
         {/* Header */}
-        <div className="bg-gradient-to-r from-orange-950/40 via-slate-900 to-slate-950 border border-orange-500/20 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 shadow-xl">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-black text-white font-display">3 BHK Apartments & Flats in {capitalized}</h1>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1">Verified 3 BHK properties with zero brokerage fees, direct owner & builder listings</p>
+            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-display">3 BHK Apartments & Flats in {capitalized}</h1>
+            <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-semibold mt-1">Verified 3 BHK properties with zero brokerage fees, direct owner & builder listings</p>
           </div>
           <Link href={`/search?bhk=3&query=${encodeURIComponent(capitalized)}`}>
             <Button variant="primary" className="bg-orange-500 hover:bg-orange-600 font-bold text-xs px-5 py-3 rounded-xl border-none">
@@ -86,32 +86,32 @@ export default async function ThreeBhkLocationPage({ params }: ThreeBhkLocationP
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {filtered.map(p => (
-            <div key={p.id} className="bg-slate-900 border border-slate-800 rounded-3xl p-5 space-y-3 hover:border-orange-500/40 transition group">
+            <div key={p.id} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-5 space-y-3 hover:border-orange-500/40 transition group shadow-md">
               <div className="flex justify-between items-start">
-                <span className="text-[10px] font-extrabold uppercase bg-orange-500/10 text-orange-400 border border-orange-500/30 px-2.5 py-0.5 rounded-full">3 BHK Luxury</span>
-                <span className="text-xs font-black text-emerald-400">{p.price}</span>
+                <span className="text-[10px] font-extrabold uppercase bg-orange-500/10 text-orange-600 dark:text-orange-400 border border-orange-500/30 px-2.5 py-0.5 rounded-full">3 BHK Luxury</span>
+                <span className="text-xs font-black text-emerald-600 dark:text-emerald-400">{p.priceString || `₹ ${(p.price / 100000).toFixed(0)} Lac`}</span>
               </div>
-              <h3 className="text-sm font-bold text-white group-hover:text-orange-400 transition">{p.title}</h3>
-              <p className="text-xs text-slate-400 flex items-center">
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-orange-500 transition">{p.name}</h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 flex items-center font-medium">
                 <MapPin className="w-3.5 h-3.5 text-slate-500 mr-1" />
                 <span>{p.locality}, {p.city}</span>
               </p>
-              <div className="pt-2 border-t border-slate-800 flex justify-between items-center text-xs">
-                <span className="text-slate-400 font-medium">Carpet: 1,850 sq.ft</span>
-                <Link href={`/property/${p.id}`} className="text-orange-400 font-extrabold hover:underline">View Property →</Link>
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-xs">
+                <span className="text-slate-500 font-medium">Carpet: 1,850 sq.ft</span>
+                <Link href={`/property/${p.slug || p.id}`} className="text-orange-500 font-extrabold hover:underline">View Property →</Link>
               </div>
             </div>
           ))}
         </div>
 
         {/* FAQs */}
-        <div className="bg-slate-900/60 border border-slate-800/80 rounded-3xl p-6 space-y-4">
-          <h3 className="text-lg font-bold text-white font-display">Frequently Asked Questions — 3 BHK in {capitalized}</h3>
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 space-y-4 shadow-sm">
+          <h3 className="text-lg font-bold text-slate-900 dark:text-white font-display">Frequently Asked Questions — 3 BHK in {capitalized}</h3>
           <div className="space-y-3">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-slate-950 p-4 rounded-2xl border border-slate-850 space-y-1">
-                <h4 className="text-xs font-bold text-orange-400">{faq.q}</h4>
-                <p className="text-xs text-slate-300">{faq.a}</p>
+              <div key={idx} className="bg-slate-50 dark:bg-slate-950 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
+                <h4 className="text-xs sm:text-sm font-black text-orange-600 dark:text-orange-400">{faq.q}</h4>
+                <p className="text-xs text-slate-700 dark:text-slate-300 font-semibold leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

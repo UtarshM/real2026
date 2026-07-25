@@ -213,20 +213,20 @@ export default async function SeoLocationPage({ params }: SeoPageProps) {
         </div>
 
         {/* AI Answer Engine / FAQ Block */}
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
-          <div className="flex items-center space-x-2 text-blue-400">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm">
+          <div className="flex items-center space-x-2 text-orange-500">
             <HelpCircle className="w-5 h-5" />
-            <h3 className="text-lg font-bold text-white">Frequently Asked Questions — {localityName} Real Estate</h3>
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white">Frequently Asked Questions — {localityName} Real Estate</h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-2">
-                <h4 className="text-sm font-bold text-white flex items-start space-x-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+              <div key={idx} className="bg-slate-50 dark:bg-slate-950 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2">
+                <h4 className="text-sm font-bold text-slate-900 dark:text-white flex items-start space-x-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
                   <span>{faq.question}</span>
                 </h4>
-                <p className="text-xs text-slate-400 leading-relaxed pl-6">{faq.answer}</p>
+                <p className="text-xs text-slate-700 dark:text-slate-400 font-semibold leading-relaxed pl-6">{faq.answer}</p>
               </div>
             ))}
           </div>

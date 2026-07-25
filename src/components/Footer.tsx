@@ -2,14 +2,29 @@
 
 import React from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Send, ShieldCheck, Video } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Video, Target, Calculator } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 
 export default function Footer() {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you for subscribing to Rama Realty's property alerts!");
+    alert("Thank you for subscribing to AddressBox property alerts!");
   };
+
+  const toolsList = [
+    { title: "Gujarat Stamp Duty Calculator", href: "/tools/stamp-duty-calculator" },
+    { title: "Home Loan Eligibility", href: "/tools/home-loan-eligibility" },
+    { title: "NRI Currency Converter", href: "/tools/nri-currency-converter" },
+    { title: "Rental Yield & ROI Estimator", href: "/tools/rental-yield-estimator" },
+    { title: "Property Comparison Matrix", href: "/tools/property-comparison-matrix" },
+    { title: "RERA Gujarat Checker", href: "/tools/rera-gujarat-checker" },
+    { title: "Commute & Transit Calculator", href: "/tools/commute-calculator" },
+    { title: "Legal Title Clearance", href: "/tools/legal-title-checklist" },
+    { title: "Make Digital Price Offer", href: "/tools/make-price-offer" },
+    { title: "Developer Portfolios", href: "/tools/developer-portfolios" },
+    { title: "Verified Buyer Reviews", href: "/tools/buyer-reviews" },
+    { title: "Share Property Card", href: "/tools/share-property-card" },
+  ];
 
   return (
     <footer className="bg-slate-950 border-t border-slate-900 text-slate-400 pt-16 pb-12 font-sans relative z-10">
@@ -20,56 +35,82 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Core Layout Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-12 border-b border-slate-900">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
           
           {/* Logo & Corporate Description */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-1 space-y-6">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-blue-600 p-2 rounded-xl text-white shadow-md shadow-blue-500/25">
+              <div className="bg-orange-500 p-2 rounded-xl text-white shadow-md shadow-orange-500/25">
                 <Video className="w-5 h-5" />
               </div>
               <span className="font-extrabold text-xl text-white tracking-tight font-display">
                 Address<span className="text-orange-500">Box</span>
               </span>
             </Link>
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
+            <p className="text-xs text-slate-400 leading-relaxed">
               {siteConfig.tagline}. Verified video walkthroughs and zero-brokerage advisory across top micro-markets in Ahmedabad & Gandhinagar.
             </p>
 
-            <div className="space-y-3 text-xs sm:text-sm font-medium">
+            <div className="space-y-3 text-xs font-medium">
               <a href={`tel:${siteConfig.contact.phone.replace(/\s+/g, '')}`} className="flex items-center space-x-2.5 hover:text-white transition text-slate-300">
-                <Phone className="w-4.5 h-4.5 text-blue-500 flex-shrink-0" />
+                <Phone className="w-4 h-4 text-blue-500 flex-shrink-0" />
                 <span>{siteConfig.contact.phone}</span>
               </a>
               <a href={`mailto:${siteConfig.contact.email}`} className="flex items-center space-x-2.5 hover:text-white transition text-slate-300">
-                <Mail className="w-4.5 h-4.5 text-blue-500 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-blue-500 flex-shrink-0" />
                 <span>{siteConfig.contact.email}</span>
               </a>
               <div className="flex items-start space-x-2.5 text-slate-400">
-                <MapPin className="w-4.5 h-4.5 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span>{siteConfig.address.street}, {siteConfig.address.city} {siteConfig.address.zipCode}</span>
+                <MapPin className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                <span>{siteConfig.address.street}, {siteConfig.address.city}</span>
               </div>
             </div>
           </div>
 
-          {/* Quick links: Micro-Market Hubs */}
+          {/* Column 2: Micro-Markets */}
           <div className="space-y-4">
-            <h4 className="text-white font-bold text-xs sm:text-sm tracking-wider uppercase">Micro-Markets</h4>
+            <h4 className="text-white font-bold text-xs tracking-wider uppercase">Micro-Markets</h4>
             <ul className="space-y-2 text-xs font-semibold">
               {siteConfig.primaryLocalities.slice(0, 6).map((loc) => (
                 <li key={loc.slug}>
-                  <Link href={`/properties-in-${loc.slug}`} className="hover:text-blue-400 transition">
+                  <Link href={`/properties-in-${loc.slug}`} className="hover:text-orange-400 transition">
                     Flats in {loc.name}
+                  </Link>
+                </li>
+              ))}
+              <li><Link href="/property-in-ahmedabad" className="hover:text-orange-400 transition font-bold text-orange-400">View All Ahmedabad Localities →</Link></li>
+              <li><Link href="/property-in-gandhinagar" className="hover:text-orange-400 transition font-bold text-orange-400">View All Gandhinagar Localities →</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 3: Tools & Calculators (NEW Dedicated Column) */}
+          <div className="space-y-4">
+            <h4 className="text-white font-bold text-xs tracking-wider uppercase flex items-center space-x-1.5">
+              <Calculator className="w-4 h-4 text-orange-500" />
+              <span>Tools & Calculators</span>
+            </h4>
+            <ul className="space-y-2 text-xs font-semibold">
+              {toolsList.map((tool, idx) => (
+                <li key={idx}>
+                  <Link href={tool.href} className="hover:text-orange-400 transition">
+                    {tool.title}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Quick links: Legal & RERA Guides */}
+          {/* Column 4: Resources & Requirements */}
           <div className="space-y-4">
-            <h4 className="text-white font-bold text-xs sm:text-sm tracking-wider uppercase">Resources</h4>
+            <h4 className="text-white font-bold text-xs tracking-wider uppercase">Resources & Services</h4>
             <ul className="space-y-2 text-xs font-semibold">
+              <li>
+                <Link href="/requirements" className="text-orange-400 hover:text-orange-300 font-bold flex items-center space-x-1">
+                  <Target className="w-3.5 h-3.5" />
+                  <span>Tell Us Your Requirement</span>
+                </Link>
+              </li>
+              <li><Link href="/valuation" className="hover:text-blue-400 transition">Groq AI Property Valuation</Link></li>
               <li><Link href="/blog/rera-gujarat-guide" className="hover:text-blue-400 transition">GUJRERA Verification Guide</Link></li>
               <li><Link href="/terms" className="hover:text-blue-400 transition">Terms of Service</Link></li>
               <li><Link href="/privacy" className="hover:text-blue-400 transition">Privacy Policy</Link></li>
@@ -77,22 +118,22 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter Input */}
+          {/* Column 5: Newsletter Input */}
           <div className="space-y-4">
-            <h4 className="text-white font-bold text-xs sm:text-sm tracking-wider uppercase">Video Alerts</h4>
+            <h4 className="text-white font-bold text-xs tracking-wider uppercase">Video Alerts</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Subscribe for new property video walkthroughs and RERA project analysis in Ahmedabad.
+              Subscribe for new property video walkthroughs and RERA project analysis in Gujarat.
             </p>
             <form onSubmit={handleNewsletterSubmit} className="relative flex items-center mt-2">
               <input
                 type="email"
                 required
                 placeholder="Enter email"
-                className="w-full bg-slate-900 border border-slate-800 text-white rounded-xl pl-3 pr-10 py-2.5 text-xs sm:text-sm placeholder:text-slate-500 focus:outline-none focus:border-blue-600 transition"
+                className="w-full bg-slate-900 border border-slate-800 text-white rounded-xl pl-3 pr-10 py-2.5 text-xs sm:text-sm placeholder:text-slate-500 focus:outline-none focus:border-orange-500 transition"
               />
               <button
                 type="submit"
-                className="absolute right-1 bg-blue-600 hover:bg-blue-500 text-white p-1.5 rounded-lg transition cursor-pointer"
+                className="absolute right-1 bg-orange-500 hover:bg-orange-600 text-white p-1.5 rounded-lg transition cursor-pointer"
               >
                 <Send className="w-4 h-4" />
               </button>

@@ -95,12 +95,13 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src={AHMEDABAD_GANDHINAGAR_IMAGES.hero.ramarealtyBg} 
-            alt="Real Estate Ahmedabad Gandhinagar"
+            alt="Ahmedabad City Skyline View"
             width={1920}
             height={1080}
-            className="w-full h-full object-cover opacity-40"
+            priority
+            className="w-full h-full object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/30" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6">
@@ -460,22 +461,22 @@ export default function HomePage() {
       {/* FAQ Accordion Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="text-center mb-10">
-          <span className="text-xs font-extrabold text-blue-400 uppercase tracking-widest">Got Questions?</span>
-          <h2 className="text-3xl font-black text-white font-display mt-1">Frequently Asked Questions</h2>
+          <span className="text-xs font-extrabold text-orange-500 uppercase tracking-widest">Got Questions?</span>
+          <h2 className="text-3xl font-black text-slate-900 dark:text-white font-display mt-1">Frequently Asked Questions</h2>
         </div>
 
         <div className="space-y-4">
           {faqData.map((faq, index) => (
-            <div key={index} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <div key={index} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm">
               <button
                 onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                className="w-full text-left p-5 text-sm sm:text-base font-bold text-white flex justify-between items-center transition hover:text-blue-400"
+                className="w-full text-left p-5 text-sm sm:text-base font-black text-slate-900 dark:text-white flex justify-between items-center transition hover:text-orange-500 cursor-pointer"
               >
                 <span>{faq.q}</span>
-                <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${openFaq === index ? "rotate-180 text-blue-400" : "text-slate-500"}`} />
+                <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${openFaq === index ? "rotate-180 text-orange-500" : "text-slate-400"}`} />
               </button>
               {openFaq === index && (
-                <div className="px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+                <div className="px-5 pb-5 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-semibold leading-relaxed border-t border-slate-100 dark:border-slate-800/60 pt-3">
                   {faq.a}
                 </div>
               )}

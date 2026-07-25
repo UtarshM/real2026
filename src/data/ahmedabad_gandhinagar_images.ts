@@ -1,8 +1,8 @@
 export const AHMEDABAD_GANDHINAGAR_IMAGES = {
   hero: {
-    addressboxBg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
-    ramarealtyBg: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80",
-    buildingBg: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80",
+    addressboxBg: "/assets/images/ahmedabad-city-skyline.png",
+    ramarealtyBg: "/assets/images/ahmedabad-city-skyline.png",
+    buildingBg: "/assets/images/ahmedabad-city-skyline.png",
     giftCityHero: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80",
     sgHighwayHero: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
   },

@@ -33,7 +33,7 @@ export default function RecentlyViewed() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {recentList.map(p => (
-          <Link key={p.id} href={`/property/${p.id}`} className="block">
+          <Link key={p.id} href={`/property/${(p as any).slug || p.id}`} className="block">
             <div className="bg-slate-950 border border-slate-850 hover:border-blue-600/40 rounded-2xl p-4 space-y-3 transition hover:scale-[1.02]">
               <div 
                 className="h-32 rounded-xl bg-cover bg-center" 

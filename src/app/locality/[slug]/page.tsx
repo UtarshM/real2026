@@ -212,13 +212,13 @@ export default async function LocalityPage({ params }: LocalityPageProps) {
 
         {/* FAQs */}
         {locality.faqs.length > 0 && (
-          <div className="bg-slate-900/60 border border-slate-800/80 rounded-3xl p-6 sm:p-8 space-y-4">
-            <h3 className="text-xl font-bold text-white font-display">Frequently Asked Questions — {locality.name}</h3>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white font-display">Frequently Asked Questions — {locality.name}</h3>
             <div className="space-y-3">
               {locality.faqs.map((faq, idx) => (
-                <div key={idx} className="bg-slate-950 p-4 rounded-2xl border border-slate-850 space-y-1">
-                  <h4 className="text-xs sm:text-sm font-bold text-orange-400">{faq.q}</h4>
-                  <p className="text-xs text-slate-300">{faq.a}</p>
+                <div key={idx} className="bg-slate-50 dark:bg-slate-950 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
+                  <h4 className="text-xs sm:text-sm font-black text-orange-600 dark:text-orange-400">{faq.q}</h4>
+                  <p className="text-xs text-slate-700 dark:text-slate-300 font-semibold leading-relaxed">{faq.a}</p>
                 </div>
               ))}
             </div>
