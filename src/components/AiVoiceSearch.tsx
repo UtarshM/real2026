@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Mic, MicOff, Sparkles, X, Volume2, Search, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { parseNaturalLanguageSearch } from "@/lib/ai";
 
 interface AiVoiceSearchProps {
   isOpen: boolean;
@@ -36,6 +37,11 @@ export default function AiVoiceSearch({ isOpen, onClose }: AiVoiceSearchProps) {
       "ગાંધીનગરમાં સરગાસણ પાસે પ્લોટ"
     ]
   };
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (isListening) {
@@ -48,6 +54,7 @@ export default function AiVoiceSearch({ isOpen, onClose }: AiVoiceSearchProps) {
       }, 3000);
       return () => clearTimeout(timer);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isListening, language]);
 
   const handleStartListening = () => {
@@ -60,15 +67,40 @@ export default function AiVoiceSearch({ isOpen, onClose }: AiVoiceSearchProps) {
     setTimeout(() => {
       setAnalyzing(false);
       onClose();
-      router.push(`/search?query=${encodeURIComponent(queryText)}&ai=true`);
-    }, 1000);
+      const parsed = parseNaturalLanguageSearch(queryText);
+      const searchParams = new URLSearchParams({
+        purpose: parsed.purpose,
+        type: parsed.type,
+        ...(parsed.bhk ? { bhk: parsed.bhk } : {}),
+        ...(parsed.locality ? { query: parsed.locality } : { query: queryText }),
+        ...(parsed.maxPrice ? { maxBudget: String(parsed.maxPrice) } : {}),
+        ai: "true"
+      });
+      router.push(`/search?${searchParams.toString()}`);
+    }, 800);
   };
 
-  if (!isOpen) return null;
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    if (isOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-xl bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden">
+  if (!isOpen || !mounted) return null;
+
+  return require("react-dom").createPortal(
+    <div 
+      className="fixed inset-0 z-[9999] overflow-y-auto p-4 sm:p-6 bg-slate-950/80 backdrop-blur-md animate-in fade-in duration-200 font-sans flex min-h-full items-center justify-center cursor-pointer"
+      onClick={onClose}
+    >
+      <div 
+        className="relative w-full max-w-xl bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-hidden cursor-default max-h-[85vh] overflow-y-auto my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         
         {/* Glowing Background Ring */}
         <div className="absolute -top-24 -right-24 w-60 h-60 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
@@ -143,7 +175,7 @@ export default function AiVoiceSearch({ isOpen, onClose }: AiVoiceSearchProps) {
             <div className="flex items-start space-x-3">
               <Volume2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
               <div className="flex-1">
-                <p className="text-sm text-slate-200 font-semibold italic">"{transcript}"</p>
+                <p className="text-sm text-slate-200 font-semibold italic">&quot;{transcript}&quot;</p>
                 <div className="flex justify-end mt-3">
                   <button
                     onClick={() => handleExecuteSearch(transcript)}
@@ -172,7 +204,7 @@ export default function AiVoiceSearch({ isOpen, onClose }: AiVoiceSearchProps) {
                 }}
                 className="flex items-center justify-between bg-slate-950/60 hover:bg-slate-800/80 border border-slate-800/60 text-slate-300 hover:text-white px-3.5 py-2.5 rounded-xl text-xs font-medium transition text-left"
               >
-                <span>"{promptText}"</span>
+                <span>&quot;{promptText}&quot;</span>
                 <Search className="w-3.5 h-3.5 text-blue-400 opacity-60" />
               </button>
             ))}
@@ -180,6 +212,7 @@ export default function AiVoiceSearch({ isOpen, onClose }: AiVoiceSearchProps) {
         </div>
 
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
-import { Search, Command, ArrowRight, ShieldCheck, PlusCircle, Bookmark, PhoneCall, HelpCircle, X } from "lucide-react";
+import { Search, Command, ArrowRight, ShieldCheck, PlusCircle, Bookmark, PhoneCall, HelpCircle, X, CornerDownLeft } from "lucide-react";
 
 export default function CommandPalette() {
   const router = useRouter();
@@ -46,11 +47,23 @@ export default function CommandPalette() {
     ? items.filter(item => item.label.toLowerCase().includes(query.toLowerCase()) || item.desc.toLowerCase().includes(query.toLowerCase()))
     : items;
 
-  if (!isOpen) return null;
+  const [mounted, setMounted] = useState(false);
 
-  return (
-    <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 font-sans">
-      <div className="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!isOpen || !mounted) return null;
+
+  return createPortal(
+    <div 
+      className="fixed inset-0 z-[9999] bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 font-sans cursor-pointer overflow-y-auto"
+      onClick={() => setIsOpen(false)}
+    >
+      <div 
+        className="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 cursor-default max-h-[85vh] overflow-y-auto my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         
         {/* Input area */}
         <div className="flex items-center border-b border-slate-850 px-4 py-3 bg-slate-950/40">
@@ -65,14 +78,14 @@ export default function CommandPalette() {
           />
           <button 
             onClick={() => setIsOpen(false)}
-            className="text-slate-500 hover:text-white p-1 hover:bg-slate-850 rounded-lg cursor-pointer"
+            className="text-slate-500 hover:text-white p-1 hover:bg-slate-800 rounded-lg cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>
         </div>
 
-        {/* Results directory */}
-        <div className="max-h-80 overflow-y-auto p-4 space-y-2">
+        {/* Results list */}
+        <div className="p-2 space-y-1 max-h-72 overflow-y-auto">
           {filtered.map((item, idx) => (
             <button
               key={idx}
@@ -80,30 +93,29 @@ export default function CommandPalette() {
                 item.action();
                 setIsOpen(false);
               }}
-              className="w-full text-left p-3 hover:bg-slate-850/50 rounded-2xl transition flex justify-between items-center group cursor-pointer"
+              className="w-full flex items-center justify-between p-3 rounded-2xl hover:bg-slate-800/80 transition text-left group cursor-pointer"
             >
-              <div className="flex items-start space-x-3.5 min-w-0">
-                <div className="w-8 h-8 rounded-lg bg-blue-600/10 border border-blue-500/20 text-blue-500 flex items-center justify-center flex-shrink-0">
-                  <Command className="w-4 h-4" />
+              <div className="flex items-center space-x-3">
+                <div className="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 group-hover:text-blue-400 group-hover:border-blue-500/30 transition">
+                  <CornerDownLeft className="w-4 h-4" />
                 </div>
-                <div className="min-w-0">
-                  <span className="text-xs sm:text-sm text-white font-bold block group-hover:text-blue-550 transition">{item.label}</span>
-                  <span className="text-[10px] text-slate-500 font-semibold block mt-0.5">{item.desc}</span>
+                <div>
+                  <h4 className="text-xs font-bold text-white group-hover:text-blue-400 transition">{item.label}</h4>
+                  <p className="text-[10px] text-slate-500 font-medium">{item.desc}</p>
                 </div>
               </div>
-              
-              <div className="flex items-center space-x-2">
-                <span className="bg-slate-950 border border-slate-850 text-slate-500 text-[9px] px-2 py-0.5 rounded font-black tracking-wider group-hover:text-white transition">
+
+              {item.shortcut && (
+                <kbd className="text-[9px] font-black text-slate-400 bg-slate-950 border border-slate-800 px-2 py-1 rounded-lg">
                   {item.shortcut}
-                </span>
-                <ArrowRight className="w-3.5 h-3.5 text-slate-650 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition" />
-              </div>
+                </kbd>
+              )}
             </button>
           ))}
 
           {filtered.length === 0 && (
             <div className="text-center py-8 text-slate-500 space-y-1">
-              <HelpCircle className="w-8 h-8 mx-auto text-slate-650" />
+              <HelpCircle className="w-8 h-8 mx-auto text-slate-655" />
               <p className="text-xs font-semibold">No commands matching query found.</p>
             </div>
           )}
@@ -116,6 +128,7 @@ export default function CommandPalette() {
         </div>
 
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

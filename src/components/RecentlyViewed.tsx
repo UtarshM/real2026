@@ -9,15 +9,17 @@ export default function RecentlyViewed() {
   const [recentList, setRecentList] = useState<typeof initialProperties>([]);
 
   useEffect(() => {
-    try {
-      const ids: number[] = JSON.parse(localStorage.getItem("recently_viewed") || "[]");
-      if (ids.length > 0) {
-        const matches = ids.map(id => initialProperties.find(p => p.id === id)).filter(Boolean) as typeof initialProperties;
-        setRecentList(matches.slice(0, 4));
+    queueMicrotask(() => {
+      try {
+        const ids: number[] = JSON.parse(localStorage.getItem("recently_viewed") || "[]");
+        if (ids.length > 0) {
+          const matches = ids.map(id => initialProperties.find(p => p.id === id)).filter(Boolean) as typeof initialProperties;
+          setRecentList(matches.slice(0, 4));
+        }
+      } catch {
+        // fallback
       }
-    } catch (e) {
-      // fallback
-    }
+    });
   }, []);
 
   if (recentList.length === 0) return null;

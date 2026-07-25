@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
-import { Compass, CheckCircle2, AlertCircle, X, Sparkles, RefreshCw } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
+import { Compass, CheckCircle2, AlertCircle, X, Sparkles } from "lucide-react";
 
 interface VastuCalculatorModalProps {
   isOpen: boolean;
@@ -15,12 +16,16 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
   const [masterBedroom, setMasterBedroom] = useState<string>("SOUTH_WEST");
   const [calculatedScore, setCalculatedScore] = useState<number | null>(null);
   const [recommendations, setRecommendations] = useState<string[]>([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const calculateVastu = () => {
     let score = 50;
     const tips: string[] = [];
 
-    // Facing calculation
     if (facing === "NORTH_EAST" || facing === "NORTH" || facing === "EAST") {
       score += 20;
       tips.push("Excellent primary orientation! North/East facing invites positive solar energy and prosperity.");
@@ -32,7 +37,6 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
       tips.push("South facing properties can be balanced with a heavy wooden main door and brass pyramid thresholds.");
     }
 
-    // Entrance
     if (entrance === "NORTH_EAST" || entrance === "NORTH" || entrance === "EAST") {
       score += 15;
       tips.push("Main entrance in North-East quadrant maximizes Ishanya Kona (divine energy flow).");
@@ -40,7 +44,6 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
       tips.push("Ensure main entrance has adequate lighting and Om/Swastik auspicious symbols.");
     }
 
-    // Kitchen
     if (kitchen === "SOUTH_EAST") {
       score += 15;
       tips.push("Kitchen in Agni Kona (South-East) ensures health and culinary vitality.");
@@ -51,7 +54,6 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
       tips.push("Place cooking stove facing East to mitigate non-South-East kitchen placement.");
     }
 
-    // Master Bedroom
     if (masterBedroom === "SOUTH_WEST") {
       score += 15;
       tips.push("Master Bedroom in Nairrutya Kona (South-West) promotes stability, leadership, and peace.");
@@ -63,45 +65,61 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
     setRecommendations(tips);
   };
 
-  if (!isOpen) return null;
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    if (isOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl overflow-y-auto max-h-[90vh]">
+  if (!isOpen || !mounted) return null;
+
+  return createPortal(
+    <div 
+      className="fixed inset-0 z-[9999] overflow-y-auto p-4 sm:p-6 bg-slate-950/80 backdrop-blur-md animate-in fade-in duration-200 font-sans flex min-h-full items-center justify-center cursor-pointer"
+      onClick={onClose}
+    >
+      <div 
+        className="relative w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl max-h-[85vh] overflow-y-auto cursor-default my-auto space-y-6"
+        onClick={(e) => e.stopPropagation()}
+      >
         
         {/* Glow Header */}
-        <div className="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+        <div className="flex items-center justify-between border-b border-slate-800 pb-4">
           <div className="flex items-center space-x-3">
             <div className="p-2.5 bg-amber-500/20 border border-amber-500/30 rounded-xl text-amber-400">
               <Compass className="w-6 h-6 animate-spin-slow" />
             </div>
             <div>
-              <h3 className="text-xl font-extrabold text-white font-display">Rama AI Vastu Score Calculator</h3>
-              <p className="text-xs text-slate-400 font-medium">Evaluate Home Orientation & Energy Alignment</p>
+              <h3 className="text-xl font-black text-white font-display">Vastu Shastra Compliance Calculator</h3>
+              <p className="text-xs text-slate-400">Calculate 100-point Vastu score for directional energy alignment</p>
             </div>
           </div>
-          
-          <button onClick={onClose} className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800">
+          <button
+            onClick={onClose}
+            className="text-slate-500 hover:text-white p-1 hover:bg-slate-800 rounded-lg cursor-pointer"
+          >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Inputs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-          
+        {/* Inputs Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Main Facing Direction</label>
+            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Main Orientation Facing</label>
             <select
               value={facing}
               onChange={(e) => setFacing(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-amber-500"
+              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500"
             >
-              <option value="NORTH_EAST">North-East (Ishanya) - Highest</option>
+              <option value="NORTH_EAST">North-East (Ishanya)</option>
               <option value="NORTH">North (Kuber Kona)</option>
               <option value="EAST">East (Indra Kona)</option>
               <option value="WEST">West (Varun Kona)</option>
-              <option value="SOUTH_EAST">South-East (Agni Kona)</option>
-              <option value="SOUTH_WEST">South-West (Nairrutya)</option>
+              <option value="SOUTH">South (Yama Kona)</option>
             </select>
           </div>
 
@@ -110,7 +128,7 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
             <select
               value={entrance}
               onChange={(e) => setEntrance(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-amber-500"
+              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500"
             >
               <option value="NORTH_EAST">North-East Entrance</option>
               <option value="NORTH">North Entrance</option>
@@ -126,7 +144,7 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
             <select
               value={kitchen}
               onChange={(e) => setKitchen(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-amber-500"
+              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500"
             >
               <option value="SOUTH_EAST">South-East (Agni Kona) - Recommended</option>
               <option value="NORTH_WEST">North-West (Vayu Kona)</option>
@@ -140,7 +158,7 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
             <select
               value={masterBedroom}
               onChange={(e) => setMasterBedroom(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-amber-500"
+              className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-amber-500"
             >
               <option value="SOUTH_WEST">South-West (Nairrutya) - Recommended</option>
               <option value="NORTH_WEST">North-West</option>
@@ -148,21 +166,20 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
               <option value="NORTH_EAST">North-East</option>
             </select>
           </div>
-
         </div>
 
         <button
           onClick={calculateVastu}
-          className="w-full py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm rounded-xl shadow-lg transition flex items-center justify-center space-x-2"
+          className="w-full py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg transition flex items-center justify-center space-x-2 cursor-pointer"
         >
-          <Sparkles className="w-5 h-5" />
+          <Sparkles className="w-4 h-4" />
           <span>Calculate AI Vastu Score</span>
         </button>
 
         {/* Results */}
         {calculatedScore !== null && (
-          <div className="mt-6 bg-slate-950 border border-amber-500/30 rounded-2xl p-6 animate-in zoom-in-95 duration-200">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+          <div className="bg-slate-950 border border-amber-500/30 rounded-2xl p-6 space-y-4 animate-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <div>
                 <span className="text-xs uppercase font-extrabold tracking-widest text-slate-400">Vastu Score Result</span>
                 <h4 className="text-2xl font-black text-white flex items-center space-x-2 mt-1">
@@ -174,8 +191,8 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
               </div>
 
               {/* Radial Meter Visual */}
-              <div className="w-16 h-16 rounded-full border-4 border-amber-500 flex items-center justify-center bg-amber-500/10 text-amber-400 font-extrabold text-base">
-                {calculatedScore}/100
+              <div className="w-16 h-16 rounded-full border-4 border-amber-500 flex items-center justify-center bg-amber-500/10 text-amber-400 font-extrabold text-xs">
+                {calculatedScore} / 100
               </div>
             </div>
 
@@ -192,6 +209,7 @@ export default function VastuCalculatorModal({ isOpen, onClose }: VastuCalculato
         )}
 
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

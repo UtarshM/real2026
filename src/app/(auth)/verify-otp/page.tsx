@@ -124,7 +124,7 @@ function OtpVerificationForm() {
       )}
 
       <div className="mt-6 text-center text-xs sm:text-sm text-slate-400">
-        Didn't receive the email?{" "}
+        Didn&apos;t receive the email?{" "}
         <button 
           onClick={() => alert("Verification code resent! Please check your email.")}
           className="text-blue-500 hover:text-blue-400 font-semibold underline bg-transparent border-none cursor-pointer"

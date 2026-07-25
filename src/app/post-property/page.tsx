@@ -8,11 +8,27 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { generateAiDescription, generateAiTitle, estimatePrice } from "@/lib/ai";
+import { uploadPropertyImage } from "@/lib/supabase";
 
 export default function PostPropertyPage() {
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [success, setSuccess] = useState(false);
+  const [uploadingImage, setUploadingImage] = useState(false);
+
+  const handleImageFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploadingImage(true);
+    try {
+      const publicUrl = await uploadPropertyImage(file);
+      setFormData(prev => ({ ...prev, image: publicUrl }));
+    } catch (err) {
+      console.error("Image upload failed:", err);
+    } finally {
+      setUploadingImage(false);
+    }
+  };
 
   // Form states
   const [formData, setFormData] = useState({
@@ -601,20 +617,31 @@ export default function PostPropertyPage() {
               <div className="space-y-6">
                 <h3 className="font-extrabold text-lg text-white font-display border-b border-slate-850 pb-3">8. Image & Description</h3>
                 
-                <div className="space-y-1.5">
+                <div className="space-y-3">
                   <label className="block text-slate-450 text-xs font-semibold uppercase tracking-wider font-sans">
-                    Cover Photo Link (Mock Upload)
+                    Upload Property Banner (Supabase Storage)
                   </label>
-                  <textarea
-                    rows={2}
-                    value={formData.image}
-                    onChange={(e) => setFormData({ ...formData, image: e.target.value })}
-                    className="w-full bg-slate-950 border border-slate-800 text-white rounded-xl px-4 py-2.5 outline-none focus:border-blue-600 text-xs sm:text-sm font-semibold placeholder:text-slate-700 resize-none font-sans"
-                    placeholder="Enter image link"
-                  />
-                  <span className="text-[10px] text-slate-500 font-bold block mt-1">
-                    Please provide an absolute path link. A default sample banner is pre-loaded for preview purposes.
-                  </span>
+                  <div className="flex items-center space-x-4 bg-slate-950 border border-slate-800 rounded-2xl p-4">
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleImageFileUpload}
+                      className="text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-500 cursor-pointer"
+                    />
+                    {uploadingImage && <span className="text-xs font-semibold text-blue-400 animate-pulse">Uploading to Supabase...</span>}
+                  </div>
+                  <div className="space-y-1.5">
+                    <label className="block text-slate-450 text-xs font-semibold uppercase tracking-wider font-sans">
+                      Or Image URL Link
+                    </label>
+                    <textarea
+                      rows={2}
+                      value={formData.image}
+                      onChange={(e) => setFormData({ ...formData, image: e.target.value })}
+                      className="w-full bg-slate-950 border border-slate-800 text-white rounded-xl px-4 py-2.5 outline-none focus:border-blue-600 text-xs sm:text-sm font-semibold placeholder:text-slate-700 resize-none font-sans"
+                      placeholder="Enter image link"
+                    />
+                  </div>
                 </div>
 
                 <div className="space-y-1.5">

@@ -135,6 +135,44 @@ export default function PricingPage() {
           <span>All payment transactions are mock verified under secure Sandbox environments. Need custom team seats? <a href="/contact" className="text-blue-500 hover:underline">Contact our corporate desk</a></span>
         </div>
 
+        {/* Micro-Market Locality Price Index Section */}
+        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+            <div>
+              <span className="text-blue-500 font-bold text-xs uppercase tracking-widest">Market Benchmark Index</span>
+              <h3 className="text-xl sm:text-2xl font-black text-white font-display mt-0.5">Ahmedabad & Gandhinagar Price Trends</h3>
+            </div>
+            <span className="text-xs text-emerald-400 font-bold bg-emerald-500/10 border border-emerald-500/30 px-3 py-1.5 rounded-full w-fit">
+              Updated July 2026 Index
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { locality: "Bopal", avgPrice: "₹ 6,800 / sqft", growth: "+12.4% YoY", rating: "9.4 Connectivity" },
+              { locality: "GIFT City", avgPrice: "₹ 9,200 / sqft", growth: "+18.6% YoY", rating: "9.8 Infrastructure" },
+              { locality: "Gota", avgPrice: "₹ 5,800 / sqft", growth: "+9.2% YoY", rating: "9.1 Proximity" },
+              { locality: "Prahladnagar", avgPrice: "₹ 11,500 / sqft", growth: "+14.1% YoY", rating: "9.7 Corporate Hub" },
+              { locality: "Science City", avgPrice: "₹ 8,800 / sqft", growth: "+11.5% YoY", rating: "9.5 Education Sector" },
+              { locality: "Sargasan", avgPrice: "₹ 5,200 / sqft", growth: "+8.7% YoY", rating: "9.0 Metro Access" }
+            ].map((loc, idx) => (
+              <div key={idx} className="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-2">
+                <div className="flex justify-between items-center">
+                  <h4 className="text-sm font-extrabold text-white font-display">{loc.locality}</h4>
+                  <span className="text-xs font-black text-emerald-400">{loc.growth}</span>
+                </div>
+                <div className="flex justify-between items-center text-xs">
+                  <span className="text-slate-400">Avg Benchmark:</span>
+                  <span className="text-blue-400 font-bold">{loc.avgPrice}</span>
+                </div>
+                <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider pt-1 border-t border-slate-900">
+                  {loc.rating}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );

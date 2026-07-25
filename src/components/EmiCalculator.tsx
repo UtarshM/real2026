@@ -121,6 +121,23 @@ export default function EmiCalculator() {
               ₹ {monthlyEmi.toLocaleString("en-IN")} <span className="text-xs font-normal text-slate-400">/ month</span>
             </h4>
 
+            {/* Visual Principal vs Interest Progress Bar */}
+            <div className="mt-4 space-y-1.5">
+              <div className="flex justify-between text-[11px] font-extrabold">
+                <span className="text-blue-400">Principal ({Math.round((loanAmount / totalPayment) * 100)}%)</span>
+                <span className="text-amber-400">Interest ({100 - Math.round((loanAmount / totalPayment) * 100)}%)</span>
+              </div>
+              <div className="w-full h-3 bg-slate-800 rounded-full overflow-hidden flex">
+                <div 
+                  className="h-full bg-blue-500 transition-all duration-300"
+                  style={{ width: `${Math.round((loanAmount / totalPayment) * 100)}%` }}
+                />
+                <div 
+                  className="h-full bg-amber-500 transition-all duration-300 flex-1"
+                />
+              </div>
+            </div>
+
             <div className="mt-6 space-y-3 border-t border-slate-800/80 pt-4">
               <div className="flex justify-between text-xs font-semibold">
                 <span className="text-slate-400">Principal Amount:</span>
@@ -138,7 +155,7 @@ export default function EmiCalculator() {
           </div>
 
           <div className="mt-6">
-            <button className="w-full py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-xs rounded-xl shadow-lg transition flex items-center justify-center space-x-2">
+            <button className="w-full py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-xs rounded-xl shadow-lg transition flex items-center justify-center space-x-2 cursor-pointer">
               <Landmark className="w-4 h-4" />
               <span>Apply for Pre-Approved Home Loan</span>
             </button>

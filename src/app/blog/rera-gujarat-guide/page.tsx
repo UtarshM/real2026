@@ -80,7 +80,7 @@ export default function ReraGuidePage() {
             
             <ol className="list-decimal list-inside space-y-3 text-xs sm:text-sm text-slate-300 font-medium">
               <li>Visit the official portal at <strong className="text-white">gujrera.gujarat.gov.in</strong></li>
-              <li>Click on <strong className="text-white">"Projects"</strong> ➔ <strong className="text-white">"Search Registered Projects"</strong></li>
+              <li>Click on <strong className="text-white">&quot;Projects&quot;</strong> ➔ <strong className="text-white">&quot;Search Registered Projects&quot;</strong></li>
               <li>Enter the project RERA registration number (formatted as <code className="text-emerald-400 font-mono">PR/GJ/AHMEDABAD/...</code>)</li>
               <li>Verify the approved completion date, building layouts, bank escrow account details, and RERA quarterly progress reports (QPR).</li>
             </ol>

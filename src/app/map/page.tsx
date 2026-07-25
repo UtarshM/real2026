@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { initialProperties } from "@/data/properties";
 import { MapPin, ShieldAlert, Navigation, School, Activity, Radio, Plus, RotateCcw, Layers, Eye, Compass, ArrowRight, Building, Search, X, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -252,7 +253,7 @@ export default function AdvancedMapPage() {
             {selectedPin ? (
               <div className="bg-slate-950 border border-blue-500/30 p-4 rounded-2xl animate-in fade-in duration-200">
                 <div className="relative h-36 w-full rounded-xl overflow-hidden mb-3">
-                  <img src={selectedPin.image} alt={selectedPin.name} className="w-full h-full object-cover" />
+                  <Image src={selectedPin.image} alt={selectedPin.name} width={400} height={300} className="w-full h-full object-cover" />
                   <div className="absolute top-2 left-2 bg-emerald-500 text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase">
                     Zero Brokerage
                   </div>

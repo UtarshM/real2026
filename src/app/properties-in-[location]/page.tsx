@@ -116,7 +116,7 @@ export default async function SeoLocationPage({ params }: SeoPageProps) {
             Properties in {localityName}
           </h1>
           <p className="text-slate-400 text-xs sm:text-sm max-w-2xl leading-relaxed">
-            Browse RERA-verified residential flats, commercial offices, and luxury bungalows in {localityName}. Personally inspected by {siteConfig.name}'s local agents with video walkthroughs and zero brokerage terms.
+            Browse RERA-verified residential flats, commercial offices, and luxury bungalows in {localityName}. Personally inspected by {siteConfig.name}&apos;s local agents with video walkthroughs and zero brokerage terms.
           </p>
         </div>
 
@@ -145,7 +145,7 @@ export default async function SeoLocationPage({ params }: SeoPageProps) {
                 <span>First-Hand Agent Inspection Note</span>
               </span>
               <p className="text-xs sm:text-sm text-slate-300 italic leading-relaxed">
-                "{localityInfo.agentSiteNotes}"
+                &quot;{localityInfo.agentSiteNotes}&quot;
               </p>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default async function SeoLocationPage({ params }: SeoPageProps) {
               <div className="col-span-full text-center py-16 bg-slate-900 border border-slate-800 rounded-3xl space-y-3">
                 <Info className="w-10 h-10 text-slate-500 mx-auto" />
                 <p className="text-xs sm:text-sm font-semibold text-slate-400">
-                  New video-verified properties in {localityName} are being added by {siteConfig.name}'s agents.
+                  New video-verified properties in {localityName} are being added by {siteConfig.name}&apos;s agents.
                 </p>
                 <Link href="/contact">
                   <Button variant="outline" className="text-xs mt-2">Request Property Inspection in {localityName}</Button>

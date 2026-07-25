@@ -1,6 +1,7 @@
 import "./globals.css";
 import { AuthProvider } from "@/providers/auth-provider";
 import Navbar from "@/components/Navbar";
+import PriceDropAlertBanner from "@/components/PriceDropAlertBanner";
 import Footer from "@/components/Footer";
 import CommandPalette from "@/components/CommandPalette";
 import AiSearchModal from "@/components/AiSearchModal";
@@ -34,8 +35,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-full antialiased scroll-smooth" suppressHydrationWarning>
-      <body className="min-h-full flex flex-col bg-[#090d16] text-[#f8fafc] font-sans" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans transition-colors duration-300" suppressHydrationWarning>
         <AuthProvider>
+          <PriceDropAlertBanner />
           <Navbar />
           <CommandPalette />
           <AiSearchModal />

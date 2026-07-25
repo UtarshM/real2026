@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { 
   Building2, PhoneCall, Calendar, User, Eye, PlusCircle, 
@@ -26,20 +27,22 @@ export default function DashboardPage() {
       return;
     }
 
-    const storedProps = localStorage.getItem("posted_properties");
-    setMyProperties(storedProps ? JSON.parse(storedProps) : []);
+    queueMicrotask(() => {
+      const storedProps = localStorage.getItem("posted_properties");
+      setMyProperties(storedProps ? JSON.parse(storedProps) : []);
 
-    // Set mock lead callbacks
-    setCallbacks([
-      { id: 1, name: "Amit Patel", phone: "9825012345", property: "Shivalik Parkview 3 BHK", date: "2026-07-23" },
-      { id: 2, name: "Pooja Shah", phone: "9099054321", property: "GIFT City Tech Tower", date: "2026-07-22" }
-    ]);
+      // Set mock lead callbacks
+      setCallbacks([
+        { id: 1, name: "Amit Patel", phone: "9825012345", property: "Shivalik Parkview 3 BHK", date: "2026-07-23" },
+        { id: 2, name: "Pooja Shah", phone: "9099054321", property: "GIFT City Tech Tower", date: "2026-07-22" }
+      ]);
 
-    // Set mock appointments
-    setAppointments([
-      { id: 1, builder: "Adani Realty", property: "Adani Shantigram Flat", time: "2026-07-25 at 11:00 AM", status: "Confirmed" },
-      { id: 2, builder: "Shilp Group", property: "Shilp Ananta Shop", time: "2026-07-28 at 03:30 PM", status: "Pending approval" }
-    ]);
+      // Set mock appointments
+      setAppointments([
+        { id: 1, builder: "Adani Realty", property: "Adani Shantigram Flat", time: "2026-07-25 at 11:00 AM", status: "Confirmed" },
+        { id: 2, builder: "Shilp Group", property: "Shilp Ananta Shop", time: "2026-07-28 at 03:30 PM", status: "Pending approval" }
+      ]);
+    });
   }, [status, router]);
 
   const handleDeleteProperty = (id: number) => {
@@ -198,7 +201,7 @@ export default function DashboardPage() {
                       <div key={p.id} className="bg-slate-950 border border-slate-850 p-4 rounded-xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                         <div className="flex items-center space-x-3.5">
                           <div className="w-14 h-10 rounded-lg overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src={p.images?.[0]} alt="Prop" className="w-full h-full object-cover" />
+                            <Image src={p.images?.[0] || "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"} alt="Prop" width={100} height={100} className="w-full h-full object-cover" />
                           </div>
                           <div>
                             <h4 className="font-bold text-xs sm:text-sm text-white">{p.name}</h4>

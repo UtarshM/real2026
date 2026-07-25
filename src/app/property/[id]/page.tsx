@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { initialProperties } from "@/data/properties";
 import { siteConfig } from "@/config/siteConfig";
 import { 
@@ -31,15 +32,17 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   useEffect(() => {
-    const found = initialProperties.find(p => p.id === propertyId);
-    if (found) {
-      setProperty(found);
-      try {
-        const existing: number[] = JSON.parse(localStorage.getItem("recently_viewed") || "[]");
-        const updated = Array.from(new Set([found.id, ...existing]));
-        localStorage.setItem("recently_viewed", JSON.stringify(updated));
-      } catch (e) {}
-    }
+    queueMicrotask(() => {
+      const found = initialProperties.find(p => p.id === propertyId);
+      if (found) {
+        setProperty(found);
+        try {
+          const existing: number[] = JSON.parse(localStorage.getItem("recently_viewed") || "[]");
+          const updated = Array.from(new Set([found.id, ...existing]));
+          localStorage.setItem("recently_viewed", JSON.stringify(updated));
+        } catch {}
+      }
+    });
   }, [propertyId]);
 
   if (!property) {
@@ -127,9 +130,11 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
           {/* Left Slideshow */}
           <div className="lg:col-span-8 space-y-4">
             <div className="relative h-[420px] sm:h-[500px] rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 group">
-              <img
+              <Image
                 src={property.images[activeImage]}
                 alt={property.name}
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover transition duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
@@ -183,7 +188,7 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
                     activeImage === idx ? "border-blue-500 scale-105" : "border-slate-800 opacity-60 hover:opacity-100"
                   }`}
                 >
-                  <img src={img} alt="thumb" className="w-full h-full object-cover" />
+                  <Image src={img} alt="thumb" width={200} height={150} className="w-full h-full object-cover" />
                 </button>
               ))}
             </div>
@@ -259,7 +264,7 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Video Player Card */}
             <div className="lg:col-span-7 relative h-72 sm:h-80 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 group flex items-center justify-center">
-              <img src={property.images[0]} alt="video thumbnail" className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition duration-500" />
+              <Image src={property.images[0]} alt="video thumbnail" width={800} height={600} className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition duration-500" />
               <button 
                 onClick={() => alert(`Playing ${property.name} video walkthrough by Rama Realty.`)}
                 className="absolute p-5 bg-red-600 hover:bg-red-500 text-white rounded-full shadow-2xl transition transform group-hover:scale-110"
@@ -275,10 +280,10 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
             <div className="lg:col-span-5 space-y-4">
               <h4 className="text-sm font-extrabold text-white uppercase tracking-wider">Video Walkthrough Transcript Summary:</h4>
               <div className="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-2 text-xs text-slate-300 leading-relaxed font-mono max-h-64 overflow-y-auto">
-                <p><strong className="text-blue-400">[00:05]</strong> "Welcome to {property.name} in {property.locality}, {property.city}. Today we are walking through this spacious {property.bhk ? `${property.bhk} BHK` : property.subType} residence..."</p>
-                <p><strong className="text-blue-400">[00:45]</strong> "Notice the cross-ventilation in the main living hall with expansive glass balconies looking out towards {property.locality} green corridors..."</p>
-                <p><strong className="text-blue-400">[01:30]</strong> "The modular kitchen includes premium fitting provisions, adhering strictly to South-East Agni Kona Vastu orientation..."</p>
-                <p><strong className="text-blue-400">[02:15]</strong> "This unit comes with {property.parking || 1} designated covered parking slots and 100% power backup provisions."</p>
+                <p><strong className="text-blue-400">[00:05]</strong> &quot;Welcome to {property.name} in {property.locality}, {property.city}. Today we are walking through this spacious {property.bhk ? `${property.bhk} BHK` : property.subType} residence...&quot;</p>
+                <p><strong className="text-blue-400">[00:45]</strong> &quot;Notice the cross-ventilation in the main living hall with expansive glass balconies looking out towards {property.locality} green corridors...&quot;</p>
+                <p><strong className="text-blue-400">[01:30]</strong> &quot;The modular kitchen includes premium fitting provisions, adhering strictly to South-East Agni Kona Vastu orientation...&quot;</p>
+                <p><strong className="text-blue-400">[02:15]</strong> &quot;This unit comes with {property.parking || 1} designated covered parking slots and 100% power backup provisions.&quot;</p>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { initialProperties } from "@/data/properties";
 import { MapPin, SlidersHorizontal, Grid, List, PhoneCall, Sparkles, X, CheckCircle, Calculator } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,23 +11,38 @@ interface SearchListingsProps {
   defaultPurpose?: "BUY" | "RENT";
   defaultType?: "RESIDENTIAL" | "COMMERCIAL" | "PLOT";
   defaultCategory?: string;
+  defaultQuery?: string;
+  defaultBhk?: string;
+  defaultMaxBudget?: number;
 }
 
 export default function SearchListings({
   defaultPurpose,
   defaultType,
   defaultCategory,
+  defaultQuery,
+  defaultBhk,
+  defaultMaxBudget,
 }: SearchListingsProps) {
   // Properties state
-  const [properties, setProperties] = useState<any[]>([]);
+  const [properties, setProperties] = useState<any[]>(() =>
+    initialProperties.map((p) => ({
+      ...p,
+      purpose: p.purpose.toUpperCase() as "BUY" | "RENT",
+      type: p.type.toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
+      category: p.subType,
+    }))
+  );
 
   // Filtering Parameters
   const [purpose, setPurpose] = useState<"BUY" | "RENT">(defaultPurpose || "BUY");
   const [type, setType] = useState<"RESIDENTIAL" | "COMMERCIAL" | "PLOT">(defaultType || "RESIDENTIAL");
   const [category, setCategory] = useState(defaultCategory || "");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [maxBudget, setMaxBudget] = useState<number>(purpose === "RENT" ? 150000 : 80000000);
-  const [selectedBhk, setSelectedBhk] = useState<string[]>([]);
+  const [searchQuery, setSearchQuery] = useState(defaultQuery || "");
+  const [maxBudget, setMaxBudget] = useState<number>(
+    defaultMaxBudget || (purpose === "RENT" ? 150000 : 80000000)
+  );
+  const [selectedBhk, setSelectedBhk] = useState<string[]>(defaultBhk ? [defaultBhk] : []);
   const [selectedFurnishing, setSelectedFurnishing] = useState<string[]>([]);
   const [selectedPostedBy, setSelectedPostedBy] = useState<string[]>([]);
   const [isReadyToMove, setIsReadyToMove] = useState<boolean | null>(null);
@@ -39,18 +55,6 @@ export default function SearchListings({
 
   // View state: Grid vs List
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
-
-  // Load initial property records
-  useEffect(() => {
-    // Map initialProperties formatting (matching DB expectations)
-    const formatted = initialProperties.map((p) => ({
-      ...p,
-      purpose: p.purpose.toUpperCase() as "BUY" | "RENT",
-      type: p.type.toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
-      category: p.subType,
-    }));
-    setProperties(formatted);
-  }, []);
 
   const handleBhkChange = (bhk: string) => {
     setSelectedBhk(prev =>
@@ -382,9 +386,11 @@ export default function SearchListings({
                   >
                     {/* Visual slider block */}
                     <div className={`relative bg-slate-950 overflow-hidden ${viewMode === "list" ? "md:w-72 h-64 md:h-auto flex-shrink-0" : "h-56"}`}>
-                      <img
+                      <Image
                         src={p.images?.[0] || "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"}
                         alt={p.name}
+                        width={800}
+                        height={600}
                         className="w-full h-full object-cover transition duration-500 group-hover:scale-103"
                       />
                       <span className="absolute top-4 left-4 bg-slate-950/80 border border-slate-800 text-slate-300 text-[9px] font-black uppercase tracking-wider px-2.5 py-1.5 rounded-lg shadow-sm">

@@ -1,0 +1,91 @@
+"use server";
+
+import { db } from "@/lib/db";
+import { initialProperties } from "@/data/properties";
+
+export interface PropertyFilterParams {
+  query?: string;
+  purpose?: "BUY" | "RENT";
+  type?: "RESIDENTIAL" | "COMMERCIAL" | "PLOT";
+  locality?: string;
+  bhk?: number[];
+  minPrice?: number;
+  maxPrice?: number;
+}
+
+export async function getProperties(params?: PropertyFilterParams) {
+  try {
+    const whereClause: any = {};
+
+    if (params?.purpose) {
+      whereClause.purpose = params.purpose;
+    }
+    if (params?.type) {
+      whereClause.type = params.type;
+    }
+    if (params?.locality) {
+      whereClause.locality = { contains: params.locality, mode: "insensitive" };
+    }
+    if (params?.maxPrice) {
+      whereClause.price = { lte: params.maxPrice };
+    }
+    if (params?.bhk && params.bhk.length > 0) {
+      whereClause.bhk = { in: params.bhk };
+    }
+
+    const dbProperties = await db.property.findMany({
+      where: whereClause,
+      include: {
+        agent: true,
+        builder: true,
+      },
+      take: 50,
+    });
+
+    if (dbProperties && dbProperties.length > 0) {
+      return dbProperties;
+    }
+  } catch (error) {
+    console.warn("Prisma query failed or database empty, using local fallback dataset:", error);
+  }
+
+  // Fallback to in-memory initialProperties formatted
+  let filtered = initialProperties.map((p) => ({
+    ...p,
+    purpose: p.purpose.toUpperCase() as "BUY" | "RENT",
+    type: p.type.toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
+    category: p.subType,
+  }));
+
+  if (params?.purpose) {
+    filtered = filtered.filter((p) => p.purpose === params.purpose);
+  }
+  if (params?.type) {
+    filtered = filtered.filter((p) => p.type === params.type);
+  }
+  if (params?.locality) {
+    const locLower = params.locality.toLowerCase();
+    filtered = filtered.filter(
+      (p) =>
+        p.locality.toLowerCase().includes(locLower) ||
+        p.city.toLowerCase().includes(locLower)
+    );
+  }
+  if (params?.maxPrice) {
+    filtered = filtered.filter((p) => p.price <= params.maxPrice!);
+  }
+  if (params?.bhk && params.bhk.length > 0) {
+    filtered = filtered.filter((p) => p.bhk && params.bhk!.includes(p.bhk));
+  }
+  if (params?.query) {
+    const qLower = params.query.toLowerCase();
+    filtered = filtered.filter(
+      (p) =>
+        p.name.toLowerCase().includes(qLower) ||
+        p.locality.toLowerCase().includes(qLower) ||
+        p.city.toLowerCase().includes(qLower)
+    );
+  }
+
+  return filtered;
+}

@@ -61,7 +61,7 @@ export default function RequirementsPage() {
           <span className="text-blue-500 font-bold text-xs uppercase tracking-widest">Share Your Needs</span>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white mt-2 font-display">Tell us Your Requirement</h1>
           <p className="text-slate-400 text-xs sm:text-sm mt-2 max-w-md mx-auto leading-relaxed">
-            Can't find the perfect property? Let us know what you're looking for, and we will find the ideal listings with Zero Brokerage.
+            Can&apos;t find the perfect property? Let us know what you&apos;re looking for, and we will find the ideal listings with Zero Brokerage.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function RequirementsPage() {
               </div>
               <h3 className="font-extrabold text-2xl text-white font-display mb-2">Requirements Submitted!</h3>
               <p className="text-slate-455 text-xs sm:text-sm max-w-sm leading-relaxed mb-6">
-                Thank you! We've received your criteria. Our personal property manager will contact you with matching verified listings shortly.
+                Thank you! We&apos;ve received your criteria. Our personal property manager will contact you with matching verified listings shortly.
               </p>
               <Link href="/">
                 <Button variant="primary" size="sm">Go Back Home</Button>

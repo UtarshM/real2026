@@ -1,20 +1,58 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
-import { Menu, X, Sun, Moon, ChevronDown, User, LogOut, FileText, Bell } from "lucide-react";
+import { Menu, X, Sun, Moon, ChevronDown, User, LogOut, FileText, Bell, Heart, Calculator, Layers, ShieldCheck, Landmark, Globe, Navigation, Tag, TrendingUp, Layout, FileCheck, Share2, Star, Building } from "lucide-react";
 import { Button } from "./ui/button";
+import StampDutyCalculatorModal from "./StampDutyCalculatorModal";
+import PropertyCompareModal from "./PropertyCompareModal";
+import ReraCheckerModal from "./ReraCheckerModal";
+import LoanEligibilityModal from "./LoanEligibilityModal";
+import CurrencyConverterModal from "./CurrencyConverterModal";
+import QuickSearchShortcutModal from "./QuickSearchShortcutModal";
+import CommuteCalculatorModal from "./CommuteCalculatorModal";
+import OfferSubmissionModal from "./OfferSubmissionModal";
+import RentalYieldModal from "./RentalYieldModal";
+import FloorPlanViewerModal from "./FloorPlanViewerModal";
+import LegalTitleCheckerModal from "./LegalTitleCheckerModal";
+import PropertyShareModal from "./PropertyShareModal";
+import PropertyReviewModal from "./PropertyReviewModal";
+import DeveloperPortfolioModal from "./DeveloperPortfolioModal";
 
 export default function Navbar() {
   const { data: session } = useSession();
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [showStampDutyModal, setShowStampDutyModal] = useState(false);
+  const [showCompareModal, setShowCompareModal] = useState(false);
+  const [showReraModal, setShowReraModal] = useState(false);
+  const [showLoanModal, setShowLoanModal] = useState(false);
+  const [showCurrencyModal, setShowCurrencyModal] = useState(false);
+  const [showCommuteModal, setShowCommuteModal] = useState(false);
+  const [showOfferModal, setShowOfferModal] = useState(false);
+  const [showYieldModal, setShowYieldModal] = useState(false);
+  const [showFloorPlanModal, setShowFloorPlanModal] = useState(false);
+  const [showLegalModal, setShowLegalModal] = useState(false);
+  const [showShareModal, setShowShareModal] = useState(false);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [showPortfolioModal, setShowPortfolioModal] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("addressbox_theme") as "dark" | "light" | null;
+    if (saved) {
+      queueMicrotask(() => {
+        setTheme(saved);
+        if (saved === "light") document.documentElement.classList.add("light-theme");
+      });
+    }
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
+    localStorage.setItem("addressbox_theme", newTheme);
     if (newTheme === "light") {
       document.documentElement.classList.add("light-theme");
     } else {
@@ -109,9 +147,148 @@ export default function Navbar() {
             <button
               onClick={toggleTheme}
               className="p-2.5 text-slate-400 hover:text-white rounded-xl hover:bg-slate-800/40 transition cursor-pointer"
+              title="Toggle Theme"
             >
               {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
+
+            {/* Saved Favorites Shortcut */}
+            <Link
+              href="/dashboard"
+              className="p-2.5 text-slate-400 hover:text-red-400 rounded-xl hover:bg-slate-800/40 transition flex items-center space-x-1"
+              title="Saved Properties"
+            >
+              <Heart className="w-5 h-5" />
+            </Link>
+
+            {/* Tools & Calculators Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setActiveMenu(activeMenu === "tools" ? null : "tools")}
+                onMouseEnter={() => setActiveMenu("tools")}
+                className="flex items-center space-x-1 px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white rounded-xl hover:bg-slate-800/60 transition cursor-pointer"
+              >
+                <Calculator className="w-4 h-4 text-blue-400" />
+                <span>Tools & Calculators</span>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-500" />
+              </button>
+
+              {activeMenu === "tools" && (
+                <div
+                  onMouseLeave={() => setActiveMenu(null)}
+                  className="absolute right-0 top-full mt-2 w-80 bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150 space-y-1"
+                >
+                  <div className="text-[10px] font-black uppercase text-slate-500 px-3 py-1 tracking-wider">Financial & Calculators</div>
+                  <button
+                    onClick={() => { setShowStampDutyModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Calculator className="w-4 h-4 text-emerald-400" />
+                    <span>Gujarat Stamp Duty Calculator</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowLoanModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Landmark className="w-4 h-4 text-blue-400" />
+                    <span>Home Loan Eligibility</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowCurrencyModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Globe className="w-4 h-4 text-emerald-400" />
+                    <span>NRI Multi-Currency Converter</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowYieldModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <TrendingUp className="w-4 h-4 text-blue-400" />
+                    <span>Rental Yield & ROI Estimator</span>
+                  </button>
+
+                  <div className="pt-2 border-t border-slate-800/80 text-[10px] font-black uppercase text-slate-500 px-3 py-1 tracking-wider">Property Insights & Legal</div>
+                  
+                  <button
+                    onClick={() => { setShowCompareModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Layers className="w-4 h-4 text-purple-400" />
+                    <span>Property Comparison Matrix</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowReraModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    <span>RERA Gujarat Checker</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowCommuteModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Navigation className="w-4 h-4 text-blue-400" />
+                    <span>Commute & Transit Calculator</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowFloorPlanModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Layout className="w-4 h-4 text-emerald-400" />
+                    <span>Floor Plan Dimensions</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowLegalModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <FileCheck className="w-4 h-4 text-blue-400" />
+                    <span>Legal Title Clearance</span>
+                  </button>
+
+                  <div className="pt-2 border-t border-slate-800/80 text-[10px] font-black uppercase text-slate-500 px-3 py-1 tracking-wider">Offers & Community</div>
+
+                  <button
+                    onClick={() => { setShowOfferModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Tag className="w-4 h-4 text-emerald-400" />
+                    <span>Make Digital Price Offer</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowPortfolioModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Building className="w-4 h-4 text-blue-400" />
+                    <span>Developer Portfolios</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowReviewModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Star className="w-4 h-4 text-amber-400" />
+                    <span>Verified Buyer Reviews</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setShowShareModal(true); setActiveMenu(null); }}
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                  >
+                    <Share2 className="w-4 h-4 text-indigo-400" />
+                    <span>Share Property Card</span>
+                  </button>
+                </div>
+              )}
+            </div>
 
             {session ? (
               <div className="flex items-center space-x-3">
@@ -227,6 +404,73 @@ export default function Navbar() {
           </div>
         </div>
       )}
+
+      <StampDutyCalculatorModal
+        isOpen={showStampDutyModal}
+        onClose={() => setShowStampDutyModal(false)}
+      />
+
+      <PropertyCompareModal
+        isOpen={showCompareModal}
+        onClose={() => setShowCompareModal(false)}
+      />
+
+      <ReraCheckerModal
+        isOpen={showReraModal}
+        onClose={() => setShowReraModal(false)}
+      />
+
+      <LoanEligibilityModal
+        isOpen={showLoanModal}
+        onClose={() => setShowLoanModal(false)}
+      />
+
+      <CurrencyConverterModal
+        isOpen={showCurrencyModal}
+        onClose={() => setShowCurrencyModal(false)}
+      />
+
+      <CommuteCalculatorModal
+        isOpen={showCommuteModal}
+        onClose={() => setShowCommuteModal(false)}
+      />
+
+      <OfferSubmissionModal
+        isOpen={showOfferModal}
+        onClose={() => setShowOfferModal(false)}
+      />
+
+      <RentalYieldModal
+        isOpen={showYieldModal}
+        onClose={() => setShowYieldModal(false)}
+      />
+
+      <FloorPlanViewerModal
+        isOpen={showFloorPlanModal}
+        onClose={() => setShowFloorPlanModal(false)}
+      />
+
+      <LegalTitleCheckerModal
+        isOpen={showLegalModal}
+        onClose={() => setShowLegalModal(false)}
+      />
+
+      <PropertyShareModal
+        isOpen={showShareModal}
+        onClose={() => setShowShareModal(false)}
+      />
+
+      <PropertyReviewModal
+        isOpen={showReviewModal}
+        onClose={() => setShowReviewModal(false)}
+      />
+
+      <DeveloperPortfolioModal
+        isOpen={showPortfolioModal}
+        onClose={() => setShowPortfolioModal(false)}
+      />
+
+      <QuickSearchShortcutModal />
     </header>
   );
 }

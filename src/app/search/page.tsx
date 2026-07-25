@@ -9,11 +9,17 @@ function SearchPageContent() {
   const searchParams = useSearchParams();
   const purpose = (searchParams.get("purpose")?.toUpperCase() as "BUY" | "RENT") || "BUY";
   const type = (searchParams.get("type")?.toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT") || "RESIDENTIAL";
+  const query = searchParams.get("query") || "";
+  const bhk = searchParams.get("bhk") || "";
+  const maxBudget = searchParams.get("maxBudget") ? Number(searchParams.get("maxBudget")) : undefined;
 
   return (
     <SearchListings
       defaultPurpose={purpose}
       defaultType={type}
+      defaultQuery={query}
+      defaultBhk={bhk}
+      defaultMaxBudget={maxBudget}
     />
   );
 }

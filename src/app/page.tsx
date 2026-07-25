@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { initialProperties } from "@/data/properties";
 import { AHMEDABAD_GANDHINAGAR_IMAGES } from "@/data/ahmedabad_gandhinagar_images";
@@ -87,9 +88,11 @@ export default function HomePage() {
         
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
-          <img 
+          <Image 
             src={AHMEDABAD_GANDHINAGAR_IMAGES.hero.ramarealtyBg} 
             alt="Real Estate Ahmedabad Gandhinagar"
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-950/40" />
@@ -305,7 +308,7 @@ export default function HomePage() {
           {trendingLocalities.map((loc, idx) => (
             <Link key={idx} href={loc.href} className="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 hover:border-blue-500 transition duration-300">
               <div className="h-44 w-full relative">
-                <img src={loc.image} alt={loc.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                <Image src={loc.image} alt={loc.name} width={400} height={300} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3">
                   <span className="text-[10px] font-bold uppercase text-blue-400">{loc.city}</span>
@@ -337,7 +340,7 @@ export default function HomePage() {
               
               {/* Image & Badges */}
               <div className="relative h-56 w-full">
-                <img src={prop.images[0]} alt={prop.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                <Image src={prop.images[0]} alt={prop.name} width={800} height={600} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
                 
                 <div className="absolute top-3 left-3 flex flex-wrap gap-2">

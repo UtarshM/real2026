@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { AHMEDABAD_GANDHINAGAR_IMAGES } from "@/data/ahmedabad_gandhinagar_images";
 import { Building2, Award, CheckCircle2, ShieldCheck, MapPin, ExternalLink, Search, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -139,7 +140,7 @@ export default function BuildersDirectoryPage() {
               Premier Builders in Ahmedabad & Gandhinagar
             </h1>
             <p className="text-slate-400 text-xs sm:text-sm mt-1 leading-relaxed">
-              Explore track records, completed square footage, and active RERA registered projects from Gujarat's top developers.
+              Explore track records, completed square footage, and active RERA registered projects from Gujarat&apos;s top developers.
             </p>
           </div>
 
@@ -165,7 +166,7 @@ export default function BuildersDirectoryPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-start">
                   <div className="w-14 h-14 rounded-2xl bg-slate-950 border border-slate-800 p-2 flex items-center justify-center overflow-hidden">
-                    <img src={b.logo} alt={b.name} className="w-full h-full object-contain" />
+                    <Image src={b.logo} alt={b.name} width={100} height={100} className="w-full h-full object-contain" />
                   </div>
                   <span className="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[10px] font-black px-2.5 py-1 rounded-full uppercase flex items-center space-x-1">
                     <ShieldCheck className="w-3.5 h-3.5" />
@@ -175,7 +176,7 @@ export default function BuildersDirectoryPage() {
 
                 <div>
                   <h3 className="text-xl font-black text-white font-display group-hover:text-blue-400 transition">{b.name}</h3>
-                  <p className="text-xs text-slate-400 italic mt-0.5 font-medium">"{b.tagline}"</p>
+                  <p className="text-xs text-slate-400 italic mt-0.5 font-medium">&quot;{b.tagline}&quot;</p>
                 </div>
               </div>
 
