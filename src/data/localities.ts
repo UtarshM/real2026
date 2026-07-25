@@ -39,7 +39,7 @@ export const LOCALITIES_DATA: Record<string, LocalityInfo> = {
     keyHighlight: "Upscale residential hub near SG Highway with luxury 4 & 5 BHK bungalows and high-rises",
     connectivity: ["Direct access to SG Highway & SP Ring Road", "Minutes from Sola Civil Hospital & Zydus Cadila Corporate Office", "Close to Science City Metro Station"],
     topProjects: ["Science City Horizon Villa", "Shaligram Prime", "Shaival Sky", "Silver Harmony"],
-    agentSiteNotes: "Rama Realty site inspection note: Science City Road has evolved into Ahmedabad's premier luxury bungalow corridor. Families prioritize East-facing 4 BHK inventory with Vastu compliance.",
+    agentSiteNotes: "AddressBox site inspection note: Science City Road has evolved into Ahmedabad's premier luxury bungalow corridor. Families prioritize East-facing 4 BHK inventory with Vastu compliance.",
     faqs: [
       {
         question: "Are luxury villas available near Science City Road Ahmedabad?",

@@ -16,7 +16,7 @@ export default function AgentChatModal({
   isOpen,
   onClose,
   propertyName = "Shivalik Edge 4 BHK",
-  agentName = "Rama Realty Verified Agent",
+  agentName = "AddressBox Verified Agent",
   agentPhone = "+91 98765 43210"
 }: AgentChatModalProps) {
   const [messages, setMessages] = useState<Array<{ sender: "agent" | "user"; text: string; time: string }>>([

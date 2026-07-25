@@ -62,16 +62,16 @@ export default function HomePage() {
     { q: "Is there any brokerage fee on AddressBox?", a: "No, AddressBox operates on a strict Zero Brokerage model. You deal directly with verified property owners and builders, saving lakhs in commissions." },
     { q: "How are properties verified on the platform?", a: "Every listing on AddressBox undergoes strict validation including RERA registration checks (GUJRERA / AUDA), map coordinate verification, and builder title verification." },
     { q: "Can I get home loan assistance through AddressBox?", a: "Yes! We partner with leading institutions like SBI, HDFC, ICICI, and Bank of Baroda to offer instant pre-approved loans with zero processing charges." },
-    { q: "How does Rama AI Vastu Calculator work?", a: "Our AI Vastu tool evaluates direction, entrance placement, and kitchen/bedroom quadrants against ancient Vastu principles to generate a harmony score." },
+    { q: "How does AddressBox AI Vastu Calculator work?", a: "Our AI Vastu tool evaluates direction, entrance placement, and kitchen/bedroom quadrants against ancient Vastu principles to generate a harmony score." },
     { q: "Which areas in Gandhinagar have high investment appreciation?", a: "Properties around GIFT City, Sargasan, Kudasan, and Randesan yield high rental returns and asset growth due to tech corridors and metro connectivity." }
   ];
 
   const trendingLocalities = [
-    { name: "GIFT City", city: "Gandhinagar", count: 110, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.giftCity, href: "/search?city=Gandhinagar&query=GIFT+City" },
-    { name: "Science City", city: "Ahmedabad", count: 145, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.scienceCity, href: "/search?city=Ahmedabad&query=Science+City" },
-    { name: "Sindhu Bhavan Road", city: "Ahmedabad", count: 98, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.sbr, href: "/search?city=Ahmedabad&query=Sindhu+Bhavan+Road" },
-    { name: "Sargasan", city: "Gandhinagar", count: 82, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.sargasan, href: "/search?city=Gandhinagar&query=Sargasan" },
-    { name: "South Bopal", city: "Ahmedabad", count: 160, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.bopal, href: "/search?city=Ahmedabad&query=Bopal" }
+    { name: "GIFT City", city: "Gandhinagar", count: 110, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.giftCity, href: "/locality/gift-city" },
+    { name: "Science City", city: "Ahmedabad", count: 145, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.scienceCity, href: "/locality/science-city" },
+    { name: "Sindhu Bhavan Road", city: "Ahmedabad", count: 98, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.sbr, href: "/locality/sindhu-bhavan-road" },
+    { name: "Sargasan", city: "Gandhinagar", count: 82, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.sargasan, href: "/locality/sargasan" },
+    { name: "South Bopal", city: "Ahmedabad", count: 160, image: AHMEDABAD_GANDHINAGAR_IMAGES.localities.bopal, href: "/locality/bopal" }
   ];
 
   return (
@@ -84,7 +84,7 @@ export default function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[680px] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 z-10 border-b border-slate-900">
+      <section className="relative min-h-[680px] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 z-10 border-b border-slate-900 hero-section">
         
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
@@ -101,15 +101,15 @@ export default function HomePage() {
         <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6">
           
           {/* Top Pill Header */}
-          <div className="inline-flex items-center space-x-2 bg-slate-900/90 border border-blue-500/30 px-4 py-1.5 rounded-full backdrop-blur-md">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-            <span className="text-xs font-extrabold text-blue-400 tracking-wider uppercase">
+          <div className="inline-flex items-center space-x-2 bg-slate-900/90 border border-orange-500/30 px-4 py-1.5 rounded-full backdrop-blur-md">
+            <span className="w-2 h-2 rounded-full bg-orange-400 animate-ping" />
+            <span className="text-xs font-extrabold text-orange-400 tracking-wider uppercase">
               Ahmedabad & Gandhinagar #1 Property Portal
             </span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight font-display leading-tight drop-shadow-xl">
-            Right Property, <span className="text-blue-500">Right Now</span>
+            Right Property, <span className="text-orange-500">Right Now</span>
           </h1>
           <p className="text-slate-300 text-sm sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium drop-shadow-md">
             Find 100% RERA-verified residential flats, commercial offices, villas, and plots in Ahmedabad & Gandhinagar with zero brokerage.
@@ -126,7 +126,7 @@ export default function HomePage() {
                   onClick={() => setPropertyCategory(cat.value)}
                   className={`relative px-4 py-2 rounded-xl text-xs font-extrabold tracking-wider transition cursor-pointer flex items-center space-x-1.5 ${
                     propertyCategory === cat.value
-                      ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25"
+                      ? "bg-orange-500 text-white shadow-lg shadow-orange-500/25"
                       : "bg-slate-950 text-slate-400 hover:bg-slate-800 hover:text-white"
                   }`}
                 >
@@ -149,7 +149,7 @@ export default function HomePage() {
                     onClick={() => setPurpose(p)}
                     className={`flex-1 py-2 text-center text-xs font-bold rounded-lg transition capitalize cursor-pointer ${
                       purpose === p
-                        ? "bg-blue-600 text-white shadow-sm"
+                        ? "bg-orange-500 text-white shadow-sm"
                         : "text-slate-500 hover:text-slate-300"
                     }`}
                   >
@@ -219,7 +219,7 @@ export default function HomePage() {
               <div className="md:col-span-2 flex space-x-2">
                 <Button
                   onClick={handleSearch}
-                  className="w-full bg-blue-600 hover:bg-blue-500 text-white font-extrabold py-3 px-4 rounded-xl transition flex items-center justify-center space-x-2"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-black py-3 px-4 rounded-xl transition flex items-center justify-center space-x-2 border-none shadow-lg shadow-orange-500/25"
                 >
                   <Search className="w-4 h-4" />
                   <span>Search</span>
@@ -228,17 +228,26 @@ export default function HomePage() {
 
             </div>
 
-            {/* AI Voice & Vastu Tools Action Bar */}
+            {/* AI Voice, Valuation & Vastu Tools Action Bar */}
             <div className="mt-6 pt-5 border-t border-slate-800/80 flex flex-wrap justify-between items-center gap-3">
               
               {/* Voice search trigger */}
               <button
                 onClick={() => setIsVoiceSearchOpen(true)}
-                className="flex items-center space-x-2 bg-slate-950 hover:bg-slate-800 border border-blue-500/30 text-blue-400 px-4 py-2 rounded-xl text-xs font-bold transition"
+                className="flex items-center space-x-2 bg-slate-950 hover:bg-slate-800 border border-orange-500/30 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold transition"
               >
-                <Mic className="w-4 h-4 text-blue-400 animate-pulse" />
+                <Mic className="w-4 h-4 text-orange-400 animate-pulse" />
                 <span>AI Voice Search (EN/HI/GU)</span>
               </button>
+
+              {/* AI Valuation Link */}
+              <Link
+                href="/valuation"
+                className="flex items-center space-x-2 bg-orange-500/10 hover:bg-orange-500/20 border border-orange-500/30 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold transition"
+              >
+                <Sparkles className="w-4 h-4 text-orange-400" />
+                <span>AI Home Value Estimator</span>
+              </Link>
 
               {/* Vastu Score Calculator trigger */}
               <button
@@ -396,6 +405,43 @@ export default function HomePage() {
 
               </div>
 
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Verified Agents Showcase */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-900">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
+          <div>
+            <span className="text-xs font-extrabold text-orange-400 uppercase tracking-widest">RERA Certified Partners</span>
+            <h2 className="text-3xl font-black text-white font-display mt-1">Verified Real Estate Agents</h2>
+          </div>
+          <Link href="/builders" className="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center space-x-1 mt-4 md:mt-0">
+            <span>Explore All Agents</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { slug: "rahul-patel", name: "Rahul Patel", agency: "Apex Realty Solutions", rera: "GJ/AHMEDABAD/AG/01928", rating: "4.9", deals: "320+", localities: "Bopal, Shela, Ambli" },
+            { slug: "priya-shah", name: "Priya Shah", agency: "Capital Assets & Investments", rera: "GJ/GANDHINAGAR/AG/08821", rating: "4.8", deals: "195+", localities: "GIFT City, Sargasan" },
+            { slug: "vikram-desai", name: "Vikram Desai", agency: "Heritage & Modern Spaces", rera: "GJ/AHMEDABAD/AG/05541", rating: "5.0", deals: "480+", localities: "Science City, SBR" }
+          ].map((agent, idx) => (
+            <div key={idx} className="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 hover:border-orange-500/40 transition group">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-lg font-bold text-white group-hover:text-orange-400 transition">{agent.name}</h3>
+                  <p className="text-xs text-slate-400 font-medium">{agent.agency}</p>
+                </div>
+                <span className="text-xs font-extrabold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/30">★ {agent.rating}</span>
+              </div>
+              <p className="text-[11px] text-slate-400">Specialist in <span className="text-slate-300 font-bold">{agent.localities}</span> • {agent.deals} Deals</p>
+              <div className="pt-2 border-t border-slate-800 flex justify-between items-center text-xs">
+                <span className="text-[10px] font-mono text-slate-500">RERA: {agent.rera}</span>
+                <Link href={`/agent/${agent.slug}`} className="text-orange-400 font-extrabold hover:underline">View Agent Profile →</Link>
+              </div>
             </div>
           ))}
         </div>

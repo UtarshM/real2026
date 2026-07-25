@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Rama Realty",
-  tagline: "Gujarat's First Video-First Real Estate Specialist",
-  description: "Boutique real estate agency specializing in 100% RERA-verified luxury residential flats, commercial offices, villas, and plots in Ahmedabad & Gandhinagar with zero brokerage and video walkthroughs.",
-  url: "https://www.ramarealty.in",
+  name: "AddressBox",
+  tagline: "Gujarat's #1 Zero Brokerage Real Estate Portal",
+  description: "Premier real estate portal specializing in 100% RERA-verified luxury residential flats, commercial offices, villas, and plots in Ahmedabad & Gandhinagar with zero brokerage and 3D virtual tours.",
+  url: "https://addressbox.in",
   address: {
     street: "708, Elite Magnum, Bhuyangdev Cross Road, Sola Road",
     locality: "Sola Road / Bhuyangdev",
@@ -13,15 +13,15 @@ export const siteConfig = {
   },
   contact: {
     phone: "+91 98250 79334",
-    email: "contact@ramarealty.in",
-    altEmail: "ramarealtyind@gmail.com",
+    email: "contact@addressbox.in",
+    altEmail: "support@addressbox.in",
     whatsapp: "+91 98250 79334"
   },
   social: {
-    youtube: "https://youtube.com/@ramarealty",
-    facebook: "https://facebook.com/ramarealtyind",
-    instagram: "https://instagram.com/ramarealty",
-    linkedin: "https://linkedin.com/company/ramarealty"
+    youtube: "https://youtube.com/@addressbox",
+    facebook: "https://facebook.com/addressbox",
+    instagram: "https://instagram.com/addressbox",
+    linkedin: "https://linkedin.com/company/addressbox"
   },
   primaryLocalities: [
     { name: "GIFT City", city: "Gandhinagar", slug: "gift-city" },

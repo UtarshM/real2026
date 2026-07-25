@@ -7,6 +7,9 @@
   
   --primary: #2563eb;
   --primary-hover: #1d4ed8;
+  --orange-primary: #f97316;
+  --orange-hover: #ea580c;
+  --orange-glow: #ff6b00;
   --secondary: #0f172a;
   --secondary-light: #1e293b;
   --accent-gold: #f59e0b;
@@ -64,7 +67,7 @@ body {
 .light-theme .bg-slate-800\/50,
 .light-theme .bg-slate-800\/80,
 .light-theme .bg-slate-800\/40 {
-  background-color: #f1f5f9 !important;
+  background-color: #f8fafc !important;
   color: #0f172a;
 }
 
@@ -79,24 +82,23 @@ body {
 .light-theme .border-slate-800\/80,
 .light-theme .border-white\/10,
 .light-theme .border-slate-800\/50 {
-  border-color: #e2e8f0 !important;
+  border-color: #cbd5e1 !important;
 }
 
-.light-theme .text-white {
-  color: #0f172a !important;
+/* Ensure dark overlay sections (like Hero background image) always maintain bright white text */
+.hero-section,
+.dark-banner {
+  color: #ffffff !important;
 }
 
-.light-theme .text-slate-300,
-.light-theme .text-slate-400 {
-  color: #475569 !important;
+.hero-section h1,
+.dark-banner h1 {
+  color: #ffffff !important;
 }
 
-.light-theme .text-slate-500 {
-  color: #64748b !important;
-}
-
-.light-theme .text-slate-200 {
-  color: #1e293b !important;
+.hero-section p,
+.dark-banner p {
+  color: #f1f5f9 !important;
 }
 
 .light-theme input[type="text"],
@@ -118,11 +120,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
 }
 
-/* AddressBox & Rama Realty Glassmorphism */
-.glass-panel {
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+/* Light Theme Gradient & Hero Card Overrides */
+.light-theme .bg-gradient-to-r.from-orange-950\/40,
+.light-theme .bg-gradient-to-r.from-blue-950\/40,
+.light-theme .bg-gradient-to-r.from-amber-950\/40,
+.light-theme .bg-gradient-to-r.from-slate-950 {
+  background: linear-gradient(to right, #fff7ed, #f8fafc, #ffffff) !important;
+  border-color: #fdba74 !important;
+}
+
+.light-theme .glass-panel {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #0f172a !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
 }
 
 .light-theme .glass-panel {
@@ -131,16 +142,36 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
+.navbar-logo-text {
+  color: #ffffff;
+}
+
+.light-theme .navbar-logo-text {
+  color: #0f172a !important;
+}
+
 .glass-header {
-  background: rgba(6, 9, 19, 0.9);
+  background: rgba(6, 9, 19, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .light-theme .glass-header {
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff !important;
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  border-bottom: 1px solid #cbd5e1 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme nav a,
+.light-theme nav button {
+  color: #1e293b !important;
+  font-weight: 800 !important;
+}
+
+.light-theme nav a:hover,
+.light-theme nav button:hover {
+  color: #f97316 !important;
 }
 
 /* Custom Badges */

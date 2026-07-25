@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
-import { Menu, X, Sun, Moon, ChevronDown, User, LogOut, FileText, Bell, Heart, Calculator, Layers, ShieldCheck, Landmark, Globe, Navigation, Tag, TrendingUp, Layout, FileCheck, Share2, Star, Building } from "lucide-react";
+import { Menu, X, Sun, Moon, ChevronDown, User, LogOut, FileText, Bell, Heart, Calculator, Layers, ShieldCheck, Landmark, Globe, Navigation, Tag, TrendingUp, Layout, FileCheck, Share2, Star, Building, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import StampDutyCalculatorModal from "./StampDutyCalculatorModal";
 import PropertyCompareModal from "./PropertyCompareModal";
@@ -41,16 +41,17 @@ export default function Navbar() {
 
   useEffect(() => {
     const saved = localStorage.getItem("addressbox_theme") as "dark" | "light" | null;
-    if (saved) {
-      queueMicrotask(() => {
-        setTheme(saved);
-        if (saved === "light") document.documentElement.classList.add("light-theme");
-      });
+    if (saved === "dark") {
+      setTheme("dark");
+      document.documentElement.classList.remove("light-theme");
+    } else {
+      setTheme("light");
+      document.documentElement.classList.add("light-theme");
     }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
+    const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("addressbox_theme", newTheme);
     if (newTheme === "light") {
@@ -86,59 +87,61 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 glass-header shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-blue-600 p-2 rounded-xl text-white shadow-md shadow-blue-500/25">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                </svg>
-              </div>
-              <span className="font-extrabold text-2xl text-white tracking-tight font-display">
-                Address<span className="text-blue-500">Box</span>
-              </span>
-            </Link>
+          <div className="flex items-center space-x-6 lg:space-x-8">
+            {/* Logo */}
+            <div className="flex-shrink-0 pr-4">
+              <Link href="/" className="flex items-center space-x-2.5">
+                <div className="bg-orange-500 p-2.5 rounded-2xl text-white shadow-md shadow-orange-500/25">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                </div>
+                <span className="font-black text-2xl tracking-tight font-display navbar-logo-text">
+                  Address<span className="text-orange-500 font-black">Box</span>
+                </span>
+              </Link>
+            </div>
+
+            {/* Desktop Navigation Links */}
+            <nav className="hidden lg:flex items-center space-x-5 xl:space-x-7 text-slate-700 dark:text-slate-300 font-extrabold text-xs sm:text-sm">
+              
+              {/* Mega Dropdowns */}
+              {(["buy", "rent", "commercial"] as const).map((key) => (
+                <div
+                  key={key}
+                  className="relative"
+                  onMouseEnter={() => setActiveMenu(key)}
+                  onMouseLeave={() => setActiveMenu(null)}
+                >
+                  <button className="flex items-center space-x-1 hover:text-orange-500 dark:hover:text-white transition py-2 capitalize cursor-pointer">
+                    <span>{key}</span>
+                    <ChevronDown className="w-3.5 h-3.5 opacity-70" />
+                  </button>
+                  {activeMenu === key && (
+                    <div className="absolute top-full -left-4 w-52 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 shadow-xl flex flex-col space-y-1 mt-0 z-50">
+                      {menuItems[key].map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href={item.href}
+                          className="text-slate-700 dark:text-slate-400 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/60 px-3 py-2 rounded-xl text-xs font-bold transition"
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+
+              <Link href="/buy" className="hover:text-orange-500 dark:hover:text-white transition">Projects</Link>
+              <Link href="/builders" className="hover:text-orange-500 dark:hover:text-white transition">Builders</Link>
+              <Link href="/builders" className="hover:text-orange-500 dark:hover:text-white transition">Agents</Link>
+              <Link href="/blog" className="hover:text-orange-500 dark:hover:text-white transition">Blog</Link>
+            </nav>
           </div>
-
-          {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-6 text-slate-300 font-semibold text-xs sm:text-sm">
-            
-            {/* Mega Dropdowns */}
-            {(["buy", "rent", "commercial"] as const).map((key) => (
-              <div
-                key={key}
-                className="relative"
-                onMouseEnter={() => setActiveMenu(key)}
-                onMouseLeave={() => setActiveMenu(null)}
-              >
-                <button className="flex items-center space-x-1 hover:text-white transition py-2 capitalize cursor-pointer">
-                  <span>{key}</span>
-                  <ChevronDown className="w-4 h-4" />
-                </button>
-                {activeMenu === key && (
-                  <div className="absolute top-full -left-4 w-52 bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl flex flex-col space-y-2 mt-0">
-                    {menuItems[key].map((item, idx) => (
-                      <Link
-                        key={idx}
-                        href={item.href}
-                        className="text-slate-400 hover:text-white hover:bg-slate-800/40 px-3 py-2.5 rounded-lg text-xs font-semibold transition"
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-
-            <Link href="/projects" className="hover:text-white transition">Projects</Link>
-            <Link href="/builders" className="hover:text-white transition">Builders</Link>
-            <Link href="/agents" className="hover:text-white transition">Agents</Link>
-            <Link href="/blog" className="hover:text-white transition">Blog</Link>
-          </nav>
 
           {/* Actions & Profiles */}
           <div className="hidden lg:flex items-center space-x-4">
@@ -151,6 +154,15 @@ export default function Navbar() {
             >
               {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
+
+            {/* AI Valuation Shortcut */}
+            <Link
+              href="/valuation"
+              className="flex items-center space-x-1.5 px-3 py-2 text-xs font-bold text-orange-400 bg-orange-500/10 border border-orange-500/30 rounded-xl hover:bg-orange-500/20 transition"
+            >
+              <Sparkles className="w-4 h-4 animate-pulse" />
+              <span>AI Valuation</span>
+            </Link>
 
             {/* Saved Favorites Shortcut */}
             <Link
@@ -176,114 +188,114 @@ export default function Navbar() {
               {activeMenu === "tools" && (
                 <div
                   onMouseLeave={() => setActiveMenu(null)}
-                  className="absolute right-0 top-full mt-2 w-80 bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150 space-y-1"
+                  className="absolute right-0 top-full mt-2 w-80 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150 space-y-1"
                 >
-                  <div className="text-[10px] font-black uppercase text-slate-500 px-3 py-1 tracking-wider">Financial & Calculators</div>
+                  <div className="text-[10px] font-black uppercase text-slate-500 dark:text-slate-400 px-3 py-1 tracking-wider">Financial & Calculators</div>
                   <button
                     onClick={() => { setShowStampDutyModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Calculator className="w-4 h-4 text-emerald-400" />
+                    <Calculator className="w-4 h-4 text-emerald-500" />
                     <span>Gujarat Stamp Duty Calculator</span>
                   </button>
 
                   <button
                     onClick={() => { setShowLoanModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Landmark className="w-4 h-4 text-blue-400" />
+                    <Landmark className="w-4 h-4 text-blue-500" />
                     <span>Home Loan Eligibility</span>
                   </button>
 
                   <button
                     onClick={() => { setShowCurrencyModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Globe className="w-4 h-4 text-emerald-400" />
+                    <Globe className="w-4 h-4 text-emerald-500" />
                     <span>NRI Multi-Currency Converter</span>
                   </button>
 
                   <button
                     onClick={() => { setShowYieldModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <TrendingUp className="w-4 h-4 text-blue-400" />
+                    <TrendingUp className="w-4 h-4 text-blue-500" />
                     <span>Rental Yield & ROI Estimator</span>
                   </button>
 
-                  <div className="pt-2 border-t border-slate-800/80 text-[10px] font-black uppercase text-slate-500 px-3 py-1 tracking-wider">Property Insights & Legal</div>
+                  <div className="pt-2 border-t border-slate-200 dark:border-slate-800/80 text-[10px] font-black uppercase text-slate-500 dark:text-slate-400 px-3 py-1 tracking-wider">Property Insights & Legal</div>
                   
                   <button
                     onClick={() => { setShowCompareModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Layers className="w-4 h-4 text-purple-400" />
+                    <Layers className="w-4 h-4 text-purple-500" />
                     <span>Property Comparison Matrix</span>
                   </button>
 
                   <button
                     onClick={() => { setShowReraModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    <ShieldCheck className="w-4 h-4 text-emerald-500" />
                     <span>RERA Gujarat Checker</span>
                   </button>
 
                   <button
                     onClick={() => { setShowCommuteModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Navigation className="w-4 h-4 text-blue-400" />
+                    <Navigation className="w-4 h-4 text-blue-500" />
                     <span>Commute & Transit Calculator</span>
                   </button>
 
                   <button
                     onClick={() => { setShowFloorPlanModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Layout className="w-4 h-4 text-emerald-400" />
+                    <Layout className="w-4 h-4 text-emerald-500" />
                     <span>Floor Plan Dimensions</span>
                   </button>
 
                   <button
                     onClick={() => { setShowLegalModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <FileCheck className="w-4 h-4 text-blue-400" />
+                    <FileCheck className="w-4 h-4 text-blue-500" />
                     <span>Legal Title Clearance</span>
                   </button>
 
-                  <div className="pt-2 border-t border-slate-800/80 text-[10px] font-black uppercase text-slate-500 px-3 py-1 tracking-wider">Offers & Community</div>
+                  <div className="pt-2 border-t border-slate-200 dark:border-slate-800/80 text-[10px] font-black uppercase text-slate-500 dark:text-slate-400 px-3 py-1 tracking-wider">Offers & Community</div>
 
                   <button
                     onClick={() => { setShowOfferModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Tag className="w-4 h-4 text-emerald-400" />
+                    <Tag className="w-4 h-4 text-emerald-500" />
                     <span>Make Digital Price Offer</span>
                   </button>
 
                   <button
                     onClick={() => { setShowPortfolioModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Building className="w-4 h-4 text-blue-400" />
+                    <Building className="w-4 h-4 text-blue-500" />
                     <span>Developer Portfolios</span>
                   </button>
 
                   <button
                     onClick={() => { setShowReviewModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Star className="w-4 h-4 text-amber-400" />
+                    <Star className="w-4 h-4 text-amber-500" />
                     <span>Verified Buyer Reviews</span>
                   </button>
 
                   <button
                     onClick={() => { setShowShareModal(true); setActiveMenu(null); }}
-                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition text-left cursor-pointer"
+                    className="w-full flex items-center space-x-2.5 p-2 rounded-xl text-xs font-extrabold text-slate-800 dark:text-slate-200 hover:text-orange-500 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-slate-800/80 transition text-left cursor-pointer"
                   >
-                    <Share2 className="w-4 h-4 text-indigo-400" />
+                    <Share2 className="w-4 h-4 text-indigo-500" />
                     <span>Share Property Card</span>
                   </button>
                 </div>

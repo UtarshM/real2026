@@ -34,7 +34,7 @@ export default function RootLayout({
   const organizationSchema = getOrganizationSchema();
 
   return (
-    <html lang="en" className="h-full antialiased scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className="h-full antialiased scroll-smooth light-theme" suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans transition-colors duration-300" suppressHydrationWarning>
         <AuthProvider>
           <PriceDropAlertBanner />

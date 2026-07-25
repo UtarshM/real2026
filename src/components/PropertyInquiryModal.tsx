@@ -79,7 +79,7 @@ export default function PropertyInquiryModal({ isOpen, onClose, propertyName = "
           <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-6 text-center space-y-3">
             <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto" />
             <h4 className="text-lg font-bold text-white font-display">Inquiry Registered!</h4>
-            <p className="text-xs text-slate-300">Our dedicated Rama Realty agent will contact you on <span className="text-emerald-400 font-bold">{phone}</span> shortly.</p>
+            <p className="text-xs text-slate-300">Our dedicated AddressBox agent will contact you on <span className="text-emerald-400 font-bold">{phone}</span> shortly.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">

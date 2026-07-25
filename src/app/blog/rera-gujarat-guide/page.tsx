@@ -57,7 +57,7 @@ export default function ReraGuidePage() {
         <div className="space-y-4 border-b border-slate-800 pb-8">
           <div className="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full text-emerald-400 text-xs font-extrabold uppercase tracking-widest">
             <ShieldCheck className="w-4 h-4" />
-            <span>Rama Realty Buyer Protection Series</span>
+            <span>AddressBox Buyer Protection Series</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white font-display leading-tight">

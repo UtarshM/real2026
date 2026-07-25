@@ -35,7 +35,7 @@ export default function TermsPage() {
           <section className="space-y-2">
             <h2 className="text-lg font-bold text-white">3. Zero Brokerage & Advisory Services</h2>
             <p>
-              Direct developer properties listed on our site qualify under zero brokerage terms for buyers. Tailored advisory and documentation assistance is provided by certified Rama Realty agents.
+              Direct developer properties listed on our site qualify under zero brokerage terms for buyers. Tailored advisory and documentation assistance is provided by certified AddressBox agents.
             </p>
           </section>
 

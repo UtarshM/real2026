@@ -29,7 +29,7 @@ export default function Footer() {
                 <Video className="w-5 h-5" />
               </div>
               <span className="font-extrabold text-xl text-white tracking-tight font-display">
-                Rama <span className="text-blue-500">Realty</span>
+                Address<span className="text-orange-500">Box</span>
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">

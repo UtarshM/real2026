@@ -113,7 +113,7 @@ export default function AiVoiceSearch({ isOpen, onClose }: AiVoiceSearchProps) {
               <Sparkles className="w-5 h-5 animate-pulse" />
             </div>
             <div>
-              <h3 className="text-lg font-extrabold text-white font-display">Rama AI Voice Search</h3>
+              <h3 className="text-lg font-extrabold text-white font-display">AddressBox AI Voice Search</h3>
               <p className="text-xs text-slate-400 font-medium">Ahmedabad & Gandhinagar Property Assistant</p>
             </div>
           </div>
