@@ -80,7 +80,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="bg-slate-950 min-h-screen text-white relative">
+    <div className="bg-white min-h-screen text-slate-900 relative">
       
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -435,17 +435,17 @@ export default function HomePage() {
             { slug: "priya-shah", name: "Priya Shah", agency: "Capital Assets & Investments", rera: "GJ/GANDHINAGAR/AG/08821", rating: "4.8", deals: "195+", localities: "GIFT City, Sargasan" },
             { slug: "vikram-desai", name: "Vikram Desai", agency: "Heritage & Modern Spaces", rera: "GJ/AHMEDABAD/AG/05541", rating: "5.0", deals: "480+", localities: "Science City, SBR" }
           ].map((agent, idx) => (
-            <div key={idx} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 space-y-4 shadow-md hover:border-orange-500/50 transition group">
+            <div key={idx} className="bg-white border border-slate-200 rounded-3xl p-6 space-y-4 shadow-md hover:border-orange-500/50 transition group text-slate-900">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="text-lg font-black text-slate-900 dark:text-white group-hover:text-orange-500 transition">{agent.name}</h3>
-                  <p className="text-xs text-slate-700 dark:text-slate-300 font-bold">{agent.agency}</p>
+                  <h3 className="text-lg font-black text-slate-900 group-hover:text-orange-500 transition">{agent.name}</h3>
+                  <p className="text-xs text-slate-700 font-bold">{agent.agency}</p>
                 </div>
-                <span className="text-xs font-black text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-300 dark:border-amber-500/30">★ {agent.rating}</span>
+                <span className="text-xs font-black text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-300">★ {agent.rating}</span>
               </div>
-              <p className="text-xs text-slate-600 dark:text-slate-400 font-medium">Specialist in <span className="text-slate-900 dark:text-slate-200 font-extrabold">{agent.localities}</span> • {agent.deals} Deals</p>
-              <div className="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
-                <span className="text-[11px] font-mono text-slate-600 dark:text-slate-400 font-bold">RERA: {agent.rera}</span>
+              <p className="text-xs text-slate-600 font-medium">Specialist in <span className="text-slate-900 font-extrabold">{agent.localities}</span> • {agent.deals} Deals</p>
+              <div className="pt-3 border-t border-slate-200 flex justify-between items-center text-xs">
+                <span className="text-[11px] font-mono text-slate-600 font-bold">RERA: {agent.rera}</span>
                 <Link href={`/agent/${agent.slug}`} className="text-orange-500 font-extrabold hover:underline">View Agent Profile →</Link>
               </div>
             </div>
@@ -454,7 +454,7 @@ export default function HomePage() {
       </section>
 
       {/* AddressBox Home Loan Calculator Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-900">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-100">
         <EmiCalculator />
       </section>
 
@@ -462,21 +462,21 @@ export default function HomePage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-xs font-extrabold text-orange-500 uppercase tracking-widest">Got Questions?</span>
-          <h2 className="text-3xl font-black text-slate-900 dark:text-white font-display mt-1">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-black text-slate-900 font-display mt-1">Frequently Asked Questions</h2>
         </div>
 
         <div className="space-y-4">
           {faqData.map((faq, index) => (
-            <div key={index} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm">
+            <div key={index} className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
               <button
                 onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                className="w-full text-left p-5 text-sm sm:text-base font-black text-slate-900 dark:text-white flex justify-between items-center transition hover:text-orange-500 cursor-pointer"
+                className="w-full text-left p-5 text-sm sm:text-base font-black text-slate-900 flex justify-between items-center transition hover:text-orange-500 cursor-pointer"
               >
                 <span>{faq.q}</span>
                 <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${openFaq === index ? "rotate-180 text-orange-500" : "text-slate-400"}`} />
               </button>
               {openFaq === index && (
-                <div className="px-5 pb-5 text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-semibold leading-relaxed border-t border-slate-100 dark:border-slate-800/60 pt-3">
+                <div className="px-5 pb-5 text-xs sm:text-sm text-slate-700 font-semibold leading-relaxed border-t border-slate-100 pt-3 bg-slate-50/50">
                   {faq.a}
                 </div>
               )}
