@@ -28,18 +28,18 @@ export default function EmiCalculator() {
   ];
 
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
       
       {/* Background Accent */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="flex items-center space-x-3 mb-8">
-        <div className="p-3 bg-blue-600/20 border border-blue-500/30 rounded-2xl text-blue-400">
+        <div className="p-3 bg-blue-500/10 dark:bg-blue-600/20 border border-blue-500/30 rounded-2xl text-blue-600 dark:text-blue-400">
           <Calculator className="w-6 h-6" />
         </div>
         <div>
-          <h3 className="text-2xl font-black text-white font-display">AddressBox Home Loan EMI Calculator</h3>
-          <p className="text-xs text-slate-400 font-medium">Calculate your monthly loan payments for Ahmedabad & Gandhinagar properties</p>
+          <h3 className="text-2xl font-black text-slate-900 dark:text-white font-display">AddressBox Home Loan EMI Calculator</h3>
+          <p className="text-xs text-slate-600 dark:text-slate-400 font-semibold">Calculate your monthly loan payments for Ahmedabad & Gandhinagar properties</p>
         </div>
       </div>
 
@@ -49,10 +49,10 @@ export default function EmiCalculator() {
         <div className="lg:col-span-7 space-y-6">
           
           {/* Loan Amount */}
-          <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+          <div className="bg-slate-50 dark:bg-slate-950 p-4 rounded-2xl border border-slate-200 dark:border-slate-800">
             <div className="flex justify-between items-center mb-2">
-              <label className="text-xs font-extrabold uppercase text-slate-400">Loan Amount</label>
-              <span className="text-sm font-bold text-blue-400">₹ {(loanAmount / 100000).toFixed(1)} Lakhs</span>
+              <label className="text-xs font-black uppercase text-slate-700 dark:text-slate-300">Loan Amount</label>
+              <span className="text-sm font-extrabold text-blue-600 dark:text-blue-400">₹ {(loanAmount / 100000).toFixed(1)} Lakhs</span>
             </div>
             <input
               type="range"
@@ -61,19 +61,19 @@ export default function EmiCalculator() {
               step="500000"
               value={loanAmount}
               onChange={(e) => setLoanAmount(Number(e.target.value))}
-              className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+              className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-600"
             />
-            <div className="flex justify-between text-[10px] text-slate-500 mt-1 font-bold">
+            <div className="flex justify-between text-[10px] text-slate-600 dark:text-slate-400 mt-1 font-bold">
               <span>₹10 Lakhs</span>
               <span>₹5 Crores</span>
             </div>
           </div>
 
           {/* Interest Rate */}
-          <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+          <div className="bg-slate-50 dark:bg-slate-950 p-4 rounded-2xl border border-slate-200 dark:border-slate-800">
             <div className="flex justify-between items-center mb-2">
-              <label className="text-xs font-extrabold uppercase text-slate-400">Interest Rate (% p.a.)</label>
-              <span className="text-sm font-bold text-blue-400">{interestRate}%</span>
+              <label className="text-xs font-black uppercase text-slate-700 dark:text-slate-300">Interest Rate (% p.a.)</label>
+              <span className="text-sm font-extrabold text-blue-600 dark:text-blue-400">{interestRate}%</span>
             </div>
             <input
               type="range"
@@ -82,19 +82,19 @@ export default function EmiCalculator() {
               step="0.1"
               value={interestRate}
               onChange={(e) => setInterestRate(Number(e.target.value))}
-              className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+              className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-600"
             />
-            <div className="flex justify-between text-[10px] text-slate-500 mt-1 font-bold">
+            <div className="flex justify-between text-[10px] text-slate-600 dark:text-slate-400 mt-1 font-bold">
               <span>6.5%</span>
               <span>14.0%</span>
             </div>
           </div>
 
           {/* Tenure */}
-          <div className="bg-slate-950 p-4 rounded-2xl border border-slate-800">
+          <div className="bg-slate-50 dark:bg-slate-950 p-4 rounded-2xl border border-slate-200 dark:border-slate-800">
             <div className="flex justify-between items-center mb-2">
-              <label className="text-xs font-extrabold uppercase text-slate-400">Loan Tenure (Years)</label>
-              <span className="text-sm font-bold text-blue-400">{tenureYears} Years</span>
+              <label className="text-xs font-black uppercase text-slate-700 dark:text-slate-300">Loan Tenure (Years)</label>
+              <span className="text-sm font-extrabold text-blue-600 dark:text-blue-400">{tenureYears} Years</span>
             </div>
             <input
               type="range"
@@ -103,9 +103,9 @@ export default function EmiCalculator() {
               step="1"
               value={tenureYears}
               onChange={(e) => setTenureYears(Number(e.target.value))}
-              className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+              className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-600"
             />
-            <div className="flex justify-between text-[10px] text-slate-500 mt-1 font-bold">
+            <div className="flex justify-between text-[10px] text-slate-600 dark:text-slate-400 mt-1 font-bold">
               <span>1 Year</span>
               <span>30 Years</span>
             </div>
@@ -114,22 +114,22 @@ export default function EmiCalculator() {
         </div>
 
         {/* Right Summary Panel */}
-        <div className="lg:col-span-5 flex flex-col justify-between bg-slate-950 border border-blue-500/20 rounded-3xl p-6">
+        <div className="lg:col-span-5 flex flex-col justify-between bg-slate-50 dark:bg-slate-950 border border-blue-500/30 rounded-3xl p-6 shadow-md">
           <div>
-            <span className="text-xs uppercase font-extrabold tracking-widest text-slate-400">Estimated Monthly EMI</span>
-            <h4 className="text-3xl sm:text-4xl font-black text-white mt-1 text-blue-400 font-display">
-              ₹ {monthlyEmi.toLocaleString("en-IN")} <span className="text-xs font-normal text-slate-400">/ month</span>
+            <span className="text-xs uppercase font-black tracking-widest text-slate-700 dark:text-slate-400">Estimated Monthly EMI</span>
+            <h4 className="text-3xl sm:text-4xl font-black text-blue-600 dark:text-blue-400 mt-1 font-display">
+              ₹ {monthlyEmi.toLocaleString("en-IN")} <span className="text-xs font-bold text-slate-600 dark:text-slate-400">/ month</span>
             </h4>
 
             {/* Visual Principal vs Interest Progress Bar */}
             <div className="mt-4 space-y-1.5">
               <div className="flex justify-between text-[11px] font-extrabold">
-                <span className="text-blue-400">Principal ({Math.round((loanAmount / totalPayment) * 100)}%)</span>
-                <span className="text-amber-400">Interest ({100 - Math.round((loanAmount / totalPayment) * 100)}%)</span>
+                <span className="text-blue-600 dark:text-blue-400">Principal ({Math.round((loanAmount / totalPayment) * 100)}%)</span>
+                <span className="text-amber-600 dark:text-amber-400">Interest ({100 - Math.round((loanAmount / totalPayment) * 100)}%)</span>
               </div>
-              <div className="w-full h-3 bg-slate-800 rounded-full overflow-hidden flex">
+              <div className="w-full h-3 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden flex">
                 <div 
-                  className="h-full bg-blue-500 transition-all duration-300"
+                  className="h-full bg-blue-600 transition-all duration-300"
                   style={{ width: `${Math.round((loanAmount / totalPayment) * 100)}%` }}
                 />
                 <div 
@@ -138,24 +138,24 @@ export default function EmiCalculator() {
               </div>
             </div>
 
-            <div className="mt-6 space-y-3 border-t border-slate-800/80 pt-4">
-              <div className="flex justify-between text-xs font-semibold">
-                <span className="text-slate-400">Principal Amount:</span>
-                <span className="text-white">₹ {loanAmount.toLocaleString("en-IN")}</span>
+            <div className="mt-6 space-y-3 border-t border-slate-200 dark:border-slate-800/80 pt-4">
+              <div className="flex justify-between text-xs font-bold">
+                <span className="text-slate-700 dark:text-slate-400">Principal Amount:</span>
+                <span className="text-slate-900 dark:text-white font-extrabold">₹ {loanAmount.toLocaleString("en-IN")}</span>
               </div>
-              <div className="flex justify-between text-xs font-semibold">
-                <span className="text-slate-400">Total Interest Payable:</span>
-                <span className="text-amber-400">₹ {totalInterest.toLocaleString("en-IN")}</span>
+              <div className="flex justify-between text-xs font-bold">
+                <span className="text-slate-700 dark:text-slate-400">Total Interest Payable:</span>
+                <span className="text-amber-600 dark:text-amber-400 font-extrabold">₹ {totalInterest.toLocaleString("en-IN")}</span>
               </div>
-              <div className="flex justify-between text-xs font-extrabold border-t border-slate-800 pt-2">
-                <span className="text-slate-300">Total Amount Payable:</span>
-                <span className="text-emerald-400">₹ {totalPayment.toLocaleString("en-IN")}</span>
+              <div className="flex justify-between text-xs font-black border-t border-slate-200 dark:border-slate-800 pt-2">
+                <span className="text-slate-900 dark:text-slate-200">Total Amount Payable:</span>
+                <span className="text-emerald-600 dark:text-emerald-400 font-extrabold">₹ {totalPayment.toLocaleString("en-IN")}</span>
               </div>
             </div>
           </div>
 
           <div className="mt-6">
-            <button className="w-full py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-xs rounded-xl shadow-lg transition flex items-center justify-center space-x-2 cursor-pointer">
+            <button className="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-xs rounded-xl shadow-lg transition flex items-center justify-center space-x-2 cursor-pointer">
               <Landmark className="w-4 h-4" />
               <span>Apply for Pre-Approved Home Loan</span>
             </button>
@@ -165,16 +165,16 @@ export default function EmiCalculator() {
       </div>
 
       {/* Partner Banks Grid */}
-      <div className="mt-10 border-t border-slate-800 pt-6">
-        <h4 className="text-xs font-extrabold uppercase text-slate-400 tracking-wider mb-4">Partnered Financial Institutions</h4>
+      <div className="mt-10 border-t border-slate-200 dark:border-slate-800 pt-6">
+        <h4 className="text-xs font-black uppercase text-slate-700 dark:text-slate-400 tracking-wider mb-4">Partnered Financial Institutions</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {partnerBanks.map((bank, i) => (
-            <div key={i} className="bg-slate-950/60 border border-slate-800 p-4 rounded-2xl">
+            <div key={i} className="bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 p-4 rounded-2xl">
               <div className="flex justify-between items-start mb-2">
-                <span className="text-xs font-bold text-white">{bank.name}</span>
-                <span className="text-xs font-black text-emerald-400">{bank.rate}</span>
+                <span className="text-xs font-extrabold text-slate-900 dark:text-white">{bank.name}</span>
+                <span className="text-xs font-black text-emerald-600 dark:text-emerald-400">{bank.rate}</span>
               </div>
-              <p className="text-[11px] text-slate-400">{bank.fee}</p>
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 font-semibold">{bank.fee}</p>
             </div>
           ))}
         </div>

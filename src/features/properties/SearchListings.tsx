@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { initialProperties } from "@/data/properties";
+import { initialProperties, getAllProperties } from "@/data/properties";
 import { MapPin, SlidersHorizontal, Grid, List, PhoneCall, Sparkles, X, CheckCircle, Calculator } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -24,15 +24,19 @@ export default function SearchListings({
   defaultBhk,
   defaultMaxBudget,
 }: SearchListingsProps) {
-  // Properties state
-  const [properties, setProperties] = useState<any[]>(() =>
-    initialProperties.map((p) => ({
+  // Properties state initialized with all properties (including user-posted ones)
+  const [properties, setProperties] = useState<any[]>([]);
+
+  useEffect(() => {
+    const rawProps = getAllProperties();
+    const formatted = rawProps.map((p: any) => ({
       ...p,
-      purpose: p.purpose.toUpperCase() as "BUY" | "RENT",
-      type: p.type.toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
-      category: p.subType,
-    }))
-  );
+      purpose: (p.purpose || "BUY").toUpperCase() as "BUY" | "RENT",
+      type: (p.type || "RESIDENTIAL").toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
+      category: p.category || p.subType || "Flat/Apartment",
+    }));
+    setProperties(formatted);
+  }, []);
 
   // Filtering Parameters
   const [purpose, setPurpose] = useState<"BUY" | "RENT">(defaultPurpose || "BUY");

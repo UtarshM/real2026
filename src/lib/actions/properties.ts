@@ -1,7 +1,7 @@
 "use server";
 
 import { db } from "@/lib/db";
-import { initialProperties } from "@/data/properties";
+import { initialProperties, getAllProperties } from "@/data/properties";
 
 export interface PropertyFilterParams {
   query?: string;
@@ -49,12 +49,13 @@ export async function getProperties(params?: PropertyFilterParams) {
     console.warn("Prisma query failed or database empty, using local fallback dataset:", error);
   }
 
-  // Fallback to in-memory initialProperties formatted
-  let filtered = initialProperties.map((p) => ({
+  // Fallback to in-memory dataset including user posted properties
+  const allProps = typeof window !== "undefined" ? getAllProperties() : initialProperties;
+  let filtered = allProps.map((p) => ({
     ...p,
-    purpose: p.purpose.toUpperCase() as "BUY" | "RENT",
-    type: p.type.toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
-    category: p.subType,
+    purpose: (p.purpose || "BUY").toUpperCase() as "BUY" | "RENT",
+    type: (p.type || "RESIDENTIAL").toUpperCase() as "RESIDENTIAL" | "COMMERCIAL" | "PLOT",
+    category: p.subType || "Flat/Apartment",
   }));
 
   if (params?.purpose) {

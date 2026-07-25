@@ -150,6 +150,7 @@ export default function PostPropertyPage() {
       developer: formData.postedBy === "Owner" ? "Owner Listed" : formData.developer,
       type: formData.type,
       subType: formData.subType,
+      category: formData.subType,
       bhk: formData.type === "RESIDENTIAL" ? Number(formData.bhk) : null,
       price: priceNum,
       priceUnit: formData.purpose === "RENT" ? "Month" : (priceNum >= 10000000 ? "Cr" : "Lac"),
@@ -166,6 +167,7 @@ export default function PostPropertyPage() {
       description: formData.description || `Premium property situated at ${formData.locality}, offering premium configurations and modern architecture setups.`,
       address: formData.address,
       mapCoords: { lat: 23.0303, lng: 72.5659 },
+      vastuScore: 94,
       amenities: formData.amenities,
       developerInfo: {
         name: formData.postedBy === "Owner" ? "Owner Listed" : formData.developer,
@@ -177,8 +179,8 @@ export default function PostPropertyPage() {
       },
       floorPlans: [],
       images: [formData.image],
-      isTrending: false,
-      isHighlighted: false,
+      isTrending: true,
+      isHighlighted: true,
       isNewLaunch: true,
       postedBy: formData.postedBy,
       targetGroup: "Family",
@@ -186,10 +188,10 @@ export default function PostPropertyPage() {
       purpose: formData.purpose
     };
 
-    // Save mock listings to local storage cache
+    // Save mock listings to local storage cache (prepend so new listing appears at the top)
     const currentStored = typeof window !== "undefined" ? localStorage.getItem("posted_properties") : null;
     const currentProps = currentStored ? JSON.parse(currentStored) : [];
-    currentProps.push(newProperty);
+    currentProps.unshift(newProperty);
     if (typeof window !== "undefined") {
       localStorage.setItem("posted_properties", JSON.stringify(currentProps));
     }

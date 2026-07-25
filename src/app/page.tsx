@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { initialProperties } from "@/data/properties";
+import { initialProperties, getAllProperties } from "@/data/properties";
 import { AHMEDABAD_GANDHINAGAR_IMAGES } from "@/data/ahmedabad_gandhinagar_images";
 import { Search, MapPin, Building, ArrowRight, ShieldCheck, UserCheck, Key, PlusCircle, CheckCircle, ChevronDown, X, Mic, Compass, Calculator, Sparkles, Building2, Landmark, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,6 +15,11 @@ import EmiCalculator from "@/components/EmiCalculator";
 
 export default function HomePage() {
   const router = useRouter();
+  const [propertiesList, setPropertiesList] = useState<any[]>([]);
+
+  React.useEffect(() => {
+    setPropertiesList(getAllProperties());
+  }, []);
 
   // Search parameters states
   const [purpose, setPurpose] = useState<"BUY" | "RENT">("BUY");
@@ -344,7 +349,7 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {initialProperties.map((prop) => (
+          {(propertiesList.length > 0 ? propertiesList : initialProperties).map((prop) => (
             <div key={prop.id} className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hover:border-slate-700 transition duration-300 group flex flex-col justify-between">
               
               {/* Image & Badges */}
@@ -411,13 +416,13 @@ export default function HomePage() {
       </section>
 
       {/* Verified Agents Showcase */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-900">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 dark:border-slate-900">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
           <div>
-            <span className="text-xs font-extrabold text-orange-400 uppercase tracking-widest">RERA Certified Partners</span>
-            <h2 className="text-3xl font-black text-white font-display mt-1">Verified Real Estate Agents</h2>
+            <span className="text-xs font-extrabold text-orange-500 uppercase tracking-widest">RERA Certified Partners</span>
+            <h2 className="text-3xl font-black text-slate-900 dark:text-white font-display mt-1">Verified Real Estate Agents</h2>
           </div>
-          <Link href="/builders" className="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center space-x-1 mt-4 md:mt-0">
+          <Link href="/builders" className="text-xs font-bold text-orange-500 hover:text-orange-600 flex items-center space-x-1 mt-4 md:mt-0">
             <span>Explore All Agents</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
@@ -429,18 +434,18 @@ export default function HomePage() {
             { slug: "priya-shah", name: "Priya Shah", agency: "Capital Assets & Investments", rera: "GJ/GANDHINAGAR/AG/08821", rating: "4.8", deals: "195+", localities: "GIFT City, Sargasan" },
             { slug: "vikram-desai", name: "Vikram Desai", agency: "Heritage & Modern Spaces", rera: "GJ/AHMEDABAD/AG/05541", rating: "5.0", deals: "480+", localities: "Science City, SBR" }
           ].map((agent, idx) => (
-            <div key={idx} className="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 hover:border-orange-500/40 transition group">
+            <div key={idx} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 space-y-4 shadow-md hover:border-orange-500/50 transition group">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="text-lg font-bold text-white group-hover:text-orange-400 transition">{agent.name}</h3>
-                  <p className="text-xs text-slate-400 font-medium">{agent.agency}</p>
+                  <h3 className="text-lg font-black text-slate-900 dark:text-white group-hover:text-orange-500 transition">{agent.name}</h3>
+                  <p className="text-xs text-slate-700 dark:text-slate-300 font-bold">{agent.agency}</p>
                 </div>
-                <span className="text-xs font-extrabold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/30">★ {agent.rating}</span>
+                <span className="text-xs font-black text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-300 dark:border-amber-500/30">★ {agent.rating}</span>
               </div>
-              <p className="text-[11px] text-slate-400">Specialist in <span className="text-slate-300 font-bold">{agent.localities}</span> • {agent.deals} Deals</p>
-              <div className="pt-2 border-t border-slate-800 flex justify-between items-center text-xs">
-                <span className="text-[10px] font-mono text-slate-500">RERA: {agent.rera}</span>
-                <Link href={`/agent/${agent.slug}`} className="text-orange-400 font-extrabold hover:underline">View Agent Profile →</Link>
+              <p className="text-xs text-slate-600 dark:text-slate-400 font-medium">Specialist in <span className="text-slate-900 dark:text-slate-200 font-extrabold">{agent.localities}</span> • {agent.deals} Deals</p>
+              <div className="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                <span className="text-[11px] font-mono text-slate-600 dark:text-slate-400 font-bold">RERA: {agent.rera}</span>
+                <Link href={`/agent/${agent.slug}`} className="text-orange-500 font-extrabold hover:underline">View Agent Profile →</Link>
               </div>
             </div>
           ))}

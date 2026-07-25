@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { initialProperties } from "@/data/properties";
+import { initialProperties, getAllProperties } from "@/data/properties";
 import { siteConfig } from "@/config/siteConfig";
 import { 
   MapPin, CheckCircle, Calculator, ChevronLeft, ChevronRight, 
@@ -33,7 +33,8 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
 
   useEffect(() => {
     queueMicrotask(() => {
-      const found = initialProperties.find(p => p.id === propertyId);
+      const all = getAllProperties();
+      const found = all.find(p => Number(p.id) === propertyId);
       if (found) {
         setProperty(found);
         try {
@@ -66,10 +67,16 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
     }, 2000);
   };
 
+  const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80";
+  const propertyImages = (property?.images || []).filter((img: any) => typeof img === "string" && img.trim().length > 0);
+  if (propertyImages.length === 0) {
+    propertyImages.push(FALLBACK_IMAGE);
+  }
+
   const videoData = {
     title: `${property.name} ${property.locality} ${property.city} Video Walkthrough`,
     description: `Full 4K video walkthrough tour of ${property.name} in ${property.locality}, ${property.city} by ${siteConfig.name}.`,
-    thumbnailUrl: property.images[0],
+    thumbnailUrl: propertyImages[0],
     uploadDate: "2026-01-15",
     contentUrl: "https://www.youtube.com/watch?v=mock_rama_realty_walkthrough"
   };
@@ -131,11 +138,12 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
           <div className="lg:col-span-8 space-y-4">
             <div className="relative h-[420px] sm:h-[500px] rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 group">
               <Image
-                src={property.images[activeImage]}
+                src={propertyImages[activeImage] || FALLBACK_IMAGE}
                 alt={property.name}
                 width={1200}
                 height={800}
                 className="w-full h-full object-cover transition duration-500"
+                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
               
@@ -146,16 +154,16 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
               </div>
 
               {/* Slider Prev Next */}
-              {property.images.length > 1 && (
+              {propertyImages.length > 1 && (
                 <div className="absolute inset-y-0 inset-x-4 flex justify-between items-center opacity-0 group-hover:opacity-100 transition">
                   <button
-                    onClick={() => setActiveImage((prev) => (prev === 0 ? property.images.length - 1 : prev - 1))}
+                    onClick={() => setActiveImage((prev) => (prev === 0 ? propertyImages.length - 1 : prev - 1))}
                     className="p-2.5 bg-slate-950/80 hover:bg-slate-900 text-white rounded-full shadow-lg"
                   >
                     <ChevronLeft className="w-5 h-5" />
                   </button>
                   <button
-                    onClick={() => setActiveImage((prev) => (prev === property.images.length - 1 ? 0 : prev + 1))}
+                    onClick={() => setActiveImage((prev) => (prev === propertyImages.length - 1 ? 0 : prev + 1))}
                     className="p-2.5 bg-slate-950/80 hover:bg-slate-900 text-white rounded-full shadow-lg"
                   >
                     <ChevronRight className="w-5 h-5" />
@@ -180,7 +188,7 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
 
             {/* Thumbnail Strip */}
             <div className="flex space-x-3 overflow-x-auto pb-2">
-              {property.images.map((img: string, idx: number) => (
+              {propertyImages.map((img: string, idx: number) => (
                 <button
                   key={idx}
                   onClick={() => setActiveImage(idx)}
@@ -188,7 +196,7 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
                     activeImage === idx ? "border-blue-500 scale-105" : "border-slate-800 opacity-60 hover:opacity-100"
                   }`}
                 >
-                  <Image src={img} alt="thumb" width={200} height={150} className="w-full h-full object-cover" />
+                  <Image src={img} alt="thumb" width={200} height={150} className="w-full h-full object-cover" unoptimized />
                 </button>
               ))}
             </div>
@@ -264,7 +272,7 @@ export default function PropertyDetailPage({ params }: PropertyDetailPageProps) 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Video Player Card */}
             <div className="lg:col-span-7 relative h-72 sm:h-80 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 group flex items-center justify-center">
-              <Image src={property.images[0]} alt="video thumbnail" width={800} height={600} className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition duration-500" />
+              <Image src={propertyImages[0]} alt="video thumbnail" width={800} height={600} className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition duration-500" unoptimized />
               <button 
                 onClick={() => alert(`Playing ${property.name} video walkthrough by Rama Realty.`)}
                 className="absolute p-5 bg-red-600 hover:bg-red-500 text-white rounded-full shadow-2xl transition transform group-hover:scale-110"
