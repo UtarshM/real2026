@@ -23,39 +23,38 @@ export const initialProperties = [
     ageOfConstruction: "2 to 3 years",
     description: "Shivalik Edge is an ultra-luxury residential landmark located in Bopal, Ahmedabad. Featuring spacious 4 BHK apartments with cross ventilation, private sundecks, double-height lobby, and zero brokerage terms.",
     address: "SHIVALIK EDGE, Maruti Suzuki ARENA Lane, Sardar Patel Ring Rd, Bopal, Ahmedabad, Gujarat - 380058",
-    mapCoords: { lat: 23.030357, lng: 72.565937 },
+    mapCoords: {"lat":23.030357,"lng":72.565937},
     vastuScore: 94,
     marketIntelligence: {
-      zestimate: "₹ 3.75 Cr",
-      estimatedRentalYield: "4.2%",
-      projectedAppreciation: "8.5% p.a.",
-      walkScore: 88,
-      transitScore: 82,
-      localityGrade: "A+"
+          "zestimate": "₹ 3.75 Cr",
+          "estimatedRentalYield": "4.2%",
+          "projectedAppreciation": "8.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 82,
+          "localityGrade": "A+"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "Shivalik Sales Desk",
-      hostRating: 4.95,
-      responseRate: "100%"
+          "isShortTermRental": false,
+          "hostName": "Shivalik Sales Desk",
+          "hostRating": 4.95,
+          "responseRate": "100%"
     },
-    amenities: ["Swimming Pool", "High Speed Lift", "Landscaped Garden", "24x7 Security", "CCTV Surveillance", "Water Supply", "Vaastu Compliant", "EV Charging Point"],
+    amenities: 6,
     developerInfo: {
-      name: "Shivalik Group",
-      totalProjects: 86,
-      completed: 75,
-      ongoing: 11,
-      tagline: "Building Spaces That Define Elegance",
-      logo: "https://www.addressbox.com/assets/images/A%20shridhar.png"
+          "name": "Shivalik Group",
+          "totalProjects": 86,
+          "completed": 75,
+          "ongoing": 11,
+          "tagline": "Building Spaces That Define Elegance",
+          "logo": "https://www.addressbox.com/assets/images/A%20shridhar.png"
     },
     floorPlans: [
-      { config: "4 BHK Flat (Type A)", area: "2267 sqft", price: "₹ 3.62 Cr", image: "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=800&q=80" },
-      { config: "4 BHK Flat (Type B)", area: "2362 sqft", price: "₹ 3.77 Cr", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" }
+      { config: "4 BHK Unit", area: "2267 sq ft", price: "₹ 3.62 Cr", image: "/uploads/projects/shivalik-edge-bopal-ahmedabad_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/shivalik-edge-bopal-ahmedabad_1.jpg",
+          "/uploads/projects/shivalik-edge-bopal-ahmedabad_2.jpg",
+          "/uploads/projects/shivalik-edge-bopal-ahmedabad_3.jpg"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -87,38 +86,37 @@ export const initialProperties = [
     ageOfConstruction: "Under Construction",
     description: "Super Shaligram brings premium 3 BHK flats in Gota near SG Highway, Ahmedabad. Includes double-height entrance lobbies, high-tech clubhouses, and extensive open green spaces.",
     address: "Super Shaligram, Near Gota Bridge, SG Highway, Gota, Ahmedabad, Gujarat - 382481",
-    mapCoords: { lat: 23.089456, lng: 72.544567 },
+    mapCoords: {"lat":23.089456,"lng":72.544567},
     vastuScore: 89,
     marketIntelligence: {
-      zestimate: "₹ 1.90 Cr",
-      estimatedRentalYield: "4.5%",
-      projectedAppreciation: "9.2% p.a.",
-      walkScore: 85,
-      transitScore: 90,
-      localityGrade: "A"
+          "zestimate": "₹ 1.90 Cr",
+          "estimatedRentalYield": "4.5%",
+          "projectedAppreciation": "9.2% p.a.",
+          "walkScore": 85,
+          "transitScore": 90,
+          "localityGrade": "A"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "Shaligram Sales Desk",
-      hostRating: 4.88,
-      responseRate: "98%"
+          "isShortTermRental": false,
+          "hostName": "Shaligram Sales Desk",
+          "hostRating": 4.88,
+          "responseRate": "98%"
     },
-    amenities: ["Gymnasium", "Infinity Pool", "Kids Play Zone", "24/7 Security", "CCTV", "Vaastu Compliant", "Power Backup"],
+    amenities: 6,
     developerInfo: {
-      name: "Shaligram Space",
-      totalProjects: 15,
-      completed: 10,
-      ongoing: 5,
-      tagline: "Quality Living Spaces For Modern Families",
-      logo: "https://www.addressbox.com/assets/images/Shaligram.png"
+          "name": "Shaligram Space",
+          "totalProjects": 15,
+          "completed": 10,
+          "ongoing": 5,
+          "tagline": "Quality Living Spaces For Modern Families",
+          "logo": "https://www.addressbox.com/assets/images/Shaligram.png"
     },
     floorPlans: [
-      { config: "3 BHK Flat", area: "1850 sqft", price: "₹ 1.83 Cr", image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" },
-      { config: "4 BHK Flat", area: "2150 sqft", price: "₹ 2.15 Cr", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" }
+      { config: "3 BHK Unit", area: "1850 sq ft", price: "₹ 1.83 Cr", image: "/uploads/projects/super-shaligram-gota-ahmedabad_2.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/super-shaligram-gota-ahmedabad_2.jpg",
+          "/uploads/projects/super-shaligram-gota-ahmedabad_3.jpg"
     ],
     isTrending: true,
     isHighlighted: false,
@@ -150,37 +148,36 @@ export const initialProperties = [
     ageOfConstruction: "Brand New",
     description: "Grade-A IT & Finance commercial tower located inside India's premier International Financial Services Centre (GIFT City, Gandhinagar). Ideal for IT MNCs, banks, and fintech enterprises.",
     address: "Block 12, GIFT City SEZ Corridor, Gandhinagar, Gujarat - 382355",
-    mapCoords: { lat: 23.1600, lng: 72.6800 },
+    mapCoords: {"lat":23.16,"lng":72.68},
     vastuScore: 92,
     marketIntelligence: {
-      zestimate: "₹ 2.60 Cr",
-      estimatedRentalYield: "7.8%",
-      projectedAppreciation: "12.4% p.a.",
-      walkScore: 94,
-      transitScore: 96,
-      localityGrade: "A++"
+          "zestimate": "₹ 2.60 Cr",
+          "estimatedRentalYield": "7.8%",
+          "projectedAppreciation": "12.4% p.a.",
+          "walkScore": 94,
+          "transitScore": 96,
+          "localityGrade": "A++"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "GIFT City Desk",
-      hostRating: 4.98,
-      responseRate: "100%"
+          "isShortTermRental": false,
+          "hostName": "GIFT City Desk",
+          "hostRating": 4.98,
+          "responseRate": "100%"
     },
-    amenities: ["Centralized AC", "100% Power Backup", "Multi-Level Car Parking", "High Speed Elevators", "Conference Center", "Food Court"],
+    amenities: 6,
     developerInfo: {
-      name: "Swagat Group",
-      totalProjects: 32,
-      completed: 28,
-      ongoing: 4,
-      tagline: "Redefining Commercial Architecture in Gujarat",
-      logo: "https://www.addressbox.com/assets/images/Swagat%20group.png"
+          "name": "Swagat Group",
+          "totalProjects": 32,
+          "completed": 28,
+          "ongoing": 4,
+          "tagline": "Redefining Commercial Architecture in Gujarat",
+          "logo": "https://www.addressbox.com/assets/images/Swagat%20group.png"
     },
     floorPlans: [
-      { config: "Corporate Office Floor Unit", area: "1450 sqft", price: "₹ 2.45 Cr", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" }
+      { config: "Corporate Unit", area: "1450 sq ft", price: "₹ 2.45 Cr", image: "/uploads/projects/gift-city-financial-tower-one-gift-city-gandhinagar_3.webp" }
     ],
     images: [
-      AHMEDABAD_GANDHINAGAR_IMAGES.localities.giftCity,
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/gift-city-financial-tower-one-gift-city-gandhinagar_3.webp"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -212,38 +209,37 @@ export const initialProperties = [
     ageOfConstruction: "1 to 2 years",
     description: "NoBroker Direct Owner Listing! Beautifully designed 3 BHK fully furnished apartment with modular kitchen, Italian marble flooring, 2 covered car parks, and zero brokerage fee.",
     address: "Prahlad Nagar Garden Road, Opposite Corporate House, Prahlad Nagar, Ahmedabad, Gujarat - 380015",
-    mapCoords: { lat: 23.0120, lng: 72.5110 },
+    mapCoords: {"lat":23.012,"lng":72.511},
     vastuScore: 95,
     marketIntelligence: {
-      zestimate: "₹ 40,000/mo",
-      estimatedRentalYield: "4.8%",
-      projectedAppreciation: "7.2% p.a.",
-      walkScore: 92,
-      transitScore: 89,
-      localityGrade: "A+"
+          "zestimate": "₹ 40,000/mo",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "7.2% p.a.",
+          "walkScore": 92,
+          "transitScore": 89,
+          "localityGrade": "A+"
     },
     airbnbExperience: {
-      isShortTermRental: true,
-      hostName: "Rajesh Patel (Owner)",
-      hostRating: 4.96,
-      responseRate: "100%",
-      instantBookable: true
+          "isShortTermRental": true,
+          "hostName": "Rajesh Patel (Owner)",
+          "hostRating": 4.96,
+          "responseRate": "100%",
+          "instantBookable": true
     },
-    amenities: ["Fully Furnished", "Modular Kitchen", "ACs in all rooms", "Covered Parking", "Clubhouse Gym", "High Speed Fiber Internet"],
+    amenities: 6,
     developerInfo: {
-      name: "Verified Property Owner",
-      totalProjects: 1,
-      completed: 1,
-      ongoing: 0,
-      tagline: "Direct Owner - Zero Commission",
-      logo: "https://www.addressbox.com/assets/images/A%20shridhar.png"
+          "name": "Verified Property Owner",
+          "totalProjects": 1,
+          "completed": 1,
+          "ongoing": 0,
+          "tagline": "Direct Owner - Zero Commission",
+          "logo": "https://www.addressbox.com/assets/images/A%20shridhar.png"
     },
     floorPlans: [
-      { config: "3 BHK Executive Suite", area: "1750 sqft", price: "₹ 38,000/mo", image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" }
+      { config: "3 BHK Unit", area: "1750 sq ft", price: "₹ 38,000 / month", image: "/uploads/projects/prahlad-nagar-sky-gardens-prahlad-nagar-ahmedabad_1.jpg" }
     ],
     images: [
-      AHMEDABAD_GANDHINAGAR_IMAGES.localities.prahladNagar,
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/prahlad-nagar-sky-gardens-prahlad-nagar-ahmedabad_1.jpg"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -275,38 +271,38 @@ export const initialProperties = [
     ageOfConstruction: "Brand New",
     description: "Airbnb & NoBroker Hybrid: Luxurious top-floor 4 BHK penthouse in Thaltej with private terrace garden, jacuzzi, servant room, and 360-degree skyline view.",
     address: "Thaltej Hebatpur Road, Near SG Highway Junction, Thaltej, Ahmedabad, Gujarat - 380059",
-    mapCoords: { lat: 23.0505, lng: 72.5180 },
+    mapCoords: {"lat":23.0505,"lng":72.518},
     vastuScore: 97,
     marketIntelligence: {
-      zestimate: "₹ 80,000/mo",
-      estimatedRentalYield: "5.1%",
-      projectedAppreciation: "8.9% p.a.",
-      walkScore: 90,
-      transitScore: 91,
-      localityGrade: "A++"
+          "zestimate": "₹ 80,000/mo",
+          "estimatedRentalYield": "5.1%",
+          "projectedAppreciation": "8.9% p.a.",
+          "walkScore": 90,
+          "transitScore": 91,
+          "localityGrade": "A++"
     },
     airbnbExperience: {
-      isShortTermRental: true,
-      hostName: "Mehta Family Trust",
-      hostRating: 4.99,
-      responseRate: "100%",
-      instantBookable: true
+          "isShortTermRental": true,
+          "hostName": "Mehta Family Trust",
+          "hostRating": 4.99,
+          "responseRate": "100%",
+          "instantBookable": true
     },
-    amenities: ["Private Jacuzzi", "Terrace Garden", "Servant Room", "3 Car Parks", "Italian Furniture", "24/7 Power Backup"],
+    amenities: 6,
     developerInfo: {
-      name: "Verified Premium Owner",
-      totalProjects: 1,
-      completed: 1,
-      ongoing: 0,
-      tagline: "Direct Owner Penthouse Rental",
-      logo: "https://www.addressbox.com/assets/images/A%20shridhar.png"
+          "name": "Verified Premium Owner",
+          "totalProjects": 1,
+          "completed": 1,
+          "ongoing": 0,
+          "tagline": "Direct Owner Penthouse Rental",
+          "logo": "https://www.addressbox.com/assets/images/A%20shridhar.png"
     },
     floorPlans: [
-      { config: "4 BHK Penthouse Layout", area: "3100 sqft", price: "₹ 75,000/mo", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" }
+      { config: "4 BHK Unit", area: "3100 sq ft", price: "₹ 75,000 / month", image: "/uploads/projects/thaltej-royal-penthouse-thaltej-ahmedabad_1.jpg" }
     ],
     images: [
-      AHMEDABAD_GANDHINAGAR_IMAGES.localities.thaltej,
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/thaltej-royal-penthouse-thaltej-ahmedabad_1.jpg",
+          "/uploads/projects/thaltej-royal-penthouse-thaltej-ahmedabad_2.jpg"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -338,38 +334,39 @@ export const initialProperties = [
     ageOfConstruction: "1 year",
     description: "Owner direct 2 BHK flat near PDPU University and Infocity IT Hub. Fully furnished with high speed wifi, smart TV, washing machine, and double balconies.",
     address: "Kudasan Main Road, Near PDPU Cross Roads, Kudasan, Gandhinagar, Gujarat - 382421",
-    mapCoords: { lat: 23.1650, lng: 72.6350 },
+    mapCoords: {"lat":23.165,"lng":72.635},
     vastuScore: 91,
     marketIntelligence: {
-      zestimate: "₹ 23,500/mo",
-      estimatedRentalYield: "5.4%",
-      projectedAppreciation: "8.0% p.a.",
-      walkScore: 89,
-      transitScore: 88,
-      localityGrade: "A"
+          "zestimate": "₹ 23,500/mo",
+          "estimatedRentalYield": "5.4%",
+          "projectedAppreciation": "8.0% p.a.",
+          "walkScore": 89,
+          "transitScore": 88,
+          "localityGrade": "A"
     },
     airbnbExperience: {
-      isShortTermRental: true,
-      hostName: "Prof. Amit Shah",
-      hostRating: 4.93,
-      responseRate: "99%",
-      instantBookable: true
+          "isShortTermRental": true,
+          "hostName": "Prof. Amit Shah",
+          "hostRating": 4.93,
+          "responseRate": "99%",
+          "instantBookable": true
     },
-    amenities: ["Fully Furnished", "High Speed Wifi", "Smart TV", "Gas Pipeline", "EV Charger Point", "Lift"],
+    amenities: 6,
     developerInfo: {
-      name: "Direct Owner",
-      totalProjects: 1,
-      completed: 1,
-      ongoing: 0,
-      tagline: "Zero Brokerage Student/Corporate Rental",
-      logo: "https://www.addressbox.com/assets/images/A%20shridhar.png"
+          "name": "Direct Owner",
+          "totalProjects": 1,
+          "completed": 1,
+          "ongoing": 0,
+          "tagline": "Zero Brokerage Student/Corporate Rental",
+          "logo": "https://www.addressbox.com/assets/images/A%20shridhar.png"
     },
     floorPlans: [
-      { config: "2 BHK Smart Apartment", area: "1250 sqft", price: "₹ 22,000/mo", image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" }
+      { config: "2 BHK Unit", area: "1250 sq ft", price: "₹ 22,000 / month", image: "/uploads/projects/kudasan-tech-park-suites-kudasan-gandhinagar_1.jpg" }
     ],
     images: [
-      AHMEDABAD_GANDHINAGAR_IMAGES.localities.kudasan,
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/kudasan-tech-park-suites-kudasan-gandhinagar_1.jpg",
+          "/uploads/projects/kudasan-tech-park-suites-kudasan-gandhinagar_2.jpg",
+          "/uploads/projects/kudasan-tech-park-suites-kudasan-gandhinagar_3.jpg"
     ],
     isTrending: false,
     isHighlighted: true,
@@ -401,38 +398,39 @@ export const initialProperties = [
     ageOfConstruction: "Brand New",
     description: "Airbnb style premium executive studio apartment right inside GIFT City SEZ. Perfect for fintech professionals & expat corporate stays.",
     address: "Tower B, GIFT City Residential SEZ Zone, Gandhinagar, Gujarat - 382355",
-    mapCoords: { lat: 23.1612, lng: 72.6820 },
+    mapCoords: {"lat":23.1612,"lng":72.682},
     vastuScore: 90,
     marketIntelligence: {
-      zestimate: "₹ 30,000/mo",
-      estimatedRentalYield: "6.8%",
-      projectedAppreciation: "11.5% p.a.",
-      walkScore: 98,
-      transitScore: 95,
-      localityGrade: "A++"
+          "zestimate": "₹ 30,000/mo",
+          "estimatedRentalYield": "6.8%",
+          "projectedAppreciation": "11.5% p.a.",
+          "walkScore": 98,
+          "transitScore": 95,
+          "localityGrade": "A++"
     },
     airbnbExperience: {
-      isShortTermRental: true,
-      hostName: "Vikram Malhotra (Superhost)",
-      hostRating: 4.98,
-      responseRate: "100%",
-      instantBookable: true
+          "isShortTermRental": true,
+          "hostName": "Vikram Malhotra (Superhost)",
+          "hostRating": 4.98,
+          "responseRate": "100%",
+          "instantBookable": true
     },
-    amenities: ["Concierge Desk", "Infinity Pool", "Housekeeping Included", "Smart Door Lock", "Centrally Air Conditioned"],
+    amenities: 6,
     developerInfo: {
-      name: "Superhost Owner",
-      totalProjects: 1,
-      completed: 1,
-      ongoing: 0,
-      tagline: "Corporate Executive Studio",
-      logo: "https://www.addressbox.com/assets/images/A%20shridhar.png"
+          "name": "Superhost Owner",
+          "totalProjects": 1,
+          "completed": 1,
+          "ongoing": 0,
+          "tagline": "Corporate Executive Studio",
+          "logo": "https://www.addressbox.com/assets/images/A%20shridhar.png"
     },
     floorPlans: [
-      { config: "1 BHK Studio Suite", area: "750 sqft", price: "₹ 28,000/mo", image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" }
+      { config: "1 BHK Unit", area: "750 sq ft", price: "₹ 28,000 / month", image: "/uploads/projects/gift-city-sez-studio-loft-gift-city-gandhinagar_1.jpg" }
     ],
     images: [
-      AHMEDABAD_GANDHINAGAR_IMAGES.localities.giftCity,
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/gift-city-sez-studio-loft-gift-city-gandhinagar_1.jpg",
+          "/uploads/projects/gift-city-sez-studio-loft-gift-city-gandhinagar_2.webp",
+          "/uploads/projects/gift-city-sez-studio-loft-gift-city-gandhinagar_3.jpg"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -464,37 +462,37 @@ export const initialProperties = [
     ageOfConstruction: "Under Construction",
     description: "Smart 2 BHK budget apartments in fast-developing Shela locality. Close to Bopal-Ambli Road, Applewoods Township, and premier schools.",
     address: "Shela Main Road, Near Club 07, Shela, Ahmedabad, Gujarat - 380058",
-    mapCoords: { lat: 23.0180, lng: 72.4720 },
+    mapCoords: {"lat":23.018,"lng":72.472},
     vastuScore: 88,
     marketIntelligence: {
-      zestimate: "₹ 72 Lakhs",
-      estimatedRentalYield: "4.1%",
-      projectedAppreciation: "10.1% p.a.",
-      walkScore: 82,
-      transitScore: 80,
-      localityGrade: "A"
+          "zestimate": "₹ 72 Lakhs",
+          "estimatedRentalYield": "4.1%",
+          "projectedAppreciation": "10.1% p.a.",
+          "walkScore": 82,
+          "transitScore": 80,
+          "localityGrade": "A"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "HN Safal Desk",
-      hostRating: 4.86,
-      responseRate: "97%"
+          "isShortTermRental": false,
+          "hostName": "HN Safal Desk",
+          "hostRating": 4.86,
+          "responseRate": "97%"
     },
-    amenities: ["Clubhouse", "Badminton Court", "Children Play Area", "Solar Lighting", "24/7 Security"],
+    amenities: 6,
     developerInfo: {
-      name: "HN Safal Group",
-      totalProjects: 40,
-      completed: 35,
-      ongoing: 5,
-      tagline: "Building Value Across Generations",
-      logo: "https://www.addressbox.com/assets/images/A%20shridhar.png"
+          "name": "HN Safal Group",
+          "totalProjects": 40,
+          "completed": 35,
+          "ongoing": 5,
+          "tagline": "Building Value Across Generations",
+          "logo": "https://www.addressbox.com/assets/images/A%20shridhar.png"
     },
     floorPlans: [
-      { config: "2 BHK Modern Apartment", area: "1250 sqft", price: "₹ 68.5 Lakhs", image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" }
+      { config: "2 BHK Unit", area: "1250 sq ft", price: "₹ 68.5 Lakhs", image: "/uploads/projects/shela-silicon-valley-homes-shela-ahmedabad_2.jpg" }
     ],
     images: [
-      AHMEDABAD_GANDHINAGAR_IMAGES.localities.shela,
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/shela-silicon-valley-homes-shela-ahmedabad_2.jpg",
+          "/uploads/projects/shela-silicon-valley-homes-shela-ahmedabad_3.jpg"
     ],
     isTrending: false,
     isHighlighted: false,
@@ -526,37 +524,37 @@ export const initialProperties = [
     ageOfConstruction: "Brand New",
     description: "Ultra-luxury 4 BHK residence in prime Bodakdev near Rajpath Club. Features private elevator access, double-height deck, Italian marble, and 3 assigned parking slots.",
     address: "Opp. Rajpath Club, SG Highway Road, Bodakdev, Ahmedabad, Gujarat - 380054",
-    mapCoords: { lat: 23.0360, lng: 72.5120 },
+    mapCoords: {"lat":23.036,"lng":72.512},
     vastuScore: 96,
     marketIntelligence: {
-      zestimate: "₹ 4.30 Cr",
-      estimatedRentalYield: "4.4%",
-      projectedAppreciation: "9.0% p.a.",
-      walkScore: 95,
-      transitScore: 94,
-      localityGrade: "A++"
+          "zestimate": "₹ 4.30 Cr",
+          "estimatedRentalYield": "4.4%",
+          "projectedAppreciation": "9.0% p.a.",
+          "walkScore": 95,
+          "transitScore": 94,
+          "localityGrade": "A++"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "Shilp Sales Desk",
-      hostRating: 4.95,
-      responseRate: "100%"
+          "isShortTermRental": false,
+          "hostName": "Shilp Sales Desk",
+          "hostRating": 4.95,
+          "responseRate": "100%"
     },
-    amenities: ["Private Lift", "Infinity Swimming Pool", "Clubhouse", "24/7 Security", "EV Charging Point", "Concierge"],
+    amenities: 6,
     developerInfo: {
-      name: "Shilp Group",
-      totalProjects: 45,
-      completed: 40,
-      ongoing: 5,
-      tagline: "Elevating Urban Living",
-      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+          "name": "Shilp Group",
+          "totalProjects": 45,
+          "completed": 40,
+          "ongoing": 5,
+          "tagline": "Elevating Urban Living",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
     },
     floorPlans: [
-      { config: "4 BHK Royal Suite", area: "2850 sqft", price: "₹ 4.15 Cr", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" }
+      { config: "4 BHK Unit", area: "2850 sq ft", price: "₹ 4.15 Cr", image: "/uploads/projects/bodakdev-executive-heights-bodakdev-ahmedabad_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/bodakdev-executive-heights-bodakdev-ahmedabad_1.jpg",
+          "/uploads/projects/bodakdev-executive-heights-bodakdev-ahmedabad_2.jpg"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -588,37 +586,38 @@ export const initialProperties = [
     ageOfConstruction: "1-2 Years",
     description: "Premium 3 BHK apartment in heart of Satellite near ISRO Colony and Star Bazaar. Well connected to SG Highway with lush gardens and children play areas.",
     address: "Satellite Road, Near Star Bazaar, Satellite, Ahmedabad, Gujarat - 380015",
-    mapCoords: { lat: 23.0280, lng: 72.5250 },
+    mapCoords: {"lat":23.028,"lng":72.525},
     vastuScore: 92,
     marketIntelligence: {
-      zestimate: "₹ 1.50 Cr",
-      estimatedRentalYield: "4.6%",
-      projectedAppreciation: "7.8% p.a.",
-      walkScore: 94,
-      transitScore: 92,
-      localityGrade: "A+"
+          "zestimate": "₹ 1.50 Cr",
+          "estimatedRentalYield": "4.6%",
+          "projectedAppreciation": "7.8% p.a.",
+          "walkScore": 94,
+          "transitScore": 92,
+          "localityGrade": "A+"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "Venus Desk",
-      hostRating: 4.89,
-      responseRate: "98%"
+          "isShortTermRental": false,
+          "hostName": "Venus Desk",
+          "hostRating": 4.89,
+          "responseRate": "98%"
     },
-    amenities: ["Landscaped Garden", "Gymnasium", "24/7 Security", "Children Play Area", "Power Backup"],
+    amenities: 6,
     developerInfo: {
-      name: "Venus Infrastructure",
-      totalProjects: 25,
-      completed: 22,
-      ongoing: 3,
-      tagline: "Quality Homes for Life",
-      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+          "name": "Venus Infrastructure",
+          "totalProjects": 25,
+          "completed": 22,
+          "ongoing": 3,
+          "tagline": "Quality Homes for Life",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
     },
     floorPlans: [
-      { config: "3 BHK Apartment", area: "1650 sqft", price: "₹ 1.45 Cr", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" }
+      { config: "3 BHK Unit", area: "1650 sq ft", price: "₹ 1.45 Cr", image: "/uploads/projects/satellite-park-avenue-satellite-ahmedabad_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/satellite-park-avenue-satellite-ahmedabad_1.jpg",
+          "/uploads/projects/satellite-park-avenue-satellite-ahmedabad_2.jpg",
+          "/uploads/projects/satellite-park-avenue-satellite-ahmedabad_3.png"
     ],
     isTrending: false,
     isHighlighted: true,
@@ -650,37 +649,37 @@ export const initialProperties = [
     ageOfConstruction: "Under Construction",
     description: "Modern 3 BHK township apartments near Nirma University on SG Highway. Packed with 30+ lifestyle amenities including indoor sports, jogging tracks, and clubhouse.",
     address: "SG Highway, Near Vaishno Devi Circle, Ahmedabad, Gujarat - 382481",
-    mapCoords: { lat: 23.1250, lng: 72.5400 },
+    mapCoords: {"lat":23.125,"lng":72.54},
     vastuScore: 90,
     marketIntelligence: {
-      zestimate: "₹ 98 Lakhs",
-      estimatedRentalYield: "5.0%",
-      projectedAppreciation: "10.5% p.a.",
-      walkScore: 86,
-      transitScore: 89,
-      localityGrade: "A"
+          "zestimate": "₹ 98 Lakhs",
+          "estimatedRentalYield": "5.0%",
+          "projectedAppreciation": "10.5% p.a.",
+          "walkScore": 86,
+          "transitScore": 89,
+          "localityGrade": "A"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "Adani Sales Desk",
-      hostRating: 4.91,
-      responseRate: "100%"
+          "isShortTermRental": false,
+          "hostName": "Adani Sales Desk",
+          "hostRating": 4.91,
+          "responseRate": "100%"
     },
-    amenities: ["Clubhouse", "Swimming Pool", "Badminton Court", "Solar Power", "24/7 Security"],
+    amenities: 6,
     developerInfo: {
-      name: "Adani Realty",
-      totalProjects: 50,
-      completed: 42,
-      ongoing: 8,
-      tagline: "Thinking Big, Doing Better",
-      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+          "name": "Adani Realty",
+          "totalProjects": 50,
+          "completed": 42,
+          "ongoing": 8,
+          "tagline": "Thinking Big, Doing Better",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
     },
     floorPlans: [
-      { config: "3 BHK Villa Apartment", area: "1550 sqft", price: "₹ 95 Lakhs", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" }
+      { config: "3 BHK Unit", area: "1550 sq ft", price: "₹ 95 Lakhs", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
     ],
     isTrending: true,
     isHighlighted: false,
@@ -712,37 +711,38 @@ export const initialProperties = [
     ageOfConstruction: "Brand New",
     description: "Grade A corporate office space on main Science City Road. Perfect for IT consultancies, law firms, and corporate regional offices.",
     address: "Science City Main Road, Sola, Ahmedabad, Gujarat - 380060",
-    mapCoords: { lat: 23.0750, lng: 72.5150 },
+    mapCoords: {"lat":23.075,"lng":72.515},
     vastuScore: 94,
     marketIntelligence: {
-      zestimate: "₹ 1.82 Cr",
-      estimatedRentalYield: "7.2%",
-      projectedAppreciation: "9.8% p.a.",
-      walkScore: 91,
-      transitScore: 90,
-      localityGrade: "A+"
+          "zestimate": "₹ 1.82 Cr",
+          "estimatedRentalYield": "7.2%",
+          "projectedAppreciation": "9.8% p.a.",
+          "walkScore": 91,
+          "transitScore": 90,
+          "localityGrade": "A+"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "Sun Buildcon Desk",
-      hostRating: 4.88,
-      responseRate: "97%"
+          "isShortTermRental": false,
+          "hostName": "Sun Buildcon Desk",
+          "hostRating": 4.88,
+          "responseRate": "97%"
     },
-    amenities: ["High Speed Lifts", "Central AC", "Multi Level Parking", "100% Power Backup", "Security"],
+    amenities: 6,
     developerInfo: {
-      name: "Sun Buildcon",
-      totalProjects: 20,
-      completed: 17,
-      ongoing: 3,
-      tagline: "Shining Excellence in Construction",
-      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+          "name": "Sun Buildcon",
+          "totalProjects": 20,
+          "completed": 17,
+          "ongoing": 3,
+          "tagline": "Shining Excellence in Construction",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
     },
     floorPlans: [
-      { config: "Corporate Office Suite", area: "1200 sqft", price: "₹ 1.75 Cr", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" }
+      { config: "Corporate Unit", area: "1200 sq ft", price: "₹ 1.75 Cr", image: "/uploads/projects/science-city-corporate-hub-science-city-ahmedabad_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/science-city-corporate-hub-science-city-ahmedabad_1.jpg",
+          "/uploads/projects/science-city-corporate-hub-science-city-ahmedabad_2.jpg",
+          "/uploads/projects/science-city-corporate-hub-science-city-ahmedabad_3.jpg"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -774,37 +774,38 @@ export const initialProperties = [
     ageOfConstruction: "1 Year",
     description: "Exclusive 5 BHK bungalow villa on Sindhu Bhavan Road with private swimming pool, home theatre room, private lawn, and smart home automation.",
     address: "SBR Ambli Corridor, Off Sindhu Bhavan Road, Bodakdev, Ahmedabad, Gujarat - 380059",
-    mapCoords: { lat: 23.0410, lng: 72.5020 },
+    mapCoords: {"lat":23.041,"lng":72.502},
     vastuScore: 98,
     marketIntelligence: {
-      zestimate: "₹ 8.10 Cr",
-      estimatedRentalYield: "4.0%",
-      projectedAppreciation: "11.0% p.a.",
-      walkScore: 96,
-      transitScore: 93,
-      localityGrade: "A++"
+          "zestimate": "₹ 8.10 Cr",
+          "estimatedRentalYield": "4.0%",
+          "projectedAppreciation": "11.0% p.a.",
+          "walkScore": 96,
+          "transitScore": 93,
+          "localityGrade": "A++"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "A Shridhar Premium Desk",
-      hostRating: 4.99,
-      responseRate: "100%"
+          "isShortTermRental": false,
+          "hostName": "A Shridhar Premium Desk",
+          "hostRating": 4.99,
+          "responseRate": "100%"
     },
-    amenities: ["Private Pool", "Home Automation", "Private Lawn", "4 Car Parks", "24/7 Security", "Servant Quarter"],
+    amenities: 6,
     developerInfo: {
-      name: "A Shridhar",
-      totalProjects: 30,
-      completed: 26,
-      ongoing: 4,
-      tagline: "Unmatched Luxury Architecture",
-      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+          "name": "A Shridhar",
+          "totalProjects": 30,
+          "completed": 26,
+          "ongoing": 4,
+          "tagline": "Unmatched Luxury Architecture",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
     },
     floorPlans: [
-      { config: "5 BHK Luxury Villa", area: "5200 sqft", price: "₹ 7.80 Cr", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" }
+      { config: "5 BHK Unit", area: "5200 sq ft", price: "₹ 7.80 Cr", image: "/uploads/projects/sbr-ambli-green-view-villa-sindhu-bhavan-road-ahmedabad_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/sbr-ambli-green-view-villa-sindhu-bhavan-road-ahmedabad_1.jpg",
+          "/uploads/projects/sbr-ambli-green-view-villa-sindhu-bhavan-road-ahmedabad_2.jpg",
+          "/uploads/projects/sbr-ambli-green-view-villa-sindhu-bhavan-road-ahmedabad_3.jpg"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -836,37 +837,37 @@ export const initialProperties = [
     ageOfConstruction: "Brand New",
     description: "Beautiful 3 BHK family flat in Sargasan near Infocity and GIFT City link road. Features spacious bedrooms, modular kitchen, and serene greenery.",
     address: "Sargasan Cross Roads, Gandhinagar, Gujarat - 382421",
-    mapCoords: { lat: 23.1800, lng: 72.6200 },
+    mapCoords: {"lat":23.18,"lng":72.62},
     vastuScore: 93,
     marketIntelligence: {
-      zestimate: "₹ 85 Lakhs",
-      estimatedRentalYield: "4.8%",
-      projectedAppreciation: "9.5% p.a.",
-      walkScore: 88,
-      transitScore: 87,
-      localityGrade: "A"
+          "zestimate": "₹ 85 Lakhs",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 87,
+          "localityGrade": "A"
     },
     airbnbExperience: {
-      isShortTermRental: false,
-      hostName: "Samatva Desk",
-      hostRating: 4.87,
-      responseRate: "96%"
+          "isShortTermRental": false,
+          "hostName": "Samatva Desk",
+          "hostRating": 4.87,
+          "responseRate": "96%"
     },
-    amenities: ["Clubhouse", "Gym", "Garden", "CCTV", "Power Backup"],
+    amenities: 6,
     developerInfo: {
-      name: "Samatva Group",
-      totalProjects: 18,
-      completed: 15,
-      ongoing: 3,
-      tagline: "Harmonious Living Built Right",
-      logo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+          "name": "Samatva Group",
+          "totalProjects": 18,
+          "completed": 15,
+          "ongoing": 3,
+          "tagline": "Harmonious Living Built Right",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
     },
     floorPlans: [
-      { config: "3 BHK Flat", area: "1480 sqft", price: "₹ 82 Lakhs", image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" }
+      { config: "3 BHK Unit", area: "1480 sq ft", price: "₹ 82 Lakhs", image: "/uploads/projects/sargasan-heritage-enclave-sargasan-gandhinagar_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/sargasan-heritage-enclave-sargasan-gandhinagar_1.jpg",
+          "/uploads/projects/sargasan-heritage-enclave-sargasan-gandhinagar_2.jpg"
     ],
     isTrending: false,
     isHighlighted: false,
@@ -898,38 +899,38 @@ export const initialProperties = [
     ageOfConstruction: "0-1 Year",
     description: "NoBroker Owner Listing: Cozy 1 BHK fully furnished studio flat near South Bopal Market. Comes with AC, smart TV, sofa, bed, fridge, and high speed wifi.",
     address: "South Bopal Main Road, Near TRP Mall, Bopal, Ahmedabad, Gujarat - 380058",
-    mapCoords: { lat: 23.0250, lng: 72.4680 },
+    mapCoords: {"lat":23.025,"lng":72.468},
     vastuScore: 89,
     marketIntelligence: {
-      zestimate: "₹ 17,500/mo",
-      estimatedRentalYield: "5.2%",
-      projectedAppreciation: "8.2% p.a.",
-      walkScore: 91,
-      transitScore: 88,
-      localityGrade: "A"
+          "zestimate": "₹ 17,500/mo",
+          "estimatedRentalYield": "5.2%",
+          "projectedAppreciation": "8.2% p.a.",
+          "walkScore": 91,
+          "transitScore": 88,
+          "localityGrade": "A"
     },
     airbnbExperience: {
-      isShortTermRental: true,
-      hostName: "Karan Verma (Owner)",
-      hostRating: 4.94,
-      responseRate: "100%",
-      instantBookable: true
+          "isShortTermRental": true,
+          "hostName": "Karan Verma (Owner)",
+          "hostRating": 4.94,
+          "responseRate": "100%",
+          "instantBookable": true
     },
-    amenities: ["Fully Furnished", "Air Conditioner", "Wifi", "Gas Pipeline", "Covered Parking", "Elevator"],
+    amenities: 6,
     developerInfo: {
-      name: "Verified Owner",
-      totalProjects: 1,
-      completed: 1,
-      ongoing: 0,
-      tagline: "Direct Rental",
-      logo: ""
+          "name": "Verified Owner",
+          "totalProjects": 1,
+          "completed": 1,
+          "ongoing": 0,
+          "tagline": "Direct Rental",
+          "logo": ""
     },
     floorPlans: [
-      { config: "1 BHK Studio", area: "650 sqft", price: "₹ 16,500/mo", image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" }
+      { config: "1 BHK Unit", area: "650 sq ft", price: "₹ 16,500 / month", image: "/uploads/projects/bopal-prime-studio-apartment-bopal-ahmedabad_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/bopal-prime-studio-apartment-bopal-ahmedabad_1.jpg",
+          "/uploads/projects/bopal-prime-studio-apartment-bopal-ahmedabad_2.webp"
     ],
     isTrending: true,
     isHighlighted: true,
@@ -961,38 +962,39 @@ export const initialProperties = [
     ageOfConstruction: "1 Year",
     description: "Direct owner 2 BHK executive flat right next to Infocity IT Park and TCS Gandhinagar Campus. Fully furnished with modular kitchen and spacious balconies.",
     address: "Infocity Road, Kudasan, Gandhinagar, Gujarat - 382421",
-    mapCoords: { lat: 23.1720, lng: 72.6320 },
+    mapCoords: {"lat":23.172,"lng":72.632},
     vastuScore: 92,
     marketIntelligence: {
-      zestimate: "₹ 25,000/mo",
-      estimatedRentalYield: "5.6%",
-      projectedAppreciation: "8.8% p.a.",
-      walkScore: 93,
-      transitScore: 91,
-      localityGrade: "A+"
+          "zestimate": "₹ 25,000/mo",
+          "estimatedRentalYield": "5.6%",
+          "projectedAppreciation": "8.8% p.a.",
+          "walkScore": 93,
+          "transitScore": 91,
+          "localityGrade": "A+"
     },
     airbnbExperience: {
-      isShortTermRental: true,
-      hostName: "Dr. Ananya Joshi",
-      hostRating: 4.97,
-      responseRate: "99%",
-      instantBookable: true
+          "isShortTermRental": true,
+          "hostName": "Dr. Ananya Joshi",
+          "hostRating": 4.97,
+          "responseRate": "99%",
+          "instantBookable": true
     },
-    amenities: ["Fully Furnished", "AC in Bedrooms", "Modular Kitchen", "Gym Access", "24/7 Power Backup"],
+    amenities: 6,
     developerInfo: {
-      name: "Direct Owner",
-      totalProjects: 1,
-      completed: 1,
-      ongoing: 0,
-      tagline: "Corporate IT Professional Rental",
-      logo: ""
+          "name": "Direct Owner",
+          "totalProjects": 1,
+          "completed": 1,
+          "ongoing": 0,
+          "tagline": "Corporate IT Professional Rental",
+          "logo": ""
     },
     floorPlans: [
-      { config: "2 BHK Executive Flat", area: "1150 sqft", price: "₹ 24,000/mo", image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" }
+      { config: "2 BHK Unit", area: "1150 sq ft", price: "₹ 24,000 / month", image: "/uploads/projects/infocity-tech-suites-kudasan-gandhinagar_1.jpg" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+          "/uploads/projects/infocity-tech-suites-kudasan-gandhinagar_1.jpg",
+          "/uploads/projects/infocity-tech-suites-kudasan-gandhinagar_2.jpg",
+          "/uploads/projects/infocity-tech-suites-kudasan-gandhinagar_3.jpg"
     ],
     isTrending: true,
     isHighlighted: false,
@@ -1001,6 +1003,7483 @@ export const initialProperties = [
     targetGroup: "Family",
     furnished: "Fully Furnished",
     purpose: "Rent"
+  },
+  {
+    id: 50,
+    name: "Adani Shantigram",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Township",
+    bhk: 4,
+    price: 25000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.50 Cr",
+    locality: "Shantigram",
+    city: "Ahmedabad",
+    area: "2800 sq ft",
+    pricePerSqft: 8929,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0001/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Adani Shantigram by Adani Realty offers premium Township developments located in Shantigram, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Adani Shantigram, Near Shantigram Main Road, Shantigram, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0333,"lng":72.5666},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 2.50 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "2800 sq ft", price: "₹ 2.50 Cr", image: "/uploads/projects/adani-shantigram-shantigram-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/adani-shantigram-shantigram-ahmedabad_1.jpg",
+          "/uploads/projects/adani-shantigram-shantigram-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 51,
+    name: "The Meadows",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 14500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.45 Cr",
+    locality: "Shantigram",
+    city: "Ahmedabad",
+    area: "1850 sq ft",
+    pricePerSqft: 7838,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0002/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "The Meadows by Adani Realty offers premium Flat/Apartment developments located in Shantigram, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "The Meadows, Near Shantigram Main Road, Shantigram, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0353,"lng":72.5686},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 1.45 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1850 sq ft", price: "₹ 1.45 Cr", image: "/uploads/projects/the-meadows-shantigram-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/the-meadows-shantigram-ahmedabad_1.jpg",
+          "/uploads/projects/the-meadows-shantigram-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 52,
+    name: "The North Park",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Villa",
+    bhk: 5,
+    price: 68000000,
+    priceUnit: "Cr",
+    priceString: "₹ 6.80 Cr",
+    locality: "Shantigram",
+    city: "Ahmedabad",
+    area: "5500 sq ft",
+    pricePerSqft: 12364,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0003/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "The North Park by Adani Realty offers premium Villa developments located in Shantigram, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "The North Park, Near Shantigram Main Road, Shantigram, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0373,"lng":72.5706},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 6.80 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "5 BHK Unit", area: "5500 sq ft", price: "₹ 6.80 Cr", image: "/uploads/projects/the-north-park-shantigram-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/the-north-park-shantigram-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 53,
+    name: "Aangan",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 4200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 42.0 Lakh",
+    locality: "Shantigram",
+    city: "Ahmedabad",
+    area: "750 sq ft",
+    pricePerSqft: 5600,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0004/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Aangan by Adani Realty offers premium Flat/Apartment developments located in Shantigram, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Aangan, Near Shantigram Main Road, Shantigram, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0393,"lng":72.5726},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 42.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "750 sq ft", price: "₹ 42.0 Lakh", image: "/uploads/projects/aangan-shantigram-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/aangan-shantigram-ahmedabad_1.jpg",
+          "/uploads/projects/aangan-shantigram-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 54,
+    name: "Water Lily",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 28500000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.85 Cr",
+    locality: "Shantigram",
+    city: "Ahmedabad",
+    area: "3100 sq ft",
+    pricePerSqft: 9194,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0005/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Water Lily by Adani Realty offers premium Flat/Apartment developments located in Shantigram, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Water Lily, Near Shantigram Main Road, Shantigram, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0413,"lng":72.5746},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 2.85 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3100 sq ft", price: "₹ 2.85 Cr", image: "/uploads/projects/water-lily-shantigram-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/water-lily-shantigram-ahmedabad_1.jpg",
+          "/uploads/projects/water-lily-shantigram-ahmedabad_2.jpg",
+          "/uploads/projects/water-lily-shantigram-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 55,
+    name: "Elysium",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 95.0 Lakh",
+    locality: "Shantigram",
+    city: "Ahmedabad",
+    area: "1420 sq ft",
+    pricePerSqft: 6690,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0006/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Elysium by Adani Realty offers premium Flat/Apartment developments located in Shantigram, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Elysium, Near Shantigram Main Road, Shantigram, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0433,"lng":72.5766},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 95.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1420 sq ft", price: "₹ 95.0 Lakh", image: "/uploads/projects/elysium-shantigram-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/elysium-shantigram-ahmedabad_1.jpg",
+          "/uploads/projects/elysium-shantigram-ahmedabad_2.jpg",
+          "/uploads/projects/elysium-shantigram-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 56,
+    name: "Oyster Grande",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 42000000,
+    priceUnit: "Cr",
+    priceString: "₹ 4.20 Cr",
+    locality: "SG Highway",
+    city: "Ahmedabad",
+    area: "3600 sq ft",
+    pricePerSqft: 11667,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0007/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Oyster Grande by Adani Realty offers premium Flat/Apartment developments located in SG Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Oyster Grande, Near SG Highway Main Road, SG Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0453,"lng":72.5786},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 4.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3600 sq ft", price: "₹ 4.20 Cr", image: "/uploads/projects/oyster-grande-sg-highway-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/oyster-grande-sg-highway-ahmedabad_1.jpg",
+          "/uploads/projects/oyster-grande-sg-highway-ahmedabad_2.jpg",
+          "/uploads/projects/oyster-grande-sg-highway-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 57,
+    name: "La Marina",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 31000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.10 Cr",
+    locality: "Shantigram",
+    city: "Ahmedabad",
+    area: "3250 sq ft",
+    pricePerSqft: 9538,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0008/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "La Marina by Adani Realty offers premium Flat/Apartment developments located in Shantigram, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "La Marina, Near Shantigram Main Road, Shantigram, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0473,"lng":72.5806},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 3.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3250 sq ft", price: "₹ 3.10 Cr", image: "/uploads/projects/la-marina-shantigram-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/la-marina-shantigram-ahmedabad_1.jpg",
+          "/uploads/projects/la-marina-shantigram-ahmedabad_2.jpg",
+          "/uploads/projects/la-marina-shantigram-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 58,
+    name: "The Storeys",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 75000000,
+    priceUnit: "Cr",
+    priceString: "₹ 7.50 Cr",
+    locality: "SG Highway",
+    city: "Ahmedabad",
+    area: "5800 sq ft",
+    pricePerSqft: 12931,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0009/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "The Storeys by Adani Realty offers premium Flat/Apartment developments located in SG Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "The Storeys, Near SG Highway Main Road, SG Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0493,"lng":72.5826},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 7.50 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "5800 sq ft", price: "₹ 7.50 Cr", image: "/uploads/projects/the-storeys-sg-highway-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/the-storeys-sg-highway-ahmedabad_1.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 59,
+    name: "Atelier Greens",
+    developer: "Adani Realty",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 21000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.10 Cr",
+    locality: "Vaishnodevi Circle",
+    city: "Ahmedabad",
+    area: "2200 sq ft",
+    pricePerSqft: 9545,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0010/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Atelier Greens by Adani Realty offers premium Flat/Apartment developments located in Vaishnodevi Circle, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Atelier Greens, Near Vaishnodevi Circle Main Road, Vaishnodevi Circle, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0513,"lng":72.5846},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 2.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Adani Realty Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Adani Realty",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "2200 sq ft", price: "₹ 2.10 Cr", image: "/uploads/projects/atelier-greens-vaishnodevi-circle-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/atelier-greens-vaishnodevi-circle-ahmedabad_1.jpg",
+          "/uploads/projects/atelier-greens-vaishnodevi-circle-ahmedabad_2.jpg",
+          "/uploads/projects/atelier-greens-vaishnodevi-circle-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 60,
+    name: "Applewoods Township",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Township",
+    bhk: 3,
+    price: 12500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.25 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1750 sq ft",
+    pricePerSqft: 7143,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0011/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Applewoods Township by HN Safal offers premium Township developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Applewoods Township, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0533,"lng":72.5866},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 1.25 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1750 sq ft", price: "₹ 1.25 Cr", image: "/uploads/projects/applewoods-township-shela-ahmedabad_1.webp" }
+    ],
+    images: [
+          "/uploads/projects/applewoods-township-shela-ahmedabad_1.webp",
+          "/uploads/projects/applewoods-township-shela-ahmedabad_2.jpg",
+          "/uploads/projects/applewoods-township-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 61,
+    name: "Orchid Harmony",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 16500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.65 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "2150 sq ft",
+    pricePerSqft: 7674,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0012/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Orchid Harmony by HN Safal offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Orchid Harmony, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0553,"lng":72.5886},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 1.65 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "2150 sq ft", price: "₹ 1.65 Cr", image: "/uploads/projects/orchid-harmony-shela-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/orchid-harmony-shela-ahmedabad_1.jpg",
+          "/uploads/projects/orchid-harmony-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 62,
+    name: "Orchid Legacy",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 29500000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.95 Cr",
+    locality: "South Bopal",
+    city: "Ahmedabad",
+    area: "3100 sq ft",
+    pricePerSqft: 9516,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0013/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Orchid Legacy by HN Safal offers premium Flat/Apartment developments located in South Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Orchid Legacy, Near South Bopal Main Road, South Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0573,"lng":72.5906},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 2.95 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3100 sq ft", price: "₹ 2.95 Cr", image: "/uploads/projects/orchid-legacy-south-bopal-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/orchid-legacy-south-bopal-ahmedabad_2.jpg",
+          "/uploads/projects/orchid-legacy-south-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 63,
+    name: "Orchid Elegance",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 88.0 Lakh",
+    locality: "South Bopal",
+    city: "Ahmedabad",
+    area: "1350 sq ft",
+    pricePerSqft: 6519,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0014/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Orchid Elegance by HN Safal offers premium Flat/Apartment developments located in South Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Orchid Elegance, Near South Bopal Main Road, South Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0593,"lng":72.5926},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 88.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1350 sq ft", price: "₹ 88.0 Lakh", image: "/uploads/projects/orchid-elegance-south-bopal-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/orchid-elegance-south-bopal-ahmedabad_1.jpg",
+          "/uploads/projects/orchid-elegance-south-bopal-ahmedabad_2.jpg",
+          "/uploads/projects/orchid-elegance-south-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 64,
+    name: "Orchid Sky",
+    developer: "HN Safal",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 11500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.15 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1100 sq ft",
+    pricePerSqft: 10455,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0015/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Orchid Sky by HN Safal offers premium Office Space developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Orchid Sky, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0613,"lng":72.5946},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 1.15 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1100 sq ft", price: "₹ 1.15 Cr", image: "/uploads/projects/orchid-sky-shela-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/orchid-sky-shela-ahmedabad_1.jpg",
+          "/uploads/projects/orchid-sky-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 65,
+    name: "Orchid Green",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 92.0 Lakh",
+    locality: "Bopal",
+    city: "Ahmedabad",
+    area: "1480 sq ft",
+    pricePerSqft: 6216,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0016/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Orchid Green by HN Safal offers premium Flat/Apartment developments located in Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Orchid Green, Near Bopal Main Road, Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0633,"lng":72.5966},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 92.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1480 sq ft", price: "₹ 92.0 Lakh", image: "/uploads/projects/orchid-green-bopal-ahmedabad_1.webp" }
+    ],
+    images: [
+          "/uploads/projects/orchid-green-bopal-ahmedabad_1.webp",
+          "/uploads/projects/orchid-green-bopal-ahmedabad_2.jpg",
+          "/uploads/projects/orchid-green-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 66,
+    name: "Orchid Paradise",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 18000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.80 Cr",
+    locality: "South Bopal",
+    city: "Ahmedabad",
+    area: "2300 sq ft",
+    pricePerSqft: 7826,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0017/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Orchid Paradise by HN Safal offers premium Flat/Apartment developments located in South Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Orchid Paradise, Near South Bopal Main Road, South Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0653,"lng":72.5986},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 1.80 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "2300 sq ft", price: "₹ 1.80 Cr", image: "/uploads/projects/orchid-paradise-south-bopal-ahmedabad_1.webp" }
+    ],
+    images: [
+          "/uploads/projects/orchid-paradise-south-bopal-ahmedabad_1.webp",
+          "/uploads/projects/orchid-paradise-south-bopal-ahmedabad_2.jpg",
+          "/uploads/projects/orchid-paradise-south-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 67,
+    name: "Safal Prelude",
+    developer: "HN Safal",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 19500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.95 Cr",
+    locality: "Prahlad Nagar",
+    city: "Ahmedabad",
+    area: "1650 sq ft",
+    pricePerSqft: 11818,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0018/2016",
+    ageOfConstruction: "0 to 2 years",
+    description: "Safal Prelude by HN Safal offers premium Office Space developments located in Prahlad Nagar, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Safal Prelude, Near Prahlad Nagar Main Road, Prahlad Nagar, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0673,"lng":72.6006},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 1.95 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1650 sq ft", price: "₹ 1.95 Cr", image: "/uploads/projects/safal-prelude-prahlad-nagar-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/safal-prelude-prahlad-nagar-ahmedabad_1.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 68,
+    name: "Safal Vivaan",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 7800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 78.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1200 sq ft",
+    pricePerSqft: 6500,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0019/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Safal Vivaan by HN Safal offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Safal Vivaan, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0693,"lng":72.6026},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 78.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1200 sq ft", price: "₹ 78.0 Lakh", image: "/uploads/projects/safal-vivaan-gota-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/safal-vivaan-gota-ahmedabad_1.jpg",
+          "/uploads/projects/safal-vivaan-gota-ahmedabad_2.webp",
+          "/uploads/projects/safal-vivaan-gota-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 69,
+    name: "Safal Parishkaar",
+    developer: "HN Safal",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 6500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 65.0 Lakh",
+    locality: "Maninagar",
+    city: "Ahmedabad",
+    area: "1300 sq ft",
+    pricePerSqft: 5000,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0020/2015",
+    ageOfConstruction: "0 to 2 years",
+    description: "Safal Parishkaar by HN Safal offers premium Flat/Apartment developments located in Maninagar, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Safal Parishkaar, Near Maninagar Main Road, Maninagar, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0713,"lng":72.6046},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 65.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1300 sq ft", price: "₹ 65.0 Lakh", image: "/uploads/projects/safal-parishkaar-maninagar-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/safal-parishkaar-maninagar-ahmedabad_1.jpg",
+          "/uploads/projects/safal-parishkaar-maninagar-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 70,
+    name: "Bakeri City",
+    developer: "Bakeri Group",
+    type: "Residential",
+    subType: "Township",
+    bhk: 2,
+    price: 7200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 72.0 Lakh",
+    locality: "Vejalpur",
+    city: "Ahmedabad",
+    area: "1150 sq ft",
+    pricePerSqft: 6261,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0021/2015",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri City by Bakeri Group offers premium Township developments located in Vejalpur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri City, Near Vejalpur Main Road, Vejalpur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0733,"lng":72.6066},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 72.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1150 sq ft", price: "₹ 72.0 Lakh", image: "/uploads/projects/bakeri-city-vejalpur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-city-vejalpur-ahmedabad_1.jpg",
+          "/uploads/projects/bakeri-city-vejalpur-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 71,
+    name: "Bakeri Serenity",
+    developer: "Bakeri Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 85.0 Lakh",
+    locality: "Vejalpur",
+    city: "Ahmedabad",
+    area: "1400 sq ft",
+    pricePerSqft: 6071,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0022/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri Serenity by Bakeri Group offers premium Flat/Apartment developments located in Vejalpur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri Serenity, Near Vejalpur Main Road, Vejalpur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0753,"lng":72.6086},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 85.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1400 sq ft", price: "₹ 85.0 Lakh", image: "/uploads/projects/bakeri-serenity-vejalpur-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-serenity-vejalpur-ahmedabad_2.jpg",
+          "/uploads/projects/bakeri-serenity-vejalpur-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 72,
+    name: "Bakeri Suvas",
+    developer: "Bakeri Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 6200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 62.0 Lakh",
+    locality: "Vejalpur",
+    city: "Ahmedabad",
+    area: "1050 sq ft",
+    pricePerSqft: 5905,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0023/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri Suvas by Bakeri Group offers premium Flat/Apartment developments located in Vejalpur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri Suvas, Near Vejalpur Main Road, Vejalpur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0773,"lng":72.6106},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 62.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1050 sq ft", price: "₹ 62.0 Lakh", image: "/uploads/projects/bakeri-suvas-vejalpur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-suvas-vejalpur-ahmedabad_1.jpg",
+          "/uploads/projects/bakeri-suvas-vejalpur-ahmedabad_2.jpg",
+          "/uploads/projects/bakeri-suvas-vejalpur-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 73,
+    name: "Bakeri Swareet",
+    developer: "Bakeri Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 5800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 58.0 Lakh",
+    locality: "Vejalpur",
+    city: "Ahmedabad",
+    area: "980 sq ft",
+    pricePerSqft: 5918,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0024/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri Swareet by Bakeri Group offers premium Flat/Apartment developments located in Vejalpur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri Swareet, Near Vejalpur Main Road, Vejalpur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0793,"lng":72.6126},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 58.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "980 sq ft", price: "₹ 58.0 Lakh", image: "/uploads/projects/bakeri-swareet-vejalpur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-swareet-vejalpur-ahmedabad_1.jpg",
+          "/uploads/projects/bakeri-swareet-vejalpur-ahmedabad_2.jpg",
+          "/uploads/projects/bakeri-swareet-vejalpur-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 74,
+    name: "Bakeri Swara",
+    developer: "Bakeri Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 5400000,
+    priceUnit: "Lakh",
+    priceString: "₹ 54.0 Lakh",
+    locality: "Vejalpur",
+    city: "Ahmedabad",
+    area: "920 sq ft",
+    pricePerSqft: 5870,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0025/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri Swara by Bakeri Group offers premium Flat/Apartment developments located in Vejalpur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri Swara, Near Vejalpur Main Road, Vejalpur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0813,"lng":72.6146},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 54.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "920 sq ft", price: "₹ 54.0 Lakh", image: "/uploads/projects/bakeri-swara-vejalpur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-swara-vejalpur-ahmedabad_1.jpg",
+          "/uploads/projects/bakeri-swara-vejalpur-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 75,
+    name: "Bakeri Sakar",
+    developer: "Bakeri Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 11000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.10 Cr",
+    locality: "Ashram Road",
+    city: "Ahmedabad",
+    area: "950 sq ft",
+    pricePerSqft: 11579,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0026/2014",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri Sakar by Bakeri Group offers premium Office Space developments located in Ashram Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri Sakar, Near Ashram Road Main Road, Ashram Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0833,"lng":72.6166},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 1.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "950 sq ft", price: "₹ 1.10 Cr", image: "/uploads/projects/bakeri-sakar-ashram-road-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-sakar-ashram-road-ahmedabad_1.jpg",
+          "/uploads/projects/bakeri-sakar-ashram-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 76,
+    name: "Bakeri Sonnet",
+    developer: "Bakeri Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 7900000,
+    priceUnit: "Lakh",
+    priceString: "₹ 79.0 Lakh",
+    locality: "Vejalpur",
+    city: "Ahmedabad",
+    area: "1380 sq ft",
+    pricePerSqft: 5725,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0027/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri Sonnet by Bakeri Group offers premium Flat/Apartment developments located in Vejalpur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri Sonnet, Near Vejalpur Main Road, Vejalpur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0853,"lng":72.6186},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 79.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1380 sq ft", price: "₹ 79.0 Lakh", image: "/uploads/projects/bakeri-sonnet-vejalpur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-sonnet-vejalpur-ahmedabad_1.jpg",
+          "/uploads/projects/bakeri-sonnet-vejalpur-ahmedabad_2.jpg",
+          "/uploads/projects/bakeri-sonnet-vejalpur-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 77,
+    name: "Bakeri Sakar IX",
+    developer: "Bakeri Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 22000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.20 Cr",
+    locality: "Ashram Road",
+    city: "Ahmedabad",
+    area: "1800 sq ft",
+    pricePerSqft: 12222,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0028/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Bakeri Sakar IX by Bakeri Group offers premium Office Space developments located in Ashram Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Bakeri Sakar IX, Near Ashram Road Main Road, Ashram Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0873,"lng":72.6206},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 2.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Bakeri Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Bakeri Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1800 sq ft", price: "₹ 2.20 Cr", image: "/uploads/projects/bakeri-sakar-ix-ashram-road-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/bakeri-sakar-ix-ashram-road-ahmedabad_2.jpg",
+          "/uploads/projects/bakeri-sakar-ix-ashram-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 78,
+    name: "Shivalik Sharda Harmony",
+    developer: "Shivalik Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 24000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.40 Cr",
+    locality: "Ambawadi",
+    city: "Ahmedabad",
+    area: "2450 sq ft",
+    pricePerSqft: 9796,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0029/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shivalik Sharda Harmony by Shivalik Group offers premium Flat/Apartment developments located in Ambawadi, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shivalik Sharda Harmony, Near Ambawadi Main Road, Ambawadi, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0893,"lng":72.6226},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 2.40 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shivalik Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shivalik Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "2450 sq ft", price: "₹ 2.40 Cr", image: "/uploads/projects/shivalik-sharda-harmony-ambawadi-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shivalik-sharda-harmony-ambawadi-ahmedabad_1.jpg",
+          "/uploads/projects/shivalik-sharda-harmony-ambawadi-ahmedabad_2.jpg",
+          "/uploads/projects/shivalik-sharda-harmony-ambawadi-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 79,
+    name: "Shivalik Platinum",
+    developer: "Shivalik Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 31000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.10 Cr",
+    locality: "Bodakdev",
+    city: "Ahmedabad",
+    area: "2200 sq ft",
+    pricePerSqft: 14091,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0030/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shivalik Platinum by Shivalik Group offers premium Office Space developments located in Bodakdev, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shivalik Platinum, Near Bodakdev Main Road, Bodakdev, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0913,"lng":72.6246},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 3.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shivalik Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shivalik Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2200 sq ft", price: "₹ 3.10 Cr", image: "/uploads/projects/shivalik-platinum-bodakdev-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shivalik-platinum-bodakdev-ahmedabad_2.jpg",
+          "/uploads/projects/shivalik-platinum-bodakdev-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 80,
+    name: "Shivalik Parkview",
+    developer: "Shivalik Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 13500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.35 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1650 sq ft",
+    pricePerSqft: 8182,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0031/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shivalik Parkview by Shivalik Group offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shivalik Parkview, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0933,"lng":72.6266},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 1.35 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shivalik Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shivalik Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1650 sq ft", price: "₹ 1.35 Cr", image: "/uploads/projects/shivalik-parkview-shela-ahmedabad_3.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shivalik-parkview-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 81,
+    name: "Shivalik Heights",
+    developer: "Shivalik Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 17500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.75 Cr",
+    locality: "Vastrapur",
+    city: "Ahmedabad",
+    area: "1900 sq ft",
+    pricePerSqft: 9211,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0032/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shivalik Heights by Shivalik Group offers premium Flat/Apartment developments located in Vastrapur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shivalik Heights, Near Vastrapur Main Road, Vastrapur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0953,"lng":72.6286},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 1.75 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shivalik Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shivalik Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1900 sq ft", price: "₹ 1.75 Cr", image: "/uploads/projects/shivalik-heights-vastrapur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shivalik-heights-vastrapur-ahmedabad_1.jpg",
+          "/uploads/projects/shivalik-heights-vastrapur-ahmedabad_2.webp",
+          "/uploads/projects/shivalik-heights-vastrapur-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 82,
+    name: "Shivalik Residency",
+    developer: "Shivalik Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 11000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.10 Cr",
+    locality: "Bopal",
+    city: "Ahmedabad",
+    area: "1550 sq ft",
+    pricePerSqft: 7097,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0033/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shivalik Residency by Shivalik Group offers premium Flat/Apartment developments located in Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shivalik Residency, Near Bopal Main Road, Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0973,"lng":72.6306},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 1.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shivalik Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shivalik Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1550 sq ft", price: "₹ 1.10 Cr", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" }
+    ],
+    images: [
+          "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 83,
+    name: "Shivalik Avenue",
+    developer: "Shivalik Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 25000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.50 Cr",
+    locality: "Bodakdev",
+    city: "Ahmedabad",
+    area: "1850 sq ft",
+    pricePerSqft: 13514,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0034/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shivalik Avenue by Shivalik Group offers premium Office Space developments located in Bodakdev, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shivalik Avenue, Near Bodakdev Main Road, Bodakdev, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.0993,"lng":72.6326},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 2.50 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shivalik Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shivalik Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1850 sq ft", price: "₹ 2.50 Cr", image: "/uploads/projects/shivalik-avenue-bodakdev-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shivalik-avenue-bodakdev-ahmedabad_2.jpg",
+          "/uploads/projects/shivalik-avenue-bodakdev-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 84,
+    name: "Arvind Uplands",
+    developer: "Arvind SmartSpaces",
+    type: "Residential",
+    subType: "Villa",
+    bhk: 4,
+    price: 35000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.50 Cr",
+    locality: "Rancharda",
+    city: "Ahmedabad",
+    area: "3800 sq ft",
+    pricePerSqft: 9211,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0035/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Arvind Uplands by Arvind SmartSpaces offers premium Villa developments located in Rancharda, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Arvind Uplands, Near Rancharda Main Road, Rancharda, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1013,"lng":72.6346},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 3.50 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Arvind SmartSpaces Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Arvind SmartSpaces",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3800 sq ft", price: "₹ 3.50 Cr", image: "/uploads/projects/arvind-uplands-rancharda-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/arvind-uplands-rancharda-ahmedabad_1.jpg",
+          "/uploads/projects/arvind-uplands-rancharda-ahmedabad_2.webp",
+          "/uploads/projects/arvind-uplands-rancharda-ahmedabad_3.webp"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 85,
+    name: "Arvind Aqua City",
+    developer: "Arvind SmartSpaces",
+    type: "Residential",
+    subType: "Township",
+    bhk: 2,
+    price: 9500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 95.0 Lakh",
+    locality: "Santej",
+    city: "Ahmedabad",
+    area: "1350 sq ft",
+    pricePerSqft: 7037,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0036/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Arvind Aqua City by Arvind SmartSpaces offers premium Township developments located in Santej, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Arvind Aqua City, Near Santej Main Road, Santej, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1033,"lng":72.6366},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 95.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Arvind SmartSpaces Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Arvind SmartSpaces",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1350 sq ft", price: "₹ 95.0 Lakh", image: "/uploads/projects/arvind-aqua-city-santej-ahmedabad_1.webp" }
+    ],
+    images: [
+          "/uploads/projects/arvind-aqua-city-santej-ahmedabad_1.webp",
+          "/uploads/projects/arvind-aqua-city-santej-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 86,
+    name: "Arvind Alcove",
+    developer: "Arvind SmartSpaces",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 7500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 75.0 Lakh",
+    locality: "Chandkheda",
+    city: "Ahmedabad",
+    area: "1180 sq ft",
+    pricePerSqft: 6356,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0037/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Arvind Alcove by Arvind SmartSpaces offers premium Flat/Apartment developments located in Chandkheda, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Arvind Alcove, Near Chandkheda Main Road, Chandkheda, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1053,"lng":72.6386},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 75.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Arvind SmartSpaces Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Arvind SmartSpaces",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1180 sq ft", price: "₹ 75.0 Lakh", image: "/uploads/projects/arvind-alcove-chandkheda-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/arvind-alcove-chandkheda-ahmedabad_1.jpg",
+          "/uploads/projects/arvind-alcove-chandkheda-ahmedabad_2.jpg",
+          "/uploads/projects/arvind-alcove-chandkheda-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 87,
+    name: "Arvind Forreste",
+    developer: "Arvind SmartSpaces",
+    type: "Residential",
+    subType: "Villa",
+    bhk: 3,
+    price: 18500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.85 Cr",
+    locality: "Rancharda",
+    city: "Ahmedabad",
+    area: "2400 sq ft",
+    pricePerSqft: 7708,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0038/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Arvind Forreste by Arvind SmartSpaces offers premium Villa developments located in Rancharda, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Arvind Forreste, Near Rancharda Main Road, Rancharda, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1073,"lng":72.6406},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 1.85 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Arvind SmartSpaces Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Arvind SmartSpaces",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "2400 sq ft", price: "₹ 1.85 Cr", image: "/uploads/projects/arvind-forreste-rancharda-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/arvind-forreste-rancharda-ahmedabad_1.jpg",
+          "/uploads/projects/arvind-forreste-rancharda-ahmedabad_2.jpg",
+          "/uploads/projects/arvind-forreste-rancharda-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 88,
+    name: "Arvind Highgrove",
+    developer: "Arvind SmartSpaces",
+    type: "Residential",
+    subType: "Villa",
+    bhk: 4,
+    price: 41000000,
+    priceUnit: "Cr",
+    priceString: "₹ 4.10 Cr",
+    locality: "Rancharda",
+    city: "Ahmedabad",
+    area: "4200 sq ft",
+    pricePerSqft: 9762,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0039/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Arvind Highgrove by Arvind SmartSpaces offers premium Villa developments located in Rancharda, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Arvind Highgrove, Near Rancharda Main Road, Rancharda, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1093,"lng":72.6426},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 4.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Arvind SmartSpaces Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Arvind SmartSpaces",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "4200 sq ft", price: "₹ 4.10 Cr", image: "/uploads/projects/arvind-highgrove-rancharda-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/arvind-highgrove-rancharda-ahmedabad_1.jpg",
+          "/uploads/projects/arvind-highgrove-rancharda-ahmedabad_2.png",
+          "/uploads/projects/arvind-highgrove-rancharda-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 89,
+    name: "Arvind Greatlands",
+    developer: "Arvind SmartSpaces",
+    type: "Residential",
+    subType: "Plot",
+    bhk: 3,
+    price: 12000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.20 Cr",
+    locality: "Santej",
+    city: "Ahmedabad",
+    area: "2100 sq ft",
+    pricePerSqft: 5714,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0040/2022",
+    ageOfConstruction: "0 to 2 years",
+    description: "Arvind Greatlands by Arvind SmartSpaces offers premium Plot developments located in Santej, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Arvind Greatlands, Near Santej Main Road, Santej, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1113,"lng":72.6446},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 1.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Arvind SmartSpaces Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Arvind SmartSpaces",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "2100 sq ft", price: "₹ 1.20 Cr", image: "/uploads/projects/arvind-greatlands-santej-ahmedabad_2.png" }
+    ],
+    images: [
+          "/uploads/projects/arvind-greatlands-santej-ahmedabad_2.png",
+          "/uploads/projects/arvind-greatlands-santej-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 90,
+    name: "Godrej Garden City",
+    developer: "Godrej Properties",
+    type: "Residential",
+    subType: "Township",
+    bhk: 3,
+    price: 7500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 75.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1450 sq ft",
+    pricePerSqft: 5172,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0041/2016",
+    ageOfConstruction: "0 to 2 years",
+    description: "Godrej Garden City by Godrej Properties offers premium Township developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Godrej Garden City, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1133,"lng":72.6466},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 75.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Godrej Properties Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Godrej Properties",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1450 sq ft", price: "₹ 75.0 Lakh", image: "/uploads/projects/godrej-garden-city-gota-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/godrej-garden-city-gota-ahmedabad_1.jpg",
+          "/uploads/projects/godrej-garden-city-gota-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 91,
+    name: "Godrej Vanaangan",
+    developer: "Godrej Properties",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 92.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1600 sq ft",
+    pricePerSqft: 5750,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0042/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Godrej Vanaangan by Godrej Properties offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Godrej Vanaangan, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1153,"lng":72.6486},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 92.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Godrej Properties Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Godrej Properties",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1600 sq ft", price: "₹ 92.0 Lakh", image: "/uploads/projects/godrej-vanaangan-gota-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/godrej-vanaangan-gota-ahmedabad_1.jpg",
+          "/uploads/projects/godrej-vanaangan-gota-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 92,
+    name: "Godrej Green Glades",
+    developer: "Godrej Properties",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 11500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.15 Cr",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1750 sq ft",
+    pricePerSqft: 6571,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0043/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Godrej Green Glades by Godrej Properties offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Godrej Green Glades, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1173,"lng":72.6506},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 1.15 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Godrej Properties Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Godrej Properties",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1750 sq ft", price: "₹ 1.15 Cr", image: "/uploads/projects/godrej-green-glades-gota-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/godrej-green-glades-gota-ahmedabad_1.jpg",
+          "/uploads/projects/godrej-green-glades-gota-ahmedabad_2.jpg",
+          "/uploads/projects/godrej-green-glades-gota-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 93,
+    name: "Godrej Celeste",
+    developer: "Godrej Properties",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 88.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1500 sq ft",
+    pricePerSqft: 5867,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0044/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Godrej Celeste by Godrej Properties offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Godrej Celeste, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1193,"lng":72.6526},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 88.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Godrej Properties Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Godrej Properties",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1500 sq ft", price: "₹ 88.0 Lakh", image: "/uploads/projects/godrej-celeste-gota-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/godrej-celeste-gota-ahmedabad_1.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 94,
+    name: "Godrej Skyline",
+    developer: "Godrej Properties",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 32000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.20 Cr",
+    locality: "Jagatpur",
+    city: "Ahmedabad",
+    area: "3200 sq ft",
+    pricePerSqft: 10000,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0045/2022",
+    ageOfConstruction: "0 to 2 years",
+    description: "Godrej Skyline by Godrej Properties offers premium Flat/Apartment developments located in Jagatpur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Godrej Skyline, Near Jagatpur Main Road, Jagatpur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1213,"lng":72.6546},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 3.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Godrej Properties Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Godrej Properties",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3200 sq ft", price: "₹ 3.20 Cr", image: "/uploads/projects/godrej-skyline-jagatpur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/godrej-skyline-jagatpur-ahmedabad_1.jpg",
+          "/uploads/projects/godrej-skyline-jagatpur-ahmedabad_2.webp",
+          "/uploads/projects/godrej-skyline-jagatpur-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 95,
+    name: "Malabar County",
+    developer: "Ganesh Housing",
+    type: "Residential",
+    subType: "Township",
+    bhk: 3,
+    price: 8500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 85.0 Lakh",
+    locality: "Tragad",
+    city: "Ahmedabad",
+    area: "1550 sq ft",
+    pricePerSqft: 5484,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0046/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Malabar County by Ganesh Housing offers premium Township developments located in Tragad, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Malabar County, Near Tragad Main Road, Tragad, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1233,"lng":72.6566},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 85.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Ganesh Housing Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Ganesh Housing",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1550 sq ft", price: "₹ 85.0 Lakh", image: "/uploads/projects/malabar-county-tragad-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/malabar-county-tragad-ahmedabad_1.jpg",
+          "/uploads/projects/malabar-county-tragad-ahmedabad_2.jpg",
+          "/uploads/projects/malabar-county-tragad-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 96,
+    name: "Malabar Exotica",
+    developer: "Ganesh Housing",
+    type: "Residential",
+    subType: "Villa",
+    bhk: 4,
+    price: 38000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.80 Cr",
+    locality: "Tragad",
+    city: "Ahmedabad",
+    area: "4000 sq ft",
+    pricePerSqft: 9500,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0047/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Malabar Exotica by Ganesh Housing offers premium Villa developments located in Tragad, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Malabar Exotica, Near Tragad Main Road, Tragad, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1253,"lng":72.6586},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 3.80 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Ganesh Housing Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Ganesh Housing",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "4000 sq ft", price: "₹ 3.80 Cr", image: "/uploads/projects/malabar-exotica-tragad-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/malabar-exotica-tragad-ahmedabad_1.jpg",
+          "/uploads/projects/malabar-exotica-tragad-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 97,
+    name: "Maple County",
+    developer: "Ganesh Housing",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 19500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.95 Cr",
+    locality: "Thaltej",
+    city: "Ahmedabad",
+    area: "2100 sq ft",
+    pricePerSqft: 9286,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0048/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Maple County by Ganesh Housing offers premium Flat/Apartment developments located in Thaltej, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Maple County, Near Thaltej Main Road, Thaltej, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1273,"lng":72.6606},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 1.95 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Ganesh Housing Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Ganesh Housing",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "2100 sq ft", price: "₹ 1.95 Cr", image: "/uploads/projects/maple-county-thaltej-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/maple-county-thaltej-ahmedabad_1.jpg",
+          "/uploads/projects/maple-county-thaltej-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 98,
+    name: "Maple Tree Garden Homes",
+    developer: "Ganesh Housing",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 45000000,
+    priceUnit: "Cr",
+    priceString: "₹ 4.50 Cr",
+    locality: "Thaltej",
+    city: "Ahmedabad",
+    area: "3900 sq ft",
+    pricePerSqft: 11538,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0049/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Maple Tree Garden Homes by Ganesh Housing offers premium Flat/Apartment developments located in Thaltej, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Maple Tree Garden Homes, Near Thaltej Main Road, Thaltej, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1293,"lng":72.6626},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 4.50 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Ganesh Housing Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Ganesh Housing",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3900 sq ft", price: "₹ 4.50 Cr", image: "/uploads/projects/maple-tree-garden-homes-thaltej-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/maple-tree-garden-homes-thaltej-ahmedabad_2.jpg",
+          "/uploads/projects/maple-tree-garden-homes-thaltej-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 99,
+    name: "Elita",
+    developer: "Ganesh Housing",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 11000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.10 Cr",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1680 sq ft",
+    pricePerSqft: 6548,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0050/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Elita by Ganesh Housing offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Elita, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1313,"lng":72.6646},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 1.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Ganesh Housing Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Ganesh Housing",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1680 sq ft", price: "₹ 1.10 Cr", image: "/uploads/projects/elita-gota-ahmedabad_1.png" }
+    ],
+    images: [
+          "/uploads/projects/elita-gota-ahmedabad_1.png",
+          "/uploads/projects/elita-gota-ahmedabad_2.jpg",
+          "/uploads/projects/elita-gota-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 100,
+    name: "Riviera Prestige",
+    developer: "Goyal & Co.",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 28000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.80 Cr",
+    locality: "Prahlad Nagar",
+    city: "Ahmedabad",
+    area: "2900 sq ft",
+    pricePerSqft: 9655,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0051/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Riviera Prestige by Goyal & Co. offers premium Flat/Apartment developments located in Prahlad Nagar, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Riviera Prestige, Near Prahlad Nagar Main Road, Prahlad Nagar, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1333,"lng":72.6666},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 2.80 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Goyal & Co. Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Goyal & Co.",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "2900 sq ft", price: "₹ 2.80 Cr", image: "/uploads/projects/riviera-prestige-prahlad-nagar-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/riviera-prestige-prahlad-nagar-ahmedabad_2.jpg",
+          "/uploads/projects/riviera-prestige-prahlad-nagar-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 101,
+    name: "Orchid Whitefield",
+    developer: "Goyal & Co.",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 17500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.75 Cr",
+    locality: "Prahlad Nagar",
+    city: "Ahmedabad",
+    area: "1950 sq ft",
+    pricePerSqft: 8974,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0052/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Orchid Whitefield by Goyal & Co. offers premium Flat/Apartment developments located in Prahlad Nagar, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Orchid Whitefield, Near Prahlad Nagar Main Road, Prahlad Nagar, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1353,"lng":72.6686},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 1.75 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Goyal & Co. Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Goyal & Co.",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1950 sq ft", price: "₹ 1.75 Cr", image: "/uploads/projects/orchid-whitefield-prahlad-nagar-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/orchid-whitefield-prahlad-nagar-ahmedabad_1.jpg",
+          "/uploads/projects/orchid-whitefield-prahlad-nagar-ahmedabad_2.jpg",
+          "/uploads/projects/orchid-whitefield-prahlad-nagar-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 102,
+    name: "Goyal Intercity",
+    developer: "Goyal & Co.",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 13000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.30 Cr",
+    locality: "Drive-In Road",
+    city: "Ahmedabad",
+    area: "1600 sq ft",
+    pricePerSqft: 8125,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0053/2015",
+    ageOfConstruction: "0 to 2 years",
+    description: "Goyal Intercity by Goyal & Co. offers premium Flat/Apartment developments located in Drive-In Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Goyal Intercity, Near Drive-In Road Main Road, Drive-In Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1373,"lng":72.6706},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 1.30 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Goyal & Co. Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Goyal & Co.",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1600 sq ft", price: "₹ 1.30 Cr", image: "/uploads/projects/goyal-intercity-drive-in-road-ahmedabad_3.jpg" }
+    ],
+    images: [
+          "/uploads/projects/goyal-intercity-drive-in-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 103,
+    name: "Goyal Riviera Greens",
+    developer: "Goyal & Co.",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 29000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.90 Cr",
+    locality: "Prahlad Nagar",
+    city: "Ahmedabad",
+    area: "3000 sq ft",
+    pricePerSqft: 9667,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0054/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Goyal Riviera Greens by Goyal & Co. offers premium Flat/Apartment developments located in Prahlad Nagar, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Goyal Riviera Greens, Near Prahlad Nagar Main Road, Prahlad Nagar, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1393,"lng":72.6726},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 2.90 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Goyal & Co. Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Goyal & Co.",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3000 sq ft", price: "₹ 2.90 Cr", image: "/uploads/projects/goyal-riviera-greens-prahlad-nagar-ahmedabad_3.jpg" }
+    ],
+    images: [
+          "/uploads/projects/goyal-riviera-greens-prahlad-nagar-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 104,
+    name: "Goyal Olive Greens",
+    developer: "Goyal & Co.",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 8200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 82.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1280 sq ft",
+    pricePerSqft: 6406,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0055/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Goyal Olive Greens by Goyal & Co. offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Goyal Olive Greens, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1413,"lng":72.6746},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 82.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Goyal & Co. Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Goyal & Co.",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1280 sq ft", price: "₹ 82.0 Lakh", image: "/uploads/projects/goyal-olive-greens-gota-ahmedabad_1.png" }
+    ],
+    images: [
+          "/uploads/projects/goyal-olive-greens-gota-ahmedabad_1.png",
+          "/uploads/projects/goyal-olive-greens-gota-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 105,
+    name: "Swati Crimson",
+    developer: "Swati Procon",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 39000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.90 Cr",
+    locality: "Shilaj",
+    city: "Ahmedabad",
+    area: "3600 sq ft",
+    pricePerSqft: 10833,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0056/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Swati Crimson by Swati Procon offers premium Flat/Apartment developments located in Shilaj, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Swati Crimson, Near Shilaj Main Road, Shilaj, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1433,"lng":72.6766},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 3.90 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Swati Procon Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Swati Procon",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3600 sq ft", price: "₹ 3.90 Cr", image: "/uploads/projects/swati-crimson-shilaj-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/swati-crimson-shilaj-ahmedabad_2.jpg",
+          "/uploads/projects/swati-crimson-shilaj-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 106,
+    name: "Swati Premier",
+    developer: "Swati Procon",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 32000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.20 Cr",
+    locality: "Ambli Road",
+    city: "Ahmedabad",
+    area: "3100 sq ft",
+    pricePerSqft: 10323,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0057/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Swati Premier by Swati Procon offers premium Flat/Apartment developments located in Ambli Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Swati Premier, Near Ambli Road Main Road, Ambli Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1453,"lng":72.6786},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 3.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Swati Procon Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Swati Procon",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "3100 sq ft", price: "₹ 3.20 Cr", image: "/uploads/projects/swati-premier-ambli-road-ahmedabad_3.jpg" }
+    ],
+    images: [
+          "/uploads/projects/swati-premier-ambli-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 107,
+    name: "Swati Symphony",
+    developer: "Swati Procon",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 26000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.60 Cr",
+    locality: "Ambli Road",
+    city: "Ahmedabad",
+    area: "2600 sq ft",
+    pricePerSqft: 10000,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0058/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Swati Symphony by Swati Procon offers premium Flat/Apartment developments located in Ambli Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Swati Symphony, Near Ambli Road Main Road, Ambli Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1473,"lng":72.6806},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 2.60 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Swati Procon Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Swati Procon",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "2600 sq ft", price: "₹ 2.60 Cr", image: "/uploads/projects/swati-symphony-ambli-road-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/swati-symphony-ambli-road-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 108,
+    name: "Swati Parkside",
+    developer: "Swati Procon",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 24500000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.45 Cr",
+    locality: "Bodakdev",
+    city: "Ahmedabad",
+    area: "2450 sq ft",
+    pricePerSqft: 10000,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0059/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Swati Parkside by Swati Procon offers premium Flat/Apartment developments located in Bodakdev, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Swati Parkside, Near Bodakdev Main Road, Bodakdev, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1493,"lng":72.6826},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 2.45 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Swati Procon Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Swati Procon",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "2450 sq ft", price: "₹ 2.45 Cr", image: "/uploads/projects/swati-parkside-bodakdev-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/swati-parkside-bodakdev-ahmedabad_2.jpg",
+          "/uploads/projects/swati-parkside-bodakdev-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 109,
+    name: "Swati Chrysantha",
+    developer: "Swati Procon",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 5,
+    price: 62000000,
+    priceUnit: "Cr",
+    priceString: "₹ 6.20 Cr",
+    locality: "Ambli Road",
+    city: "Ahmedabad",
+    area: "5200 sq ft",
+    pricePerSqft: 11923,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0060/2022",
+    ageOfConstruction: "0 to 2 years",
+    description: "Swati Chrysantha by Swati Procon offers premium Flat/Apartment developments located in Ambli Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Swati Chrysantha, Near Ambli Road Main Road, Ambli Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1513,"lng":72.6846},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 6.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Swati Procon Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Swati Procon",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "5 BHK Unit", area: "5200 sq ft", price: "₹ 6.20 Cr", image: "/uploads/projects/swati-chrysantha-ambli-road-ahmedabad_1.png" }
+    ],
+    images: [
+          "/uploads/projects/swati-chrysantha-ambli-road-ahmedabad_1.png",
+          "/uploads/projects/swati-chrysantha-ambli-road-ahmedabad_2.jpg",
+          "/uploads/projects/swati-chrysantha-ambli-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 110,
+    name: "Vishwanath Sarathya",
+    developer: "Vishwanath Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 12500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.25 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1650 sq ft",
+    pricePerSqft: 7576,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0061/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Vishwanath Sarathya by Vishwanath Group offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Vishwanath Sarathya, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1533,"lng":72.6866},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 1.25 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Vishwanath Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Vishwanath Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1650 sq ft", price: "₹ 1.25 Cr", image: "/uploads/projects/vishwanath-sarathya-shela-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/vishwanath-sarathya-shela-ahmedabad_1.jpg",
+          "/uploads/projects/vishwanath-sarathya-shela-ahmedabad_2.webp",
+          "/uploads/projects/vishwanath-sarathya-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 111,
+    name: "Vishwanath Sharanam",
+    developer: "Vishwanath Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 11000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.10 Cr",
+    locality: "Vastrapur",
+    city: "Ahmedabad",
+    area: "1500 sq ft",
+    pricePerSqft: 7333,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0062/2016",
+    ageOfConstruction: "0 to 2 years",
+    description: "Vishwanath Sharanam by Vishwanath Group offers premium Flat/Apartment developments located in Vastrapur, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Vishwanath Sharanam, Near Vastrapur Main Road, Vastrapur, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1553,"lng":72.6886},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 1.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Vishwanath Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Vishwanath Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1500 sq ft", price: "₹ 1.10 Cr", image: "/uploads/projects/vishwanath-sharanam-vastrapur-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/vishwanath-sharanam-vastrapur-ahmedabad_1.jpg",
+          "/uploads/projects/vishwanath-sharanam-vastrapur-ahmedabad_2.jpg",
+          "/uploads/projects/vishwanath-sharanam-vastrapur-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 112,
+    name: "Vishwanath Ishaan",
+    developer: "Vishwanath Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 16500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.65 Cr",
+    locality: "Ambawadi",
+    city: "Ahmedabad",
+    area: "1850 sq ft",
+    pricePerSqft: 8919,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0063/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Vishwanath Ishaan by Vishwanath Group offers premium Flat/Apartment developments located in Ambawadi, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Vishwanath Ishaan, Near Ambawadi Main Road, Ambawadi, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1573,"lng":72.6906},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 1.65 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Vishwanath Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Vishwanath Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1850 sq ft", price: "₹ 1.65 Cr", image: "/uploads/projects/vishwanath-ishaan-ambawadi-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/vishwanath-ishaan-ambawadi-ahmedabad_1.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 113,
+    name: "Vishwanath Skyline",
+    developer: "Vishwanath Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 14000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.40 Cr",
+    locality: "Sola",
+    city: "Ahmedabad",
+    area: "1720 sq ft",
+    pricePerSqft: 8140,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0064/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Vishwanath Skyline by Vishwanath Group offers premium Flat/Apartment developments located in Sola, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Vishwanath Skyline, Near Sola Main Road, Sola, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1593,"lng":72.6926},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 1.40 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Vishwanath Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Vishwanath Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1720 sq ft", price: "₹ 1.40 Cr", image: "/uploads/projects/vishwanath-skyline-sola-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/vishwanath-skyline-sola-ahmedabad_1.jpg",
+          "/uploads/projects/vishwanath-skyline-sola-ahmedabad_2.jpg",
+          "/uploads/projects/vishwanath-skyline-sola-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 114,
+    name: "Vishwanath Elite",
+    developer: "Vishwanath Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 18500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.85 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "2350 sq ft",
+    pricePerSqft: 7872,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0065/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Vishwanath Elite by Vishwanath Group offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Vishwanath Elite, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1613,"lng":72.6946},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 1.85 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Vishwanath Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Vishwanath Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "2350 sq ft", price: "₹ 1.85 Cr", image: "/uploads/projects/vishwanath-elite-shela-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/vishwanath-elite-shela-ahmedabad_1.jpg",
+          "/uploads/projects/vishwanath-elite-shela-ahmedabad_2.jpg",
+          "/uploads/projects/vishwanath-elite-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 115,
+    name: "Savvy Swaraj",
+    developer: "Savvy Group",
+    type: "Residential",
+    subType: "Township",
+    bhk: 2,
+    price: 7800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 78.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1250 sq ft",
+    pricePerSqft: 6240,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0066/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Savvy Swaraj by Savvy Group offers premium Township developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Savvy Swaraj, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1633,"lng":72.6966},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 78.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Savvy Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Savvy Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1250 sq ft", price: "₹ 78.0 Lakh", image: "/uploads/projects/savvy-swaraj-gota-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/savvy-swaraj-gota-ahmedabad_1.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 116,
+    name: "Savvy Strata",
+    developer: "Savvy Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 16000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.60 Cr",
+    locality: "SG Highway",
+    city: "Ahmedabad",
+    area: "1400 sq ft",
+    pricePerSqft: 11429,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0067/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Savvy Strata by Savvy Group offers premium Office Space developments located in SG Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Savvy Strata, Near SG Highway Main Road, SG Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1653,"lng":72.6986},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 1.60 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Savvy Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Savvy Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1400 sq ft", price: "₹ 1.60 Cr", image: "/uploads/projects/savvy-strata-sg-highway-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/savvy-strata-sg-highway-ahmedabad_1.jpg",
+          "/uploads/projects/savvy-strata-sg-highway-ahmedabad_2.jpg",
+          "/uploads/projects/savvy-strata-sg-highway-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 117,
+    name: "Savvy Solaris",
+    developer: "Savvy Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9000000,
+    priceUnit: "Lakh",
+    priceString: "₹ 90.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1480 sq ft",
+    pricePerSqft: 6081,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0068/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Savvy Solaris by Savvy Group offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Savvy Solaris, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1673,"lng":72.7006},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 90.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Savvy Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Savvy Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1480 sq ft", price: "₹ 90.0 Lakh", image: "/uploads/projects/savvy-solaris-gota-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/savvy-solaris-gota-ahmedabad_2.jpg",
+          "/uploads/projects/savvy-solaris-gota-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 118,
+    name: "Savvy Studioz",
+    developer: "Savvy Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 1,
+    price: 3800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 38.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "620 sq ft",
+    pricePerSqft: 6129,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0069/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Savvy Studioz by Savvy Group offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Savvy Studioz, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1693,"lng":72.7026},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 38.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Savvy Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Savvy Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "1 BHK Unit", area: "620 sq ft", price: "₹ 38.0 Lakh", image: "/uploads/projects/savvy-studioz-gota-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/savvy-studioz-gota-ahmedabad_2.jpg",
+          "/uploads/projects/savvy-studioz-gota-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 119,
+    name: "Savvy Skyz",
+    developer: "Savvy Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 13500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.35 Cr",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1750 sq ft",
+    pricePerSqft: 7714,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0070/2022",
+    ageOfConstruction: "0 to 2 years",
+    description: "Savvy Skyz by Savvy Group offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Savvy Skyz, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1713,"lng":72.7046},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 1.35 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Savvy Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Savvy Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1750 sq ft", price: "₹ 1.35 Cr", image: "/uploads/projects/savvy-skyz-gota-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/savvy-skyz-gota-ahmedabad_1.jpg",
+          "/uploads/projects/savvy-skyz-gota-ahmedabad_2.jpg",
+          "/uploads/projects/savvy-skyz-gota-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 120,
+    name: "Sangath IPL Smart Life",
+    developer: "Sangath Infrastructure",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 8200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 82.0 Lakh",
+    locality: "Motera",
+    city: "Ahmedabad",
+    area: "1300 sq ft",
+    pricePerSqft: 6308,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0071/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Sangath IPL Smart Life by Sangath Infrastructure offers premium Flat/Apartment developments located in Motera, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Sangath IPL Smart Life, Near Motera Main Road, Motera, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1733,"lng":72.7066},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 82.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Sangath Infrastructure Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Sangath Infrastructure",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1300 sq ft", price: "₹ 82.0 Lakh", image: "/uploads/projects/sangath-ipl-smart-life-motera-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/sangath-ipl-smart-life-motera-ahmedabad_1.jpg",
+          "/uploads/projects/sangath-ipl-smart-life-motera-ahmedabad_2.png",
+          "/uploads/projects/sangath-ipl-smart-life-motera-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 121,
+    name: "Sangath Terraces",
+    developer: "Sangath Infrastructure",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 11500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.15 Cr",
+    locality: "Motera",
+    city: "Ahmedabad",
+    area: "1680 sq ft",
+    pricePerSqft: 6845,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0072/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Sangath Terraces by Sangath Infrastructure offers premium Flat/Apartment developments located in Motera, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Sangath Terraces, Near Motera Main Road, Motera, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1753,"lng":72.7086},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 1.15 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Sangath Infrastructure Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Sangath Infrastructure",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1680 sq ft", price: "₹ 1.15 Cr", image: "/uploads/projects/sangath-terraces-motera-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/sangath-terraces-motera-ahmedabad_1.jpg",
+          "/uploads/projects/sangath-terraces-motera-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 122,
+    name: "Sangath Silver",
+    developer: "Sangath Infrastructure",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 6500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 65.0 Lakh",
+    locality: "Chandkheda",
+    city: "Ahmedabad",
+    area: "1100 sq ft",
+    pricePerSqft: 5909,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0073/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Sangath Silver by Sangath Infrastructure offers premium Flat/Apartment developments located in Chandkheda, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Sangath Silver, Near Chandkheda Main Road, Chandkheda, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1773,"lng":72.7106},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 65.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Sangath Infrastructure Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Sangath Infrastructure",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1100 sq ft", price: "₹ 65.0 Lakh", image: "/uploads/projects/sangath-silver-chandkheda-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/sangath-silver-chandkheda-ahmedabad_1.jpg",
+          "/uploads/projects/sangath-silver-chandkheda-ahmedabad_2.jpg",
+          "/uploads/projects/sangath-silver-chandkheda-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 123,
+    name: "Sangath Palm",
+    developer: "Sangath Infrastructure",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 92.0 Lakh",
+    locality: "Motera",
+    city: "Ahmedabad",
+    area: "1450 sq ft",
+    pricePerSqft: 6345,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0074/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Sangath Palm by Sangath Infrastructure offers premium Flat/Apartment developments located in Motera, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Sangath Palm, Near Motera Main Road, Motera, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1793,"lng":72.7126},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 92.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Sangath Infrastructure Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Sangath Infrastructure",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1450 sq ft", price: "₹ 92.0 Lakh", image: "/uploads/projects/sangath-palm-motera-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/sangath-palm-motera-ahmedabad_1.jpg",
+          "/uploads/projects/sangath-palm-motera-ahmedabad_2.jpg",
+          "/uploads/projects/sangath-palm-motera-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 124,
+    name: "Sangath Gateway",
+    developer: "Sangath Infrastructure",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 14500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.45 Cr",
+    locality: "Chandkheda",
+    city: "Ahmedabad",
+    area: "1300 sq ft",
+    pricePerSqft: 11154,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0075/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Sangath Gateway by Sangath Infrastructure offers premium Office Space developments located in Chandkheda, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Sangath Gateway, Near Chandkheda Main Road, Chandkheda, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1813,"lng":72.7146},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 1.45 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Sangath Infrastructure Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Sangath Infrastructure",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1300 sq ft", price: "₹ 1.45 Cr", image: "/uploads/projects/sangath-gateway-chandkheda-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/sangath-gateway-chandkheda-ahmedabad_1.jpg",
+          "/uploads/projects/sangath-gateway-chandkheda-ahmedabad_2.jpg",
+          "/uploads/projects/sangath-gateway-chandkheda-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 125,
+    name: "Dev Aashish Divine",
+    developer: "Dev Aashish Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 7800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 78.0 Lakh",
+    locality: "Bopal",
+    city: "Ahmedabad",
+    area: "1350 sq ft",
+    pricePerSqft: 5778,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0076/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Dev Aashish Divine by Dev Aashish Group offers premium Flat/Apartment developments located in Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Dev Aashish Divine, Near Bopal Main Road, Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1833,"lng":72.7166},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 78.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Dev Aashish Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Dev Aashish Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1350 sq ft", price: "₹ 78.0 Lakh", image: "/uploads/projects/dev-aashish-divine-bopal-ahmedabad_1.png" }
+    ],
+    images: [
+          "/uploads/projects/dev-aashish-divine-bopal-ahmedabad_1.png",
+          "/uploads/projects/dev-aashish-divine-bopal-ahmedabad_2.webp",
+          "/uploads/projects/dev-aashish-divine-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 126,
+    name: "Dev Aashish Pride",
+    developer: "Dev Aashish Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8400000,
+    priceUnit: "Lakh",
+    priceString: "₹ 84.0 Lakh",
+    locality: "South Bopal",
+    city: "Ahmedabad",
+    area: "1420 sq ft",
+    pricePerSqft: 5915,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0077/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Dev Aashish Pride by Dev Aashish Group offers premium Flat/Apartment developments located in South Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Dev Aashish Pride, Near South Bopal Main Road, South Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1853,"lng":72.7186},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 84.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Dev Aashish Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Dev Aashish Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1420 sq ft", price: "₹ 84.0 Lakh", image: "/uploads/projects/dev-aashish-pride-south-bopal-ahmedabad_1.webp" }
+    ],
+    images: [
+          "/uploads/projects/dev-aashish-pride-south-bopal-ahmedabad_1.webp",
+          "/uploads/projects/dev-aashish-pride-south-bopal-ahmedabad_2.jpg",
+          "/uploads/projects/dev-aashish-pride-south-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 127,
+    name: "Dev Aashish Sky",
+    developer: "Dev Aashish Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 95.0 Lakh",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1550 sq ft",
+    pricePerSqft: 6129,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0078/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Dev Aashish Sky by Dev Aashish Group offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Dev Aashish Sky, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1873,"lng":72.7206},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 95.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Dev Aashish Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Dev Aashish Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1550 sq ft", price: "₹ 95.0 Lakh", image: "/uploads/projects/dev-aashish-sky-shela-ahmedabad_1.webp" }
+    ],
+    images: [
+          "/uploads/projects/dev-aashish-sky-shela-ahmedabad_1.webp",
+          "/uploads/projects/dev-aashish-sky-shela-ahmedabad_2.jpg",
+          "/uploads/projects/dev-aashish-sky-shela-ahmedabad_3.webp"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 128,
+    name: "Dev Aashish Meadows",
+    developer: "Dev Aashish Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 88.0 Lakh",
+    locality: "Bopal",
+    city: "Ahmedabad",
+    area: "1480 sq ft",
+    pricePerSqft: 5946,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0079/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Dev Aashish Meadows by Dev Aashish Group offers premium Flat/Apartment developments located in Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Dev Aashish Meadows, Near Bopal Main Road, Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1893,"lng":72.7226},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 88.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Dev Aashish Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Dev Aashish Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1480 sq ft", price: "₹ 88.0 Lakh", image: "/uploads/projects/dev-aashish-meadows-bopal-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/dev-aashish-meadows-bopal-ahmedabad_1.jpg",
+          "/uploads/projects/dev-aashish-meadows-bopal-ahmedabad_2.webp",
+          "/uploads/projects/dev-aashish-meadows-bopal-ahmedabad_3.webp"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 129,
+    name: "Pacifica Reflections",
+    developer: "Pacifica Companies",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 14000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.40 Cr",
+    locality: "SG Highway",
+    city: "Ahmedabad",
+    area: "1780 sq ft",
+    pricePerSqft: 7865,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0080/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Pacifica Reflections by Pacifica Companies offers premium Flat/Apartment developments located in SG Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Pacifica Reflections, Near SG Highway Main Road, SG Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1913,"lng":72.7246},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 1.40 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Pacifica Companies Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Pacifica Companies",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1780 sq ft", price: "₹ 1.40 Cr", image: "/uploads/projects/pacifica-reflections-sg-highway-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/pacifica-reflections-sg-highway-ahmedabad_1.jpg",
+          "/uploads/projects/pacifica-reflections-sg-highway-ahmedabad_2.jpg",
+          "/uploads/projects/pacifica-reflections-sg-highway-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 130,
+    name: "Pacifica North Enclave",
+    developer: "Pacifica Companies",
+    type: "Residential",
+    subType: "Township",
+    bhk: 2,
+    price: 8500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 85.0 Lakh",
+    locality: "Vaishnodevi Circle",
+    city: "Ahmedabad",
+    area: "1320 sq ft",
+    pricePerSqft: 6439,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0081/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Pacifica North Enclave by Pacifica Companies offers premium Township developments located in Vaishnodevi Circle, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Pacifica North Enclave, Near Vaishnodevi Circle Main Road, Vaishnodevi Circle, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1933,"lng":72.7266},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 85.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Pacifica Companies Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Pacifica Companies",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1320 sq ft", price: "₹ 85.0 Lakh", image: "/uploads/projects/pacifica-north-enclave-vaishnodevi-circle-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/pacifica-north-enclave-vaishnodevi-circle-ahmedabad_1.jpg",
+          "/uploads/projects/pacifica-north-enclave-vaishnodevi-circle-ahmedabad_2.jpg",
+          "/uploads/projects/pacifica-north-enclave-vaishnodevi-circle-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 131,
+    name: "Pacifica Green Acres",
+    developer: "Pacifica Companies",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 6200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 62.0 Lakh",
+    locality: "Sanand Highway",
+    city: "Ahmedabad",
+    area: "1100 sq ft",
+    pricePerSqft: 5636,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0082/2016",
+    ageOfConstruction: "0 to 2 years",
+    description: "Pacifica Green Acres by Pacifica Companies offers premium Flat/Apartment developments located in Sanand Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Pacifica Green Acres, Near Sanand Highway Main Road, Sanand Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1953,"lng":72.7286},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 62.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Pacifica Companies Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Pacifica Companies",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1100 sq ft", price: "₹ 62.0 Lakh", image: "/uploads/projects/pacifica-green-acres-sanand-highway-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/pacifica-green-acres-sanand-highway-ahmedabad_1.jpg",
+          "/uploads/projects/pacifica-green-acres-sanand-highway-ahmedabad_2.jpg",
+          "/uploads/projects/pacifica-green-acres-sanand-highway-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 132,
+    name: "Pacifica Amara",
+    developer: "Pacifica Companies",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 7800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 78.0 Lakh",
+    locality: "Vaishnodevi Circle",
+    city: "Ahmedabad",
+    area: "1350 sq ft",
+    pricePerSqft: 5778,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0083/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Pacifica Amara by Pacifica Companies offers premium Flat/Apartment developments located in Vaishnodevi Circle, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Pacifica Amara, Near Vaishnodevi Circle Main Road, Vaishnodevi Circle, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1973,"lng":72.7306},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 78.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Pacifica Companies Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Pacifica Companies",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1350 sq ft", price: "₹ 78.0 Lakh", image: "/uploads/projects/pacifica-amara-vaishnodevi-circle-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/pacifica-amara-vaishnodevi-circle-ahmedabad_1.jpg",
+          "/uploads/projects/pacifica-amara-vaishnodevi-circle-ahmedabad_2.jpg",
+          "/uploads/projects/pacifica-amara-vaishnodevi-circle-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 133,
+    name: "Satyam Skyline",
+    developer: "Satyam Developers",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 21000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.10 Cr",
+    locality: "SG Highway",
+    city: "Ahmedabad",
+    area: "2150 sq ft",
+    pricePerSqft: 9767,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0084/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Satyam Skyline by Satyam Developers offers premium Flat/Apartment developments located in SG Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Satyam Skyline, Near SG Highway Main Road, SG Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.1993,"lng":72.7326},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 2.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Satyam Developers Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Satyam Developers",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "2150 sq ft", price: "₹ 2.10 Cr", image: "/uploads/projects/satyam-skyline-sg-highway-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/satyam-skyline-sg-highway-ahmedabad_2.jpg",
+          "/uploads/projects/satyam-skyline-sg-highway-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 134,
+    name: "Satyam Sentossa",
+    developer: "Satyam Developers",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8900000,
+    priceUnit: "Lakh",
+    priceString: "₹ 89.0 Lakh",
+    locality: "Gota",
+    city: "Ahmedabad",
+    area: "1460 sq ft",
+    pricePerSqft: 6096,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0085/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Satyam Sentossa by Satyam Developers offers premium Flat/Apartment developments located in Gota, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Satyam Sentossa, Near Gota Main Road, Gota, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2013,"lng":72.7346},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 89.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Satyam Developers Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Satyam Developers",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1460 sq ft", price: "₹ 89.0 Lakh", image: "/uploads/projects/satyam-sentossa-gota-ahmedabad_1.png" }
+    ],
+    images: [
+          "/uploads/projects/satyam-sentossa-gota-ahmedabad_1.png",
+          "/uploads/projects/satyam-sentossa-gota-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 135,
+    name: "Satyam Heights",
+    developer: "Satyam Developers",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 16000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.60 Cr",
+    locality: "Science City",
+    city: "Ahmedabad",
+    area: "1850 sq ft",
+    pricePerSqft: 8649,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0086/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Satyam Heights by Satyam Developers offers premium Flat/Apartment developments located in Science City, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Satyam Heights, Near Science City Main Road, Science City, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2033,"lng":72.7366},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 1.60 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Satyam Developers Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Satyam Developers",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1850 sq ft", price: "₹ 1.60 Cr", image: "/uploads/projects/satyam-heights-science-city-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/satyam-heights-science-city-ahmedabad_1.jpg",
+          "/uploads/projects/satyam-heights-science-city-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 136,
+    name: "Satyam Residency",
+    developer: "Satyam Developers",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 13000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.30 Cr",
+    locality: "Science City",
+    city: "Ahmedabad",
+    area: "1620 sq ft",
+    pricePerSqft: 8025,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0087/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Satyam Residency by Satyam Developers offers premium Flat/Apartment developments located in Science City, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Satyam Residency, Near Science City Main Road, Science City, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2053,"lng":72.7386},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 1.30 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Satyam Developers Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Satyam Developers",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1620 sq ft", price: "₹ 1.30 Cr", image: "/uploads/projects/satyam-residency-science-city-ahmedabad_1.png" }
+    ],
+    images: [
+          "/uploads/projects/satyam-residency-science-city-ahmedabad_1.png",
+          "/uploads/projects/satyam-residency-science-city-ahmedabad_2.jpg",
+          "/uploads/projects/satyam-residency-science-city-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 137,
+    name: "Shilp Revanta",
+    developer: "Shilp Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 14500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.45 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1720 sq ft",
+    pricePerSqft: 8430,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0088/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shilp Revanta by Shilp Group offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shilp Revanta, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2073,"lng":72.7406},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 1.45 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shilp Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shilp Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1720 sq ft", price: "₹ 1.45 Cr", image: "/uploads/projects/shilp-revanta-shela-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shilp-revanta-shela-ahmedabad_1.jpg",
+          "/uploads/projects/shilp-revanta-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 138,
+    name: "Shilp Zaveri",
+    developer: "Shilp Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 35000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.50 Cr",
+    locality: "Sindhu Bhavan Road",
+    city: "Ahmedabad",
+    area: "2400 sq ft",
+    pricePerSqft: 14583,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0089/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shilp Zaveri by Shilp Group offers premium Office Space developments located in Sindhu Bhavan Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shilp Zaveri, Near Sindhu Bhavan Road Main Road, Sindhu Bhavan Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2093,"lng":72.7426},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 3.50 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shilp Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shilp Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2400 sq ft", price: "₹ 3.50 Cr", image: "/uploads/projects/shilp-zaveri-sindhu-bhavan-road-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shilp-zaveri-sindhu-bhavan-road-ahmedabad_1.jpg",
+          "/uploads/projects/shilp-zaveri-sindhu-bhavan-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 139,
+    name: "Shilp Paradise",
+    developer: "Shilp Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 98.0 Lakh",
+    locality: "Bopal",
+    city: "Ahmedabad",
+    area: "1520 sq ft",
+    pricePerSqft: 6447,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0090/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shilp Paradise by Shilp Group offers premium Flat/Apartment developments located in Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shilp Paradise, Near Bopal Main Road, Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2113,"lng":72.7446},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 98.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shilp Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shilp Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1520 sq ft", price: "₹ 98.0 Lakh", image: "/uploads/projects/shilp-paradise-bopal-ahmedabad_3.png" }
+    ],
+    images: [
+          "/uploads/projects/shilp-paradise-bopal-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 140,
+    name: "Shilp Epitome",
+    developer: "Shilp Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 21500000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.15 Cr",
+    locality: "Bodakdev",
+    city: "Ahmedabad",
+    area: "1600 sq ft",
+    pricePerSqft: 13438,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0091/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shilp Epitome by Shilp Group offers premium Office Space developments located in Bodakdev, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shilp Epitome, Near Bodakdev Main Road, Bodakdev, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2133,"lng":72.7466},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 2.15 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shilp Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shilp Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1600 sq ft", price: "₹ 2.15 Cr", image: "/uploads/projects/shilp-epitome-bodakdev-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shilp-epitome-bodakdev-ahmedabad_1.jpg",
+          "/uploads/projects/shilp-epitome-bodakdev-ahmedabad_2.jpg",
+          "/uploads/projects/shilp-epitome-bodakdev-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 141,
+    name: "Kavisha Aer",
+    developer: "Kavisha Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 7200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 72.0 Lakh",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1150 sq ft",
+    pricePerSqft: 6261,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0092/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Kavisha Aer by Kavisha Group offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Kavisha Aer, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2153,"lng":72.7486},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 72.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Kavisha Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Kavisha Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1150 sq ft", price: "₹ 72.0 Lakh", image: "/uploads/projects/kavisha-aer-shela-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/kavisha-aer-shela-ahmedabad_1.jpg",
+          "/uploads/projects/kavisha-aer-shela-ahmedabad_2.webp",
+          "/uploads/projects/kavisha-aer-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 142,
+    name: "Kavisha Pebble Bay",
+    developer: "Kavisha Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 95.0 Lakh",
+    locality: "South Bopal",
+    city: "Ahmedabad",
+    area: "1550 sq ft",
+    pricePerSqft: 6129,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0093/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Kavisha Pebble Bay by Kavisha Group offers premium Flat/Apartment developments located in South Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Kavisha Pebble Bay, Near South Bopal Main Road, South Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2173,"lng":72.7506},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 95.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Kavisha Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Kavisha Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1550 sq ft", price: "₹ 95.0 Lakh", image: "/uploads/projects/kavisha-pebble-bay-south-bopal-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/kavisha-pebble-bay-south-bopal-ahmedabad_1.jpg",
+          "/uploads/projects/kavisha-pebble-bay-south-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 143,
+    name: "Kavisha The Canvas",
+    developer: "Kavisha Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 12500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.25 Cr",
+    locality: "Shela",
+    city: "Ahmedabad",
+    area: "1680 sq ft",
+    pricePerSqft: 7440,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/SANAND/AUDA/RAA0094/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Kavisha The Canvas by Kavisha Group offers premium Flat/Apartment developments located in Shela, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Kavisha The Canvas, Near Shela Main Road, Shela, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2193,"lng":72.7526},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 1.25 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Kavisha Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Kavisha Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1680 sq ft", price: "₹ 1.25 Cr", image: "/uploads/projects/kavisha-the-canvas-shela-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/kavisha-the-canvas-shela-ahmedabad_2.jpg",
+          "/uploads/projects/kavisha-the-canvas-shela-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 144,
+    name: "Kavisha Urbania",
+    developer: "Kavisha Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8400000,
+    priceUnit: "Lakh",
+    priceString: "₹ 84.0 Lakh",
+    locality: "South Bopal",
+    city: "Ahmedabad",
+    area: "1400 sq ft",
+    pricePerSqft: 6000,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0095/2022",
+    ageOfConstruction: "0 to 2 years",
+    description: "Kavisha Urbania by Kavisha Group offers premium Flat/Apartment developments located in South Bopal, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Kavisha Urbania, Near South Bopal Main Road, South Bopal, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2213,"lng":72.7546},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 84.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Kavisha Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Kavisha Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1400 sq ft", price: "₹ 84.0 Lakh", image: "/uploads/projects/kavisha-urbania-south-bopal-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/kavisha-urbania-south-bopal-ahmedabad_2.jpg",
+          "/uploads/projects/kavisha-urbania-south-bopal-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 145,
+    name: "Deep Indraprasth",
+    developer: "Deep Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 18500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.85 Cr",
+    locality: "Drive-In Road",
+    city: "Ahmedabad",
+    area: "1980 sq ft",
+    pricePerSqft: 9343,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0096/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Deep Indraprasth by Deep Group offers premium Flat/Apartment developments located in Drive-In Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Deep Indraprasth, Near Drive-In Road Main Road, Drive-In Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2233,"lng":72.7566},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 1.85 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Deep Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Deep Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1980 sq ft", price: "₹ 1.85 Cr", image: "/uploads/projects/deep-indraprasth-drive-in-road-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/deep-indraprasth-drive-in-road-ahmedabad_2.jpg",
+          "/uploads/projects/deep-indraprasth-drive-in-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 146,
+    name: "Deep Shikhar",
+    developer: "Deep Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 4,
+    price: 22000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.20 Cr",
+    locality: "Bodakdev",
+    city: "Ahmedabad",
+    area: "2350 sq ft",
+    pricePerSqft: 9362,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0097/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Deep Shikhar by Deep Group offers premium Flat/Apartment developments located in Bodakdev, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Deep Shikhar, Near Bodakdev Main Road, Bodakdev, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2253,"lng":72.7586},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 2.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Deep Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Deep Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "4 BHK Unit", area: "2350 sq ft", price: "₹ 2.20 Cr", image: "/uploads/projects/deep-shikhar-bodakdev-ahmedabad_2.png" }
+    ],
+    images: [
+          "/uploads/projects/deep-shikhar-bodakdev-ahmedabad_2.png",
+          "/uploads/projects/deep-shikhar-bodakdev-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 147,
+    name: "Deep Prime",
+    developer: "Deep Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 17000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.70 Cr",
+    locality: "Science City",
+    city: "Ahmedabad",
+    area: "1450 sq ft",
+    pricePerSqft: 11724,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0098/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Deep Prime by Deep Group offers premium Office Space developments located in Science City, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Deep Prime, Near Science City Main Road, Science City, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2273,"lng":72.7606},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 1.70 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Deep Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Deep Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1450 sq ft", price: "₹ 1.70 Cr", image: "/uploads/projects/deep-prime-science-city-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/deep-prime-science-city-ahmedabad_1.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 148,
+    name: "Siddhraj Z Square",
+    developer: "Siddhraj Developers",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 13000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.30 Cr",
+    locality: "Kudasan",
+    city: "Gandhinagar",
+    area: "1250 sq ft",
+    pricePerSqft: 10400,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0099/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Siddhraj Z Square by Siddhraj Developers offers premium Office Space developments located in Kudasan, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Siddhraj Z Square, Near Kudasan Main Road, Kudasan, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2293,"lng":72.7626},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 1.30 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Siddhraj Developers Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Siddhraj Developers",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1250 sq ft", price: "₹ 1.30 Cr", image: "/uploads/projects/siddhraj-z-square-kudasan-gandhinagar_3.png" }
+    ],
+    images: [
+          "/uploads/projects/siddhraj-z-square-kudasan-gandhinagar_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 149,
+    name: "Siddhraj Heights",
+    developer: "Siddhraj Developers",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 8500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 85.0 Lakh",
+    locality: "Raysan",
+    city: "Gandhinagar",
+    area: "1500 sq ft",
+    pricePerSqft: 5667,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0100/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Siddhraj Heights by Siddhraj Developers offers premium Flat/Apartment developments located in Raysan, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Siddhraj Heights, Near Raysan Main Road, Raysan, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2313,"lng":72.7646},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 85.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Siddhraj Developers Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Siddhraj Developers",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1500 sq ft", price: "₹ 85.0 Lakh", image: "/uploads/projects/siddhraj-heights-raysan-gandhinagar_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/siddhraj-heights-raysan-gandhinagar_1.jpg",
+          "/uploads/projects/siddhraj-heights-raysan-gandhinagar_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 150,
+    name: "Siddhraj Residency",
+    developer: "Siddhraj Developers",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 7200000,
+    priceUnit: "Lakh",
+    priceString: "₹ 72.0 Lakh",
+    locality: "Kudasan",
+    city: "Gandhinagar",
+    area: "1220 sq ft",
+    pricePerSqft: 5902,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0101/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Siddhraj Residency by Siddhraj Developers offers premium Flat/Apartment developments located in Kudasan, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Siddhraj Residency, Near Kudasan Main Road, Kudasan, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2333,"lng":72.7666},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 72.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Siddhraj Developers Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Siddhraj Developers",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1220 sq ft", price: "₹ 72.0 Lakh", image: "/uploads/projects/siddhraj-residency-kudasan-gandhinagar_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/siddhraj-residency-kudasan-gandhinagar_1.jpg",
+          "/uploads/projects/siddhraj-residency-kudasan-gandhinagar_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 151,
+    name: "Hari Aangan",
+    developer: "Hari Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 9500000,
+    priceUnit: "Lakh",
+    priceString: "₹ 95.0 Lakh",
+    locality: "Naranpura",
+    city: "Ahmedabad",
+    area: "1480 sq ft",
+    pricePerSqft: 6419,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0102/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Hari Aangan by Hari Group offers premium Flat/Apartment developments located in Naranpura, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Hari Aangan, Near Naranpura Main Road, Naranpura, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2353,"lng":72.7686},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 95.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Hari Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Hari Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1480 sq ft", price: "₹ 95.0 Lakh", image: "/uploads/projects/hari-aangan-naranpura-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/hari-aangan-naranpura-ahmedabad_1.jpg",
+          "/uploads/projects/hari-aangan-naranpura-ahmedabad_2.png",
+          "/uploads/projects/hari-aangan-naranpura-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 152,
+    name: "Hari Om Residency",
+    developer: "Hari Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 6800000,
+    priceUnit: "Lakh",
+    priceString: "₹ 68.0 Lakh",
+    locality: "Ghatlodia",
+    city: "Ahmedabad",
+    area: "1150 sq ft",
+    pricePerSqft: 5913,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0103/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Hari Om Residency by Hari Group offers premium Flat/Apartment developments located in Ghatlodia, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Hari Om Residency, Near Ghatlodia Main Road, Ghatlodia, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2373,"lng":72.7706},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 68.0 Lakh",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Hari Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Hari Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1150 sq ft", price: "₹ 68.0 Lakh", image: "/uploads/projects/hari-om-residency-ghatlodia-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/hari-om-residency-ghatlodia-ahmedabad_1.jpg",
+          "/uploads/projects/hari-om-residency-ghatlodia-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 153,
+    name: "Hari Heights",
+    developer: "Hari Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 11500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.15 Cr",
+    locality: "Naranpura",
+    city: "Ahmedabad",
+    area: "1650 sq ft",
+    pricePerSqft: 6970,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0104/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Hari Heights by Hari Group offers premium Flat/Apartment developments located in Naranpura, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Hari Heights, Near Naranpura Main Road, Naranpura, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2393,"lng":72.7726},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 1.15 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Hari Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Hari Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1650 sq ft", price: "₹ 1.15 Cr", image: "/uploads/projects/hari-heights-naranpura-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/hari-heights-naranpura-ahmedabad_1.jpg",
+          "/uploads/projects/hari-heights-naranpura-ahmedabad_2.png",
+          "/uploads/projects/hari-heights-naranpura-ahmedabad_3.png"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 154,
+    name: "Brigade Gateway GIFT City",
+    developer: "Brigade Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 3,
+    price: 26000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.60 Cr",
+    locality: "GIFT City",
+    city: "Gandhinagar",
+    area: "1950 sq ft",
+    pricePerSqft: 13333,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0105/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Brigade Gateway GIFT City by Brigade Group offers premium Flat/Apartment developments located in GIFT City, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Brigade Gateway GIFT City, Near GIFT City Main Road, GIFT City, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2413,"lng":72.7746},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 2.60 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Brigade Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Brigade Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "3 BHK Unit", area: "1950 sq ft", price: "₹ 2.60 Cr", image: "/uploads/projects/brigade-gateway-gift-city-gift-city-gandhinagar_1.webp" }
+    ],
+    images: [
+          "/uploads/projects/brigade-gateway-gift-city-gift-city-gandhinagar_1.webp",
+          "/uploads/projects/brigade-gateway-gift-city-gift-city-gandhinagar_2.jpg",
+          "/uploads/projects/brigade-gateway-gift-city-gift-city-gandhinagar_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 155,
+    name: "Hiranandani Signature",
+    developer: "Hiranandani Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 34000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.40 Cr",
+    locality: "GIFT City",
+    city: "Gandhinagar",
+    area: "2300 sq ft",
+    pricePerSqft: 14783,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0106/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Hiranandani Signature by Hiranandani Group offers premium Office Space developments located in GIFT City, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Hiranandani Signature, Near GIFT City Main Road, GIFT City, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2433,"lng":72.7766},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 3.40 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Hiranandani Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Hiranandani Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2300 sq ft", price: "₹ 3.40 Cr", image: "/uploads/projects/hiranandani-signature-gift-city-gandhinagar_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/hiranandani-signature-gift-city-gandhinagar_1.jpg",
+          "/uploads/projects/hiranandani-signature-gift-city-gandhinagar_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 156,
+    name: "Nila Spaces Project",
+    developer: "Nila Spaces",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 11500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.15 Cr",
+    locality: "GIFT City",
+    city: "Gandhinagar",
+    area: "1350 sq ft",
+    pricePerSqft: 8519,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0107/2022",
+    ageOfConstruction: "0 to 2 years",
+    description: "Nila Spaces Project by Nila Spaces offers premium Flat/Apartment developments located in GIFT City, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Nila Spaces Project, Near GIFT City Main Road, GIFT City, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2453,"lng":72.7786},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 1.15 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Nila Spaces Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Nila Spaces",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1350 sq ft", price: "₹ 1.15 Cr", image: "/uploads/projects/nila-spaces-project-gift-city-gandhinagar_3.jpg" }
+    ],
+    images: [
+          "/uploads/projects/nila-spaces-project-gift-city-gandhinagar_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 157,
+    name: "Shilp GIFT City",
+    developer: "Shilp Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 28000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.80 Cr",
+    locality: "GIFT City",
+    city: "Gandhinagar",
+    area: "2100 sq ft",
+    pricePerSqft: 13333,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0108/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shilp GIFT City by Shilp Group offers premium Office Space developments located in GIFT City, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shilp GIFT City, Near GIFT City Main Road, GIFT City, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2473,"lng":72.7806},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 2.80 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shilp Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shilp Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2100 sq ft", price: "₹ 2.80 Cr", image: "/uploads/projects/shilp-gift-city-gift-city-gandhinagar_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shilp-gift-city-gift-city-gandhinagar_1.jpg",
+          "/uploads/projects/shilp-gift-city-gift-city-gandhinagar_2.webp"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 158,
+    name: "Sangath GIFT Towers",
+    developer: "Sangath Infrastructure",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 19500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.95 Cr",
+    locality: "GIFT City",
+    city: "Gandhinagar",
+    area: "1650 sq ft",
+    pricePerSqft: 11818,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0109/2022",
+    ageOfConstruction: "0 to 2 years",
+    description: "Sangath GIFT Towers by Sangath Infrastructure offers premium Office Space developments located in GIFT City, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Sangath GIFT Towers, Near GIFT City Main Road, GIFT City, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2493,"lng":72.7826},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 1.95 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Sangath Infrastructure Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Sangath Infrastructure",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1650 sq ft", price: "₹ 1.95 Cr", image: "/uploads/projects/sangath-gift-towers-gift-city-gandhinagar_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/sangath-gift-towers-gift-city-gandhinagar_2.jpg",
+          "/uploads/projects/sangath-gift-towers-gift-city-gandhinagar_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 159,
+    name: "Savvy GIFT Residences",
+    developer: "Savvy Group",
+    type: "Residential",
+    subType: "Flat/Apartment",
+    bhk: 2,
+    price: 14500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.45 Cr",
+    locality: "GIFT City",
+    city: "Gandhinagar",
+    area: "1400 sq ft",
+    pricePerSqft: 10357,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/GANDHINAGAR/GANDHINAGAR/GUJRERA/RAA0110/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Savvy GIFT Residences by Savvy Group offers premium Flat/Apartment developments located in GIFT City, Gandhinagar. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Savvy GIFT Residences, Near GIFT City Main Road, GIFT City, Gandhinagar, Gujarat",
+    mapCoords: {"lat":23.2513,"lng":72.7846},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 1.45 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Savvy Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Savvy Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "2 BHK Unit", area: "1400 sq ft", price: "₹ 1.45 Cr", image: "/uploads/projects/savvy-gift-residences-gift-city-gandhinagar_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/savvy-gift-residences-gift-city-gandhinagar_1.jpg",
+          "/uploads/projects/savvy-gift-residences-gift-city-gandhinagar_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Family",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 160,
+    name: "Westgate Business Bay",
+    developer: "True Value Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 32000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.20 Cr",
+    locality: "SG Highway",
+    city: "Ahmedabad",
+    area: "2400 sq ft",
+    pricePerSqft: 13333,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0111/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Westgate Business Bay by True Value Group offers premium Office Space developments located in SG Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Westgate Business Bay, Near SG Highway Main Road, SG Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2533,"lng":72.7866},
+    vastuScore: 88,
+    marketIntelligence: {
+          "zestimate": "₹ 3.20 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "True Value Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "True Value Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2400 sq ft", price: "₹ 3.20 Cr", image: "/uploads/projects/westgate-business-bay-sg-highway-ahmedabad_3.jpg" }
+    ],
+    images: [
+          "/uploads/projects/westgate-business-bay-sg-highway-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 161,
+    name: "Mondeal Heights",
+    developer: "HN Safal",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 45000000,
+    priceUnit: "Cr",
+    priceString: "₹ 4.50 Cr",
+    locality: "SG Highway",
+    city: "Ahmedabad",
+    area: "3100 sq ft",
+    pricePerSqft: 14516,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0112/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Mondeal Heights by HN Safal offers premium Office Space developments located in SG Highway, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Mondeal Heights, Near SG Highway Main Road, SG Highway, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2553,"lng":72.7886},
+    vastuScore: 89,
+    marketIntelligence: {
+          "zestimate": "₹ 4.50 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "3100 sq ft", price: "₹ 4.50 Cr", image: "/uploads/projects/mondeal-heights-sg-highway-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/mondeal-heights-sg-highway-ahmedabad_1.jpg",
+          "/uploads/projects/mondeal-heights-sg-highway-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 162,
+    name: "Shivalik Shilp",
+    developer: "Shivalik Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 29000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.90 Cr",
+    locality: "ISCON Cross Roads",
+    city: "Ahmedabad",
+    area: "2100 sq ft",
+    pricePerSqft: 13810,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0113/2017",
+    ageOfConstruction: "0 to 2 years",
+    description: "Shivalik Shilp by Shivalik Group offers premium Office Space developments located in ISCON Cross Roads, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Shivalik Shilp, Near ISCON Cross Roads Main Road, ISCON Cross Roads, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2573,"lng":72.7906},
+    vastuScore: 90,
+    marketIntelligence: {
+          "zestimate": "₹ 2.90 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Shivalik Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Shivalik Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2100 sq ft", price: "₹ 2.90 Cr", image: "/uploads/projects/shivalik-shilp-iscon-cross-roads-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/shivalik-shilp-iscon-cross-roads-ahmedabad_1.jpg",
+          "/uploads/projects/shivalik-shilp-iscon-cross-roads-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 163,
+    name: "Safal Profitaire",
+    developer: "HN Safal",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 18000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.80 Cr",
+    locality: "Corporate Road",
+    city: "Ahmedabad",
+    area: "1550 sq ft",
+    pricePerSqft: 11613,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0114/2016",
+    ageOfConstruction: "0 to 2 years",
+    description: "Safal Profitaire by HN Safal offers premium Office Space developments located in Corporate Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Safal Profitaire, Near Corporate Road Main Road, Corporate Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2593,"lng":72.7926},
+    vastuScore: 91,
+    marketIntelligence: {
+          "zestimate": "₹ 1.80 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1550 sq ft", price: "₹ 1.80 Cr", image: "/uploads/projects/safal-profitaire-corporate-road-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/safal-profitaire-corporate-road-ahmedabad_1.jpg",
+          "/uploads/projects/safal-profitaire-corporate-road-ahmedabad_2.jpg",
+          "/uploads/projects/safal-profitaire-corporate-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 164,
+    name: "Titanium Business Park",
+    developer: "Goyal & Co.",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 16500000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.65 Cr",
+    locality: "Makarba",
+    city: "Ahmedabad",
+    area: "1480 sq ft",
+    pricePerSqft: 11149,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0115/2018",
+    ageOfConstruction: "0 to 2 years",
+    description: "Titanium Business Park by Goyal & Co. offers premium Office Space developments located in Makarba, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Titanium Business Park, Near Makarba Main Road, Makarba, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2613,"lng":72.7946},
+    vastuScore: 92,
+    marketIntelligence: {
+          "zestimate": "₹ 1.65 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Goyal & Co. Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Goyal & Co.",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1480 sq ft", price: "₹ 1.65 Cr", image: "/uploads/projects/titanium-business-park-makarba-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/titanium-business-park-makarba-ahmedabad_1.jpg",
+          "/uploads/projects/titanium-business-park-makarba-ahmedabad_2.jpg",
+          "/uploads/projects/titanium-business-park-makarba-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 165,
+    name: "Times Square Arcade",
+    developer: "Times Group",
+    type: "Commercial",
+    subType: "Retail",
+    bhk: 0,
+    price: 21000000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.10 Cr",
+    locality: "Thaltej",
+    city: "Ahmedabad",
+    area: "1700 sq ft",
+    pricePerSqft: 12353,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0116/2019",
+    ageOfConstruction: "0 to 2 years",
+    description: "Times Square Arcade by Times Group offers premium Retail developments located in Thaltej, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Times Square Arcade, Near Thaltej Main Road, Thaltej, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2633,"lng":72.7966},
+    vastuScore: 93,
+    marketIntelligence: {
+          "zestimate": "₹ 2.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Times Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Times Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1700 sq ft", price: "₹ 2.10 Cr", image: "/uploads/projects/times-square-arcade-thaltej-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/times-square-arcade-thaltej-ahmedabad_1.jpg",
+          "/uploads/projects/times-square-arcade-thaltej-ahmedabad_2.jpg",
+          "/uploads/projects/times-square-arcade-thaltej-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 166,
+    name: "Zion Z One",
+    developer: "Zion Builders",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 38000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.80 Cr",
+    locality: "Sindhu Bhavan Road",
+    city: "Ahmedabad",
+    area: "2600 sq ft",
+    pricePerSqft: 14615,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0117/2021",
+    ageOfConstruction: "0 to 2 years",
+    description: "Zion Z One by Zion Builders offers premium Office Space developments located in Sindhu Bhavan Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Zion Z One, Near Sindhu Bhavan Road Main Road, Sindhu Bhavan Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2653,"lng":72.7986},
+    vastuScore: 94,
+    marketIntelligence: {
+          "zestimate": "₹ 3.80 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Zion Builders Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Zion Builders",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2600 sq ft", price: "₹ 3.80 Cr", image: "/uploads/projects/zion-z-one-sindhu-bhavan-road-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/zion-z-one-sindhu-bhavan-road-ahmedabad_1.jpg",
+          "/uploads/projects/zion-z-one-sindhu-bhavan-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 167,
+    name: "Iscon Emporio",
+    developer: "JP Iscon Group",
+    type: "Commercial",
+    subType: "Retail",
+    bhk: 0,
+    price: 27500000,
+    priceUnit: "Cr",
+    priceString: "₹ 2.75 Cr",
+    locality: "CG Road",
+    city: "Ahmedabad",
+    area: "1900 sq ft",
+    pricePerSqft: 14474,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0118/2015",
+    ageOfConstruction: "0 to 2 years",
+    description: "Iscon Emporio by JP Iscon Group offers premium Retail developments located in CG Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Iscon Emporio, Near CG Road Main Road, CG Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2673,"lng":72.8006},
+    vastuScore: 95,
+    marketIntelligence: {
+          "zestimate": "₹ 2.75 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "JP Iscon Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "JP Iscon Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1900 sq ft", price: "₹ 2.75 Cr", image: "/uploads/projects/iscon-emporio-cg-road-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/iscon-emporio-cg-road-ahmedabad_1.jpg",
+          "/uploads/projects/iscon-emporio-cg-road-ahmedabad_2.jpg",
+          "/uploads/projects/iscon-emporio-cg-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: true,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 168,
+    name: "Commerce House V",
+    developer: "HN Safal",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 19000000,
+    priceUnit: "Cr",
+    priceString: "₹ 1.90 Cr",
+    locality: "Prahlad Nagar",
+    city: "Ahmedabad",
+    area: "1600 sq ft",
+    pricePerSqft: 11875,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0119/2016",
+    ageOfConstruction: "0 to 2 years",
+    description: "Commerce House V by HN Safal offers premium Office Space developments located in Prahlad Nagar, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Commerce House V, Near Prahlad Nagar Main Road, Prahlad Nagar, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2693,"lng":72.8026},
+    vastuScore: 96,
+    marketIntelligence: {
+          "zestimate": "₹ 1.90 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "HN Safal Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "HN Safal",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "1600 sq ft", price: "₹ 1.90 Cr", image: "/uploads/projects/commerce-house-v-prahlad-nagar-ahmedabad_2.jpg" }
+    ],
+    images: [
+          "/uploads/projects/commerce-house-v-prahlad-nagar-ahmedabad_2.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: true,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
+  },
+  {
+    id: 169,
+    name: "Sun Westbank",
+    developer: "Sun Builders Group",
+    type: "Commercial",
+    subType: "Office Space",
+    bhk: 0,
+    price: 31000000,
+    priceUnit: "Cr",
+    priceString: "₹ 3.10 Cr",
+    locality: "Ashram Road",
+    city: "Ahmedabad",
+    area: "2250 sq ft",
+    pricePerSqft: 13778,
+    launchDate: "15-Jan-2021",
+    possessionDate: "Ready to Move",
+    totalUnits: 96,
+    totalBlocks: 2,
+    reraId: "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA0120/2020",
+    ageOfConstruction: "0 to 2 years",
+    description: "Sun Westbank by Sun Builders Group offers premium Office Space developments located in Ashram Road, Ahmedabad. Designed with world-class amenities, high structural standards, and superior Connectivity.",
+    address: "Sun Westbank, Near Ashram Road Main Road, Ashram Road, Ahmedabad, Gujarat",
+    mapCoords: {"lat":23.2713,"lng":72.8046},
+    vastuScore: 97,
+    marketIntelligence: {
+          "zestimate": "₹ 3.10 Cr",
+          "estimatedRentalYield": "4.8%",
+          "projectedAppreciation": "9.5% p.a.",
+          "walkScore": 88,
+          "transitScore": 91,
+          "localityGrade": "A+"
+    },
+    airbnbExperience: {
+          "isShortTermRental": false,
+          "hostName": "Sun Builders Group Sales Desk",
+          "hostRating": 4.9,
+          "responseRate": "99%"
+    },
+    amenities: 6,
+    developerInfo: {
+          "name": "Sun Builders Group",
+          "totalProjects": 35,
+          "completed": 30,
+          "ongoing": 5,
+          "tagline": "Benchmark Developer of Gujarat",
+          "logo": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=200&q=80"
+    },
+    floorPlans: [
+      { config: "Corporate Unit", area: "2250 sq ft", price: "₹ 3.10 Cr", image: "/uploads/projects/sun-westbank-ashram-road-ahmedabad_1.jpg" }
+    ],
+    images: [
+          "/uploads/projects/sun-westbank-ashram-road-ahmedabad_1.jpg",
+          "/uploads/projects/sun-westbank-ashram-road-ahmedabad_2.jpg",
+          "/uploads/projects/sun-westbank-ashram-road-ahmedabad_3.jpg"
+    ],
+    isTrending: true,
+    isHighlighted: false,
+    isNewLaunch: false,
+    postedBy: "Builder",
+    targetGroup: "Corporate",
+    furnished: "Semi-Furnished",
+    purpose: "Buy"
   }
 ];
 
@@ -1050,5 +8529,3 @@ export const getPropertyBySlugOrId = (slugOrId) => {
   const all = getAllProperties();
   return all.find((p) => String(p.slug) === String(slugOrId) || String(p.id) === String(slugOrId));
 };
-
-

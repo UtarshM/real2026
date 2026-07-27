@@ -36,14 +36,24 @@ export async function getProperties(params?: PropertyFilterParams) {
     const dbProperties = await db.property.findMany({
       where: whereClause,
       include: {
+        images: true,
+        city: true,
+        areaLocality: true,
         agent: true,
         builder: true,
       },
-      take: 50,
+      take: 150,
     });
 
     if (dbProperties && dbProperties.length > 0) {
-      return dbProperties;
+      return dbProperties.map((p) => ({
+        ...p,
+        name: p.title,
+        locality: p.areaLocality?.name || p.address,
+        city: p.city?.name || "Ahmedabad",
+        priceString: p.price >= 10000000 ? `₹ ${(p.price / 10000000).toFixed(2)} Cr` : `₹ ${(p.price / 100000).toFixed(2)} Lakh`,
+        images: p.images.map((img) => img.url),
+      }));
     }
   } catch (error) {
     console.warn("Prisma query failed or database empty, using local fallback dataset:", error);
