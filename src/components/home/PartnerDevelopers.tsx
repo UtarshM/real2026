@@ -6,39 +6,47 @@ import { Building2 } from "lucide-react";
 
 export default function PartnerDevelopers() {
   const partnerDevelopers = [
-    { name: "Shivalik Group", projects: 86 },
-    { name: "Shaligram Space", projects: 42 },
-    { name: "Shilp Group", projects: 65 },
-    { name: "Swagat Group", projects: 38 },
-    { name: "Adani Realty", projects: 95 },
-    { name: "Arvind SmartSpaces", projects: 54 },
-    { name: "Binori Infrastructure", projects: 29 },
-    { name: "Venus Infrastructure", projects: 48 },
+    { name: "Shilp Group", category: "Commercial & Residential" },
+    { name: "Samatva Group", category: "Luxury Apartments" },
+    { name: "Shaligram Group", category: "High-rise Towers" },
+    { name: "Dobariya Group", category: "Residential Projects" },
+    { name: "Venus Infrastructure", category: "Commercial Spaces" },
+    { name: "Godrej Properties", category: "Townships & Villas" },
+    { name: "Adani Realty", category: "Integrated Townships" },
+    { name: "Arvind SmartSpaces", category: "Gated Communities" },
+    { name: "Sun Builders", category: "Premium Residences" },
   ];
 
   return (
-    <section className="bg-white border-b border-slate-200 py-8 overflow-hidden font-sans">
-      <div className="max-w-7xl mx-auto px-4 text-center space-y-4">
-        <h2 className="text-xl sm:text-2xl font-black text-slate-900 font-display">
-          Our Partners
-        </h2>
-        <span className="text-[11px] uppercase tracking-widest font-extrabold text-slate-400 block">
-          Trusted by Gujarat&apos;s 100+ RERA Registered Developers
-        </span>
+    <section className="bg-slate-50 border-b border-slate-200 py-10 overflow-hidden font-sans">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         
-        <div className="flex items-center justify-center gap-4 sm:gap-6 flex-wrap pt-2">
+        <div className="text-center space-y-1">
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 font-display">
+            Our Partners
+          </h2>
+          <p className="text-xs sm:text-sm font-semibold text-slate-500">
+            Trusted by Gujarat&apos;s 100+ RERA Registered Developers
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-3 pt-2">
           {partnerDevelopers.map((dev, idx) => (
             <Link 
               key={idx}
-              href="/builders"
-              className="flex items-center space-x-2 bg-slate-50 border border-slate-200 px-4 py-2.5 rounded-2xl hover:border-[#ea580c] transition duration-300 cursor-pointer shadow-xs hover:shadow-md"
+              href={`/builders?search=${encodeURIComponent(dev.name)}`}
+              className="bg-white border border-slate-200/90 rounded-2xl p-3 text-center hover:border-[#ea580c] hover:shadow-md transition duration-300 flex flex-col items-center justify-center space-y-1.5 cursor-pointer group"
             >
-              <Building2 className="w-4 h-4 text-[#ea580c]" />
-              <span className="text-xs font-extrabold text-slate-800 font-display">{dev.name}</span>
-              <span className="bg-slate-200 text-slate-700 text-[9px] font-black px-2 py-0.5 rounded-full">{dev.projects}</span>
+              <div className="w-10 h-10 rounded-xl bg-orange-50 text-[#ea580c] flex items-center justify-center group-hover:bg-[#ea580c] group-hover:text-white transition duration-300 shadow-xs">
+                <Building2 className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-black text-slate-800 group-hover:text-[#ea580c] transition font-display leading-snug">
+                {dev.name}
+              </span>
             </Link>
           ))}
         </div>
+
       </div>
     </section>
   );
