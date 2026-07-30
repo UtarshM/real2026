@@ -1,0 +1,3147 @@
+[
+  {
+    "name": "Locality Name",
+    "slug": "URL Slug",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Abasana",
+    "slug": "abasana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Adhana",
+    "slug": "adhana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Adroda",
+    "slug": "adroda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Agol",
+    "slug": "agol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ahmedabad",
+    "slug": "ahmedabad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ahmedabad Baroda Highway",
+    "slug": "ahmedabad-baroda-highway",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Akhbarnagar",
+    "slug": "akhbarnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Akru",
+    "slug": "akru",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Alau",
+    "slug": "alau",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ambaliara",
+    "slug": "ambaliara",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ambareli",
+    "slug": "ambareli",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ambawadi",
+    "slug": "ambawadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ambli",
+    "slug": "ambli",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Amraiwadi",
+    "slug": "amraiwadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Anand Nagar",
+    "slug": "anand-nagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Andej",
+    "slug": "andej",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Aniali Bhimji",
+    "slug": "aniali-bhimji",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Aniyali",
+    "slug": "aniyali",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Arnej",
+    "slug": "arnej",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Asalgam",
+    "slug": "asalgam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Asarwa",
+    "slug": "asarwa",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Asarwa Chakla",
+    "slug": "asarwa-chakla",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Asarwa Ext south",
+    "slug": "asarwa-ext-south",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ashoknagar",
+    "slug": "ashoknagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ashram Road",
+    "slug": "ashram-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Aslali",
+    "slug": "aslali",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Azad Society",
+    "slug": "azad-society",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Badarkha",
+    "slug": "badarkha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bagad",
+    "slug": "bagad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bagodara",
+    "slug": "bagodara",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bajarda",
+    "slug": "bajarda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bakrana",
+    "slug": "bakrana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bakrol",
+    "slug": "bakrol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Baldana",
+    "slug": "baldana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Balsasan",
+    "slug": "balsasan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bamroli",
+    "slug": "bamroli",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bamsara",
+    "slug": "bamsara",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bapunagar",
+    "slug": "bapunagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bareja",
+    "slug": "bareja",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Barwala Ghelasha",
+    "slug": "barwala-ghelasha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bavaliary",
+    "slug": "bavaliary",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bavla",
+    "slug": "bavla",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bavla Market yard",
+    "slug": "bavla-market-yard",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Behrampura",
+    "slug": "behrampura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhadaj",
+    "slug": "bhadaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhadana",
+    "slug": "bhadana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhadiad",
+    "slug": "bhadiad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhairavnath",
+    "slug": "bhairavnath",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhairavnath Road",
+    "slug": "bhairavnath-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhangadh",
+    "slug": "bhangadh",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhankoda",
+    "slug": "bhankoda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhat",
+    "slug": "bhat",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhatta",
+    "slug": "bhatta",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhavda",
+    "slug": "bhavda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhayla",
+    "slug": "bhayla",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhimasan",
+    "slug": "bhimasan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhojwa",
+    "slug": "bhojwa",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bholad",
+    "slug": "bholad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhoyani",
+    "slug": "bhoyani",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhudarpura",
+    "slug": "bhudarpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhurkhi",
+    "slug": "bhurkhi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bhuvaldi",
+    "slug": "bhuvaldi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bilasia",
+    "slug": "bilasia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bodakdev",
+    "slug": "bodakdev",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bol",
+    "slug": "bol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bopal",
+    "slug": "bopal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Bordibazar Viramgam",
+    "slug": "bordibazar-viramgam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Buranpur",
+    "slug": "buranpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Calico Mills",
+    "slug": "calico-mills",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Cantonment",
+    "slug": "cantonment",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "CG road",
+    "slug": "cg-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chaloda",
+    "slug": "chaloda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chanakyapuri",
+    "slug": "chanakyapuri",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chandarva",
+    "slug": "chandarva",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chandial BO",
+    "slug": "chandial-bo",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chandisar",
+    "slug": "chandisar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chandkheda",
+    "slug": "chandkheda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chandlodia",
+    "slug": "chandlodia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "CHANDOLA TALAV",
+    "slug": "chandola-talav",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chandranagar",
+    "slug": "chandranagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Changodar",
+    "slug": "changodar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Charal",
+    "slug": "charal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Charanki",
+    "slug": "charanki",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Charol",
+    "slug": "charol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chaulaj",
+    "slug": "chaulaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chekhla",
+    "slug": "chekhla",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chenpur",
+    "slug": "chenpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chhabasar",
+    "slug": "chhabasar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chhaniar",
+    "slug": "chhaniar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chharodi",
+    "slug": "chharodi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chhasiana",
+    "slug": "chhasiana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Chuval Dangarva",
+    "slug": "chuval-dangarva",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Civil Hospital",
+    "slug": "civil-hospital",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Corporate Road",
+    "slug": "corporate-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ctm Char rasta",
+    "slug": "ctm-char-rasta",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dabhala",
+    "slug": "dabhala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dabhsar",
+    "slug": "dabhsar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dadhana",
+    "slug": "dadhana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Daduka",
+    "slug": "daduka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dadusar",
+    "slug": "dadusar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dalod",
+    "slug": "dalod",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Danilimda",
+    "slug": "danilimda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Daran",
+    "slug": "daran",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dariapur",
+    "slug": "dariapur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Darpan Society",
+    "slug": "darpan-society",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Daskroi",
+    "slug": "daskroi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Daxini Society",
+    "slug": "daxini-society",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "D Cabin",
+    "slug": "d-cabin",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dehgamda",
+    "slug": "dehgamda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dehgam Road",
+    "slug": "dehgam-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dekawada",
+    "slug": "dekawada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Delhi Gate",
+    "slug": "delhi-gate",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "DELIVERY HUB AHMEDABAD",
+    "slug": "delivery-hub-ahmedabad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Detroj",
+    "slug": "detroj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Devpura",
+    "slug": "devpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dhakdi",
+    "slug": "dhakdi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dhamatvan",
+    "slug": "dhamatvan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dhanala",
+    "slug": "dhanala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dhandhuka",
+    "slug": "dhandhuka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dhanwada",
+    "slug": "dhanwada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dhedasana",
+    "slug": "dhedasana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dhingada",
+    "slug": "dhingada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dholera",
+    "slug": "dholera",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dholi",
+    "slug": "dholi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dholi Bhal",
+    "slug": "dholi-bhal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dholka",
+    "slug": "dholka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Digvijaynagar",
+    "slug": "digvijaynagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "District Court",
+    "slug": "district-court",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dodar",
+    "slug": "dodar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dr. BAOU",
+    "slug": "dr-baou",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "DUDHESHWAR TAVDIPURA",
+    "slug": "dudheshwar-tavdipura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Dumana",
+    "slug": "dumana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Durgi",
+    "slug": "durgi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "ELLISBRIDGE",
+    "slug": "ellisbridge",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Enasan",
+    "slug": "enasan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Endla",
+    "slug": "endla",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Fangadi",
+    "slug": "fangadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Fatepur",
+    "slug": "fatepur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Fatewadi",
+    "slug": "fatewadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Fedra",
+    "slug": "fedra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Galsana",
+    "slug": "galsana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gamanpura",
+    "slug": "gamanpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gamdi",
+    "slug": "gamdi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gamph",
+    "slug": "gamph",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gandhi Ashram",
+    "slug": "gandhi-ashram",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gandhi Road",
+    "slug": "gandhi-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gangad",
+    "slug": "gangad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ganol",
+    "slug": "ganol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Garodia",
+    "slug": "garodia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gatrad",
+    "slug": "gatrad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Geratpur",
+    "slug": "geratpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ghatisana",
+    "slug": "ghatisana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ghatlodia",
+    "slug": "ghatlodia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gheekanta Road",
+    "slug": "gheekanta-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ghoda",
+    "slug": "ghoda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ghodasar",
+    "slug": "ghodasar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ghuma",
+    "slug": "ghuma",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Giramtha",
+    "slug": "giramtha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Girdharnagar",
+    "slug": "girdharnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Girmatha",
+    "slug": "girmatha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gita Mandir",
+    "slug": "gita-mandir",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Godhavata",
+    "slug": "godhavata",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Godhavi",
+    "slug": "godhavi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gogla",
+    "slug": "gogla",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gomtipur",
+    "slug": "gomtipur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Goraiya",
+    "slug": "goraiya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Goraj",
+    "slug": "goraj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gorasu",
+    "slug": "gorasu",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gota",
+    "slug": "gota",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gujarat High court",
+    "slug": "gujarat-high-court",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gujarat University",
+    "slug": "gujarat-university",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "GULBAI TEKRA",
+    "slug": "gulbai-tekra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gunjala",
+    "slug": "gunjala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gunjar",
+    "slug": "gunjar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "GURUKUL",
+    "slug": "gurukul",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Gyaspur",
+    "slug": "gyaspur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Hansalpur",
+    "slug": "hansalpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Hansol",
+    "slug": "hansol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Hanspura",
+    "slug": "hanspura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Harniav",
+    "slug": "harniav",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Hathijan",
+    "slug": "hathijan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Hebatpur",
+    "slug": "hebatpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Hirapur",
+    "slug": "hirapur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Hirapura",
+    "slug": "hirapura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "IIM",
+    "slug": "iim",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Income Tax",
+    "slug": "income-tax",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Indira Bridge",
+    "slug": "indira-bridge",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ingoli",
+    "slug": "ingoli",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Isanpur",
+    "slug": "isanpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "ISRO",
+    "slug": "isro",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jagatpur",
+    "slug": "jagatpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jakhada",
+    "slug": "jakhada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jakwada",
+    "slug": "jakwada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jalalpur Vajifa",
+    "slug": "jalalpur-vajifa",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jalampur",
+    "slug": "jalampur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jalila",
+    "slug": "jalila",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jalisana",
+    "slug": "jalisana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jaliya",
+    "slug": "jaliya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jamalpur",
+    "slug": "jamalpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jamp Pharma",
+    "slug": "jamp-pharma",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "JANTANAGAR",
+    "slug": "jantanagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jasodanagar",
+    "slug": "jasodanagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jawahar Chowk",
+    "slug": "jawahar-chowk",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jawaraj",
+    "slug": "jawaraj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jeska",
+    "slug": "jeska",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jetalpur",
+    "slug": "jetalpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jethalaj",
+    "slug": "jethalaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jholapur",
+    "slug": "jholapur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jivraj Park",
+    "slug": "jivraj-park",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jodhpur",
+    "slug": "jodhpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Jodhpur Char rasta",
+    "slug": "jodhpur-char-rasta",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Joshipura",
+    "slug": "joshipura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Juda",
+    "slug": "juda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Juhapura",
+    "slug": "juhapura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Junapadhar",
+    "slug": "junapadhar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Juval Rupavati",
+    "slug": "juval-rupavati",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Juwal",
+    "slug": "juwal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kabir Chowk",
+    "slug": "kabir-chowk",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kadi",
+    "slug": "kadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kadipur",
+    "slug": "kadipur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kadi Road",
+    "slug": "kadi-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kadvasan",
+    "slug": "kadvasan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kalana",
+    "slug": "kalana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kali",
+    "slug": "kali",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kalupur",
+    "slug": "kalupur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kalyangadh",
+    "slug": "kalyangadh",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kamijala",
+    "slug": "kamijala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kanbha",
+    "slug": "kanbha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kaneti",
+    "slug": "kaneti",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kaniyel",
+    "slug": "kaniyel",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kankaria",
+    "slug": "kankaria",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kankravadi",
+    "slug": "kankravadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kanz",
+    "slug": "kanz",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "KARAI",
+    "slug": "karai",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Karakthal",
+    "slug": "karakthal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kasindra",
+    "slug": "kasindra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kathwada",
+    "slug": "kathwada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kathwada Maize product",
+    "slug": "kathwada-maize-product",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "KATHWADA VILLAGE",
+    "slug": "kathwada-village",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Katosan Road",
+    "slug": "katosan-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kauka",
+    "slug": "kauka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kavitha",
+    "slug": "kavitha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kayla",
+    "slug": "kayla",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kelia Vasna",
+    "slug": "kelia-vasna",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kerala",
+    "slug": "kerala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kesardi",
+    "slug": "kesardi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khadia",
+    "slug": "khadia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khadol",
+    "slug": "khadol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khambhada",
+    "slug": "khambhada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khamidana",
+    "slug": "khamidana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khandachora Dhandhuka",
+    "slug": "khandachora-dhandhuka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khanpur",
+    "slug": "khanpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kharad",
+    "slug": "kharad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khas",
+    "slug": "khas",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khasta",
+    "slug": "khasta",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kheda Mahemdavad Road",
+    "slug": "kheda-mahemdavad-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khoda",
+    "slug": "khoda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khodiyar",
+    "slug": "khodiyar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khokhara Mehmadabad",
+    "slug": "khokhara-mehmadabad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khokhra",
+    "slug": "khokhra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khoraj Nanoda",
+    "slug": "khoraj-nanoda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khudad",
+    "slug": "khudad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Khun",
+    "slug": "khun",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kocharia",
+    "slug": "kocharia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kointia",
+    "slug": "kointia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kokta",
+    "slug": "kokta",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kolat",
+    "slug": "kolat",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Koteshwar",
+    "slug": "koteshwar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Koth",
+    "slug": "koth",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kothadiya",
+    "slug": "kothadiya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Krishnanagar",
+    "slug": "krishnanagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kubadthal",
+    "slug": "kubadthal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kubernagar",
+    "slug": "kubernagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kuha",
+    "slug": "kuha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kujad",
+    "slug": "kujad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kukvav",
+    "slug": "kukvav",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kumarkhan",
+    "slug": "kumarkhan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kundal",
+    "slug": "kundal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kunpur",
+    "slug": "kunpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Kunvar",
+    "slug": "kunvar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Lal Darwaja",
+    "slug": "lal-darwaja",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Lambha",
+    "slug": "lambha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Lapkaman",
+    "slug": "lapkaman",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "LAW GARDEN",
+    "slug": "law-garden",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "L G hospital",
+    "slug": "l-g-hospital",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Limbadia",
+    "slug": "limbadia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Loliya",
+    "slug": "loliya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Lothal Bhurkhi Railway Station",
+    "slug": "lothal-bhurkhi-railway-station",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Madhupura Market",
+    "slug": "madhupura-market",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Madrisana",
+    "slug": "madrisana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mahijada",
+    "slug": "mahijada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Makarba",
+    "slug": "makarba",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Makhiav",
+    "slug": "makhiav",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mandal",
+    "slug": "mandal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Manekbag",
+    "slug": "manekbag",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Manek Chowk",
+    "slug": "manek-chowk",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Maninagar",
+    "slug": "maninagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Manipur",
+    "slug": "manipur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mankol",
+    "slug": "mankol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Marusana",
+    "slug": "marusana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Matoda",
+    "slug": "matoda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "M D marg",
+    "slug": "m-d-marg",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Medha",
+    "slug": "medha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Medra",
+    "slug": "medra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Meghani nagar",
+    "slug": "meghani-nagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Melaj",
+    "slug": "melaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Memco",
+    "slug": "memco",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Memnagar",
+    "slug": "memnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mingalpur",
+    "slug": "mingalpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Miroli",
+    "slug": "miroli",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mithakhali",
+    "slug": "mithakhali",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mithapur",
+    "slug": "mithapur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Modasar",
+    "slug": "modasar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Moraiya",
+    "slug": "moraiya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mota Tradia",
+    "slug": "mota-tradia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Motera",
+    "slug": "motera",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Moti Boru",
+    "slug": "moti-boru",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Moti Devti",
+    "slug": "moti-devti",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Moti kishol",
+    "slug": "moti-kishol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Moti Rantai",
+    "slug": "moti-rantai",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Moti Vavdi",
+    "slug": "moti-vavdi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Muktipur",
+    "slug": "muktipur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Mumatpura",
+    "slug": "mumatpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nadishala",
+    "slug": "nadishala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nalsarovar",
+    "slug": "nalsarovar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nana Chiloda",
+    "slug": "nana-chiloda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nana Ubhada",
+    "slug": "nana-ubhada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nandej",
+    "slug": "nandej",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nani Boru",
+    "slug": "nani-boru",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nani Devti",
+    "slug": "nani-devti",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nanodara",
+    "slug": "nanodara",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Naranpura",
+    "slug": "naranpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Naranpura Vistar",
+    "slug": "naranpura-vistar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Narayannagar",
+    "slug": "narayannagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Naroda",
+    "slug": "naroda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "NARODA GAM",
+    "slug": "naroda-gam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Naroda Road",
+    "slug": "naroda-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Narol",
+    "slug": "narol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Narol gam",
+    "slug": "narol-gam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nasmed",
+    "slug": "nasmed",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Navagam",
+    "slug": "navagam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "nava naroda",
+    "slug": "nava-naroda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Navapura",
+    "slug": "navapura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nava Vadaj",
+    "slug": "nava-vadaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Navda",
+    "slug": "navda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Navjivan",
+    "slug": "navjivan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Navrangpura",
+    "slug": "navrangpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nayakpur",
+    "slug": "nayakpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "N C market",
+    "slug": "n-c-market",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "N C mills",
+    "slug": "n-c-mills",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nedharad",
+    "slug": "nedharad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "nehru nagar",
+    "slug": "nehru-nagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nesda",
+    "slug": "nesda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "New Chandkheda",
+    "slug": "new-chandkheda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "NEW GURUKUL",
+    "slug": "new-gurukul",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "New Maninagar",
+    "slug": "new-maninagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "New Naroda",
+    "slug": "new-naroda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "New Nikol",
+    "slug": "new-nikol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "New Ranip",
+    "slug": "new-ranip",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "NEW SHAHIBAG",
+    "slug": "new-shahibag",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "New Vatva",
+    "slug": "new-vatva",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "New Wadaj",
+    "slug": "new-wadaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nikol",
+    "slug": "nikol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Nirnaynagar",
+    "slug": "nirnaynagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Noblenagar",
+    "slug": "noblenagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ode",
+    "slug": "ode",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Odhav",
+    "slug": "odhav",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Odhav Industrial estate",
+    "slug": "odhav-industrial-estate",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ogan",
+    "slug": "ogan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ognaj",
+    "slug": "ognaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Old Wadaj",
+    "slug": "old-wadaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "ONGC",
+    "slug": "ongc",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Otaria Sarvodaya ashram",
+    "slug": "otaria-sarvodaya-ashram",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Otariya",
+    "slug": "otariya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Padana",
+    "slug": "padana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Paldi",
+    "slug": "paldi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Paldi Kankaj",
+    "slug": "paldi-kankaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Palodia",
+    "slug": "palodia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Panar",
+    "slug": "panar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Panchha",
+    "slug": "panchha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Panchham",
+    "slug": "panchham",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Panjara Pol",
+    "slug": "panjara-pol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Parabadi",
+    "slug": "parabadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Pardhol",
+    "slug": "pardhol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Pasunj",
+    "slug": "pasunj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Pimpan",
+    "slug": "pimpan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Pipli",
+    "slug": "pipli",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Pirana",
+    "slug": "pirana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Pisawada",
+    "slug": "pisawada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Polarpur",
+    "slug": "polarpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Polytechnic",
+    "slug": "polytechnic",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Prahladnagar",
+    "slug": "prahladnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rahemalpur",
+    "slug": "rahemalpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Raikhad",
+    "slug": "raikhad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Railway Colony",
+    "slug": "railway-colony",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Railwaypura",
+    "slug": "railwaypura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Raipur",
+    "slug": "raipur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rajoda",
+    "slug": "rajoda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rajpur Gomtipur",
+    "slug": "rajpur-gomtipur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rakhial",
+    "slug": "rakhial",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rakhial Udyog vistar",
+    "slug": "rakhial-udyog-vistar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rakhiyana",
+    "slug": "rakhiyana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ramdev Nagar",
+    "slug": "ramdev-nagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "RAMNAGAR",
+    "slug": "ramnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ramol",
+    "slug": "ramol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rampur",
+    "slug": "rampur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rampura",
+    "slug": "rampura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ranesar",
+    "slug": "ranesar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rangpur",
+    "slug": "rangpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ranip",
+    "slug": "ranip",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ranoda",
+    "slug": "ranoda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ranodra",
+    "slug": "ranodra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rasam",
+    "slug": "rasam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rayka",
+    "slug": "rayka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Refda",
+    "slug": "refda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rethal",
+    "slug": "rethal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Revdibazar",
+    "slug": "revdibazar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ribdi",
+    "slug": "ribdi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rohika",
+    "slug": "rohika",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rojid",
+    "slug": "rojid",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rojka",
+    "slug": "rojka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rudatal",
+    "slug": "rudatal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rupal",
+    "slug": "rupal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Rupgadh",
+    "slug": "rupgadh",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sabarmati",
+    "slug": "sabarmati",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sachana",
+    "slug": "sachana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sadatpura",
+    "slug": "sadatpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sahij",
+    "slug": "sahij",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Saijpur",
+    "slug": "saijpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Saijpur Bogha",
+    "slug": "saijpur-bogha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Salajada",
+    "slug": "salajada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Salangpur Hanuman",
+    "slug": "salangpur-hanuman",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Salasar",
+    "slug": "salasar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "S A mills",
+    "slug": "s-a-mills",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sanand",
+    "slug": "sanand",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sanand Nalsarovar Road",
+    "slug": "sanand-nalsarovar-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sanathal",
+    "slug": "sanathal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sanavad",
+    "slug": "sanavad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sandhida",
+    "slug": "sandhida",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sangpura",
+    "slug": "sangpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sankod",
+    "slug": "sankod",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sarandi",
+    "slug": "sarandi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Saraspur",
+    "slug": "saraspur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sardarnagar",
+    "slug": "sardarnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sargwala",
+    "slug": "sargwala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sari",
+    "slug": "sari",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sarkhej",
+    "slug": "sarkhej",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sarkhej Road",
+    "slug": "sarkhej-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Saroda",
+    "slug": "saroda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sarsavadi",
+    "slug": "sarsavadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Satellite Road",
+    "slug": "satellite-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sathal",
+    "slug": "sathal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sattadhar Cross Road",
+    "slug": "sattadhar-cross-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Science City",
+    "slug": "science-city",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Science Park",
+    "slug": "science-park",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "SG Highway",
+    "slug": "sg-highway",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shah Alam roza",
+    "slug": "shah-alam-roza",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shahibag",
+    "slug": "shahibag",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shahpur",
+    "slug": "shahpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shahwadi",
+    "slug": "shahwadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shantigram",
+    "slug": "shantigram",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shardanagar",
+    "slug": "shardanagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shastrinagar",
+    "slug": "shastrinagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shela",
+    "slug": "shela",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sher",
+    "slug": "sher",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shilaj",
+    "slug": "shilaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shilaj Thol Road",
+    "slug": "shilaj-thol-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shivpura",
+    "slug": "shivpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shiyal",
+    "slug": "shiyal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shiyawada",
+    "slug": "shiyawada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Shyamal",
+    "slug": "shyamal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sihor",
+    "slug": "sihor",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Simej",
+    "slug": "simej",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sinaj",
+    "slug": "sinaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sindharej",
+    "slug": "sindharej",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sindhubhavan",
+    "slug": "sindhubhavan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Singarwa Gam",
+    "slug": "singarwa-gam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Singrava",
+    "slug": "singrava",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sitapur",
+    "slug": "sitapur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sobhasan",
+    "slug": "sobhasan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sodhi",
+    "slug": "sodhi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sola",
+    "slug": "sola",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "SOLA BHAGWAT",
+    "slug": "sola-bhagwat",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Solgam",
+    "slug": "solgam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "SOUTH BOPAL",
+    "slug": "south-bopal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "SOUTH VASNA",
+    "slug": "south-vasna",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "SP Ring Road",
+    "slug": "sp-ring-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "STADIUM ROAD",
+    "slug": "stadium-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "SUBHASH BRIDGE",
+    "slug": "subhash-bridge",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sukhrampura",
+    "slug": "sukhrampura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sunderiana",
+    "slug": "sunderiana",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Sunvala",
+    "slug": "sunvala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Tagadi",
+    "slug": "tagadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "T B nagar",
+    "slug": "t-b-nagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Telav",
+    "slug": "telav",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Thakkarbapa Nagar",
+    "slug": "thakkarbapa-nagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Thaltej",
+    "slug": "thaltej",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Thaltej Road",
+    "slug": "thaltej-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Thol",
+    "slug": "thol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Thori Mubarak",
+    "slug": "thori-mubarak",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Thori Thumbha",
+    "slug": "thori-thumbha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Thuleta",
+    "slug": "thuleta",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Timba",
+    "slug": "timba",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Tragad",
+    "slug": "tragad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Transad",
+    "slug": "transad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Trent",
+    "slug": "trent",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ughroj",
+    "slug": "ughroj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ukardi",
+    "slug": "ukardi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Ukhlod",
+    "slug": "ukhlod",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Unali",
+    "slug": "unali",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Unchadi",
+    "slug": "unchadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Undrel",
+    "slug": "undrel",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Upardal",
+    "slug": "upardal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Usmanpura",
+    "slug": "usmanpura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Utelia",
+    "slug": "utelia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vadaj",
+    "slug": "vadaj",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vadgas",
+    "slug": "vadgas",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vadhela",
+    "slug": "vadhela",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vadod",
+    "slug": "vadod",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vagad",
+    "slug": "vagad",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vaishno Devi Circle",
+    "slug": "vaishno-devi-circle",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Valdhera",
+    "slug": "valdhera",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Valhia",
+    "slug": "valhia",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Valinda",
+    "slug": "valinda",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vanaliya",
+    "slug": "vanaliya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vanch",
+    "slug": "vanch",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vani",
+    "slug": "vani",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vanpardi",
+    "slug": "vanpardi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vansva",
+    "slug": "vansva",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vanthal",
+    "slug": "vanthal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Varmor",
+    "slug": "varmor",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Varna",
+    "slug": "varna",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vasai",
+    "slug": "vasai",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vasisthnagar",
+    "slug": "vasisthnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vasna",
+    "slug": "vasna",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vasna chacharvadi",
+    "slug": "vasna-chacharvadi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vasna Iyava",
+    "slug": "vasna-iyava",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vastral",
+    "slug": "vastral",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vastrapur",
+    "slug": "vastrapur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vataman",
+    "slug": "vataman",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vatva",
+    "slug": "vatva",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vatva Gam",
+    "slug": "vatva-gam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vatva GIDC",
+    "slug": "vatva-gidc",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vatva Industrial estate",
+    "slug": "vatva-industrial-estate",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vautha",
+    "slug": "vautha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vehlal",
+    "slug": "vehlal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vejalka",
+    "slug": "vejalka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vejalpur",
+    "slug": "vejalpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vekariya",
+    "slug": "vekariya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vekra",
+    "slug": "vekra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vijay Cross Road",
+    "slug": "vijay-cross-road",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vinchhan",
+    "slug": "vinchhan",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vinchhiya",
+    "slug": "vinchhiya",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vinzol",
+    "slug": "vinzol",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vinzuvada",
+    "slug": "vinzuvada",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Viramgam",
+    "slug": "viramgam",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Virdi",
+    "slug": "virdi",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Virochannagar",
+    "slug": "virochannagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Visat",
+    "slug": "visat",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vishala",
+    "slug": "vishala",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vishalpur",
+    "slug": "vishalpur",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vitthal Pura",
+    "slug": "vitthal-pura",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Vivekanandnagar",
+    "slug": "vivekanandnagar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "WAPA",
+    "slug": "wapa",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Zamp",
+    "slug": "zamp",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Zanu",
+    "slug": "zanu",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Zanzarka",
+    "slug": "zanzarka",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Zanzarva",
+    "slug": "zanzarva",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Zezra",
+    "slug": "zezra",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Zinzar",
+    "slug": "zinzar",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Zundal",
+    "slug": "zundal",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Locality Name",
+    "slug": "URL Slug",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Gandhinagar",
+    "slug": "gandhinagar",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Kudasan",
+    "slug": "kudasan",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Raysan",
+    "slug": "raysan",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sargasan",
+    "slug": "sargasan",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Randesan",
+    "slug": "randesan",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Koba",
+    "slug": "koba",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Vavol",
+    "slug": "vavol",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Adalaj",
+    "slug": "adalaj",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "GIFT City",
+    "slug": "gift-city",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Infocity",
+    "slug": "infocity",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Pethapur",
+    "slug": "pethapur",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Chiloda",
+    "slug": "chiloda",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Dantali",
+    "slug": "dantali",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Kolavada",
+    "slug": "kolavada",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Uvarsad",
+    "slug": "uvarsad",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Bhaijipura",
+    "slug": "bhaijipura",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 1",
+    "slug": "sector-1",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 2",
+    "slug": "sector-2",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 3",
+    "slug": "sector-3",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 4",
+    "slug": "sector-4",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 5",
+    "slug": "sector-5",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 6",
+    "slug": "sector-6",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 7",
+    "slug": "sector-7",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 8",
+    "slug": "sector-8",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 9",
+    "slug": "sector-9",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 10",
+    "slug": "sector-10",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 11",
+    "slug": "sector-11",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 12",
+    "slug": "sector-12",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 13",
+    "slug": "sector-13",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 14",
+    "slug": "sector-14",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 15",
+    "slug": "sector-15",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 16",
+    "slug": "sector-16",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 17",
+    "slug": "sector-17",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 21",
+    "slug": "sector-21",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 22",
+    "slug": "sector-22",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 23",
+    "slug": "sector-23",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 24",
+    "slug": "sector-24",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 26",
+    "slug": "sector-26",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 27",
+    "slug": "sector-27",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 28",
+    "slug": "sector-28",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 29",
+    "slug": "sector-29",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sector 30",
+    "slug": "sector-30",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Kalol",
+    "slug": "kalol",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Dahegam",
+    "slug": "dahegam",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Mansa",
+    "slug": "mansa",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Vasna Chandkheda Road",
+    "slug": "vasna-chandkheda-road",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Por",
+    "slug": "por",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Sadra",
+    "slug": "sadra",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Zundal",
+    "slug": "zundal",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Vadaj Gandhinagar",
+    "slug": "vadaj-gandhinagar",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Lavad",
+    "slug": "lavad",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Palaj",
+    "slug": "palaj",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Bhat",
+    "slug": "bhat",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Anaj",
+    "slug": "anaj",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Nazarbagh",
+    "slug": "nazarbagh",
+    "city": "Gandhinagar"
+  },
+  {
+    "name": "Karai",
+    "slug": "karai",
+    "city": "Gandhinagar"
+  }
+]

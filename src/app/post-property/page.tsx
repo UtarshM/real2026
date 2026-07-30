@@ -209,30 +209,30 @@ export default function PostPropertyPage() {
   ];
 
   return (
-    <div className="bg-slate-950 min-h-screen py-16 text-white relative">
+    <div className="bg-slate-50 min-h-screen py-16 text-slate-900 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
         {/* Header Title */}
         <div className="text-center">
-          <span className="text-blue-500 font-bold text-xs uppercase tracking-widest">Listing Wizard Dashboard</span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mt-2 font-display">List Your Property</h1>
-          <p className="text-slate-400 text-xs sm:text-sm mt-2 max-w-md mx-auto leading-relaxed">
+          <span className="text-orange-600 font-extrabold text-xs uppercase tracking-widest">Listing Wizard Dashboard</span>
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 mt-2 font-display">List Your Property</h1>
+          <p className="text-slate-600 text-xs sm:text-sm mt-2 max-w-md mx-auto leading-relaxed font-medium">
             Sell or rent your apartments, commercial spaces, or land in Ahmedabad & Gandhinagar with zero brokerage commission.
           </p>
         </div>
 
         {/* 9-Step progress dashboard */}
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl">
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm">
           <div className="flex justify-between items-center text-xs font-bold text-slate-500 mb-4">
             <span>Step {step} of 9</span>
-            <span className="text-blue-500">{stepsList[step - 1]}</span>
+            <span className="text-orange-600">{stepsList[step - 1]}</span>
           </div>
-          <div className="w-full bg-slate-950 h-2 rounded-full overflow-hidden border border-slate-850 flex">
+          <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden border border-slate-200 flex">
             {stepsList.map((_, idx) => (
               <div 
                 key={idx}
-                className={`flex-1 h-full border-r border-slate-950 last:border-r-0 transition-colors duration-300 ${
-                  idx + 1 <= step ? "bg-blue-600" : "bg-transparent"
+                className={`flex-1 h-full border-r border-white last:border-r-0 transition-colors duration-300 ${
+                  idx + 1 <= step ? "bg-orange-600" : "bg-transparent"
                 }`}
               />
             ))}
@@ -240,14 +240,14 @@ export default function PostPropertyPage() {
         </div>
 
         {/* Wizard Form Base Panel */}
-        <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
+        <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm relative overflow-hidden">
           
           {success && (
-            <div className="absolute inset-0 bg-slate-950/95 z-20 flex flex-col items-center justify-center p-6 text-center">
-              <div className="w-16 h-16 bg-blue-600/20 text-blue-500 rounded-full flex items-center justify-center mb-4 shadow">
+            <div className="absolute inset-0 bg-white/95 z-20 flex flex-col items-center justify-center p-6 text-center">
+              <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-4 shadow-sm">
                 <CheckCircle2 className="w-10 h-10 animate-bounce" />
               </div>
-              <h3 className="font-extrabold text-2xl text-white font-display mb-2">Property Listed Successfully!</h3>
+              <h3 className="font-extrabold text-2xl text-slate-900 font-display mb-2">Property Listed Successfully!</h3>
               <p className="text-slate-450 text-xs sm:text-sm max-w-sm leading-relaxed">
                 Your listing has been compiled and is now live on our Ahmedabad & Gandhinagar search systems. Redirecting to search results...
               </p>

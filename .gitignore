@@ -40,3 +40,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python
+__pycache__/
+venv/
+.venv/
+*.pyc
+
+# database
+*.db
+*.sqlite3
+
+# root temp artifacts
+/*.png
+/*.xlsx
+

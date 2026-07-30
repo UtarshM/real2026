@@ -5,11 +5,26 @@ import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { Sparkles, Search, X, Lightbulb } from "lucide-react";
 
-export default function AiSearchModal() {
+interface AiSearchModalProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+}
+
+export default function AiSearchModal({ isOpen: controlledIsOpen, onClose }: AiSearchModalProps = {}) {
   const router = useRouter();
-  const [isOpen, setIsOpen] = useState(false);
+  const [internalIsOpen, setInternalIsOpen] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [mounted, setMounted] = useState(false);
+
+  const isModalOpen = controlledIsOpen !== undefined ? controlledIsOpen : internalIsOpen;
+
+  const handleClose = () => {
+    if (onClose) {
+      onClose();
+    } else {
+      setInternalIsOpen(false);
+    }
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -29,7 +44,7 @@ export default function AiSearchModal() {
       query: textToParse
     });
 
-    setIsOpen(false);
+    handleClose();
     setPrompt("");
     router.push(`/search?${queryParams.toString()}`);
   };
@@ -37,7 +52,7 @@ export default function AiSearchModal() {
   const modalContent = (
     <div 
       className="fixed inset-0 z-[9999] bg-slate-950/80 backdrop-blur-md overflow-y-auto flex min-h-full items-center justify-center p-4 font-sans cursor-pointer"
-      onClick={() => setIsOpen(false)}
+      onClick={handleClose}
     >
       <div 
         className="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-xl shadow-2xl p-6 sm:p-8 relative space-y-6 animate-in fade-in zoom-in-95 duration-200 cursor-default max-h-[85vh] overflow-y-auto my-auto"
@@ -45,7 +60,7 @@ export default function AiSearchModal() {
       >
         
         <button
-          onClick={() => setIsOpen(false)}
+          onClick={handleClose}
           className="absolute top-6 right-6 text-slate-500 hover:text-white p-1 hover:bg-slate-850 rounded-lg cursor-pointer"
         >
           <X className="w-5 h-5" />
@@ -114,15 +129,18 @@ export default function AiSearchModal() {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-40 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-xs sm:text-sm px-4 py-3 rounded-full shadow-2xl flex items-center space-x-2 border border-blue-400/40 hover:scale-105 transition cursor-pointer"
-      >
-        <Sparkles className="w-4.5 h-4.5 text-amber-300 animate-pulse" />
-        <span>Ask AI Search</span>
-      </button>
+      {controlledIsOpen === undefined && (
+        <button
+          onClick={() => setInternalIsOpen(true)}
+          className="fixed bottom-6 right-6 z-40 bg-orange-600 hover:bg-orange-500 text-white font-extrabold text-xs sm:text-sm px-4 py-3 rounded-full shadow-2xl flex items-center space-x-2 border border-orange-400/40 hover:scale-105 transition cursor-pointer"
+          style={{ backgroundColor: "#ea580c", color: "#ffffff" }}
+        >
+          <Sparkles className="w-4.5 h-4.5 text-amber-300 animate-pulse" />
+          <span>Ask AI Search</span>
+        </button>
+      )}
 
-      {isOpen && mounted && createPortal(modalContent, document.body)}
+      {isModalOpen && mounted && createPortal(modalContent, document.body)}
     </>
   );
 }

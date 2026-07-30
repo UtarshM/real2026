@@ -2,157 +2,136 @@
 
 import React from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Send, Video, Target, Calculator } from "lucide-react";
-import { siteConfig } from "@/config/siteConfig";
+import { Mail, Phone, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you for subscribing to AddressBox property alerts!");
-  };
-
-  const toolsList = [
-    { title: "Gujarat Stamp Duty Calculator", href: "/tools/stamp-duty-calculator" },
-    { title: "Home Loan Eligibility", href: "/tools/home-loan-eligibility" },
-    { title: "NRI Currency Converter", href: "/tools/nri-currency-converter" },
-    { title: "Rental Yield & ROI Estimator", href: "/tools/rental-yield-estimator" },
-    { title: "Property Comparison Matrix", href: "/tools/property-comparison-matrix" },
-    { title: "RERA Gujarat Checker", href: "/tools/rera-gujarat-checker" },
-    { title: "Commute & Transit Calculator", href: "/tools/commute-calculator" },
-    { title: "Legal Title Clearance", href: "/tools/legal-title-checklist" },
-    { title: "Make Digital Price Offer", href: "/tools/make-price-offer" },
-    { title: "Developer Portfolios", href: "/tools/developer-portfolios" },
-    { title: "Verified Buyer Reviews", href: "/tools/buyer-reviews" },
-    { title: "Share Property Card", href: "/tools/share-property-card" },
-  ];
-
   return (
-    <footer className="bg-slate-950 border-t border-slate-900 text-slate-400 pt-16 pb-12 font-sans relative z-10">
+    <footer 
+      className="w-full font-sans border-t border-slate-800" 
+      style={{ backgroundColor: "#0b1222", color: "#cbd5e1" }}
+    >
       
-      {/* Background Subtle glow */}
-      <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-blue-600/5 blur-[100px] pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Core Layout Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
+      {/* Top Header Callout Strip */}
+      <div 
+        className="w-full py-6 border-b border-slate-800" 
+        style={{ backgroundColor: "#070c18" }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           
-          {/* Logo & Corporate Description */}
-          <div className="lg:col-span-1 space-y-6">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-orange-500 p-2 rounded-xl text-white shadow-md shadow-orange-500/25">
-                <Video className="w-5 h-5" />
-              </div>
-              <span className="font-extrabold text-xl text-white tracking-tight font-display">
-                Address<span className="text-orange-500">Box</span>
+          <div className="space-y-0.5 text-center sm:text-left">
+            <h3 className="text-lg sm:text-xl font-black font-display" style={{ color: "#ffffff" }}>
+              AddressBox <span style={{ color: "#ea580c" }}>Real Estate</span>
+            </h3>
+            <p className="text-xs font-medium" style={{ color: "#94a3b8" }}>
+              A Unit of ARDH Realty Services Pvt. Ltd. | Premier Real Estate Platform in Gujarat
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-extrabold">
+            <a 
+              href="mailto:sales@addressbox.com" 
+              className="flex items-center space-x-2 border border-slate-700/80 px-4 py-2 rounded-xl hover:border-[#ea580c] transition"
+              style={{ backgroundColor: "#121b2d", color: "#f1f5f9" }}
+            >
+              <Mail className="w-4 h-4" style={{ color: "#ea580c" }} />
+              <span>sales@addressbox.com</span>
+            </a>
+            <a 
+              href="tel:+919327494799" 
+              className="flex items-center space-x-2 border border-slate-700/80 px-4 py-2 rounded-xl hover:border-[#ea580c] transition"
+              style={{ backgroundColor: "#121b2d", color: "#f1f5f9" }}
+            >
+              <Phone className="w-4 h-4" style={{ color: "#ea580c" }} />
+              <span>+91 93274 94799</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Main 4 Horizontal Columns Grid */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 w-full">
+          
+          {/* Column 1: Brand & RERA Verification */}
+          <div className="space-y-4 flex flex-col justify-start">
+            <Link href="/" className="inline-block">
+              <span className="font-black text-2xl sm:text-3xl tracking-tighter font-display" style={{ color: "#ffffff" }}>
+                address<span className="font-black" style={{ color: "#ea580c" }}>box</span>
               </span>
             </Link>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              {siteConfig.tagline}. Verified video walkthroughs and zero-brokerage advisory across top micro-markets in Ahmedabad & Gandhinagar.
+
+            <p className="text-xs leading-relaxed font-medium" style={{ color: "#94a3b8" }}>
+              AddressBox is a comprehensive real estate platform offering solutions for all property needs in Ahmedabad and Gandhinagar with zero brokerage.
             </p>
 
-            <div className="space-y-3 text-xs font-medium">
-              <a href={`tel:${siteConfig.contact.phone.replace(/\s+/g, '')}`} className="flex items-center space-x-2.5 hover:text-white transition text-slate-300">
-                <Phone className="w-4 h-4 text-blue-500 flex-shrink-0" />
-                <span>{siteConfig.contact.phone}</span>
-              </a>
-              <a href={`mailto:${siteConfig.contact.email}`} className="flex items-center space-x-2.5 hover:text-white transition text-slate-300">
-                <Mail className="w-4 h-4 text-blue-500 flex-shrink-0" />
-                <span>{siteConfig.contact.email}</span>
-              </a>
-              <div className="flex items-start space-x-2.5 text-slate-400">
-                <MapPin className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
-                <span>{siteConfig.address.street}, {siteConfig.address.city}</span>
-              </div>
+            <div className="pt-2 flex items-center space-x-2 text-xs font-bold" style={{ color: "#34d399" }}>
+              <ShieldCheck className="w-4.5 h-4.5 flex-shrink-0" />
+              <span>GUJRERA Verified Platform</span>
             </div>
           </div>
 
-          {/* Column 2: Micro-Markets */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-xs tracking-wider uppercase">Micro-Markets</h4>
-            <ul className="space-y-2 text-xs font-semibold">
-              {siteConfig.primaryLocalities.slice(0, 6).map((loc) => (
-                <li key={loc.slug}>
-                  <Link href={`/properties-in-${loc.slug}`} className="hover:text-orange-400 transition">
-                    Flats in {loc.name}
-                  </Link>
-                </li>
-              ))}
-              <li><Link href="/property-in-ahmedabad" className="hover:text-orange-400 transition font-bold text-orange-400">View All Ahmedabad Localities →</Link></li>
-              <li><Link href="/property-in-gandhinagar" className="hover:text-orange-400 transition font-bold text-orange-400">View All Gandhinagar Localities →</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 3: Tools & Calculators (NEW Dedicated Column) */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-xs tracking-wider uppercase flex items-center space-x-1.5">
-              <Calculator className="w-4 h-4 text-orange-500" />
-              <span>Tools & Calculators</span>
+          {/* Column 2: QUICK LINKS */}
+          <div className="space-y-3.5 flex flex-col justify-start">
+            <h4 className="text-xs font-black uppercase tracking-widest font-display" style={{ color: "#ffffff" }}>
+              QUICK LINKS
             </h4>
-            <ul className="space-y-2 text-xs font-semibold">
-              {toolsList.map((tool, idx) => (
-                <li key={idx}>
-                  <Link href={tool.href} className="hover:text-orange-400 transition">
-                    {tool.title}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-2.5 text-xs font-bold" style={{ color: "#94a3b8" }}>
+              <li><Link href="/buy" className="hover:text-white transition-colors">Buy Properties</Link></li>
+              <li><Link href="/rent" className="hover:text-white transition-colors">Rent Properties</Link></li>
+              <li><Link href="/commercial" className="hover:text-white transition-colors">Commercial Investment</Link></li>
+              <li><Link href="/plots" className="hover:text-white transition-colors">Plots & Land</Link></li>
+              <li><Link href="/builders" className="hover:text-white transition-colors">Verified Builders</Link></li>
             </ul>
           </div>
 
-          {/* Column 4: Resources & Requirements */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-xs tracking-wider uppercase">Resources & Services</h4>
-            <ul className="space-y-2 text-xs font-semibold">
-              <li>
-                <Link href="/requirements" className="text-orange-400 hover:text-orange-300 font-bold flex items-center space-x-1">
-                  <Target className="w-3.5 h-3.5" />
-                  <span>Tell Us Your Requirement</span>
-                </Link>
-              </li>
-              <li><Link href="/valuation" className="hover:text-blue-400 transition">Groq AI Property Valuation</Link></li>
-              <li><Link href="/blog/rera-gujarat-guide" className="hover:text-blue-400 transition">GUJRERA Verification Guide</Link></li>
-              <li><Link href="/terms" className="hover:text-blue-400 transition">Terms of Service</Link></li>
-              <li><Link href="/privacy" className="hover:text-blue-400 transition">Privacy Policy</Link></li>
-              <li><a href="/sitemap.xml" target="_blank" className="hover:text-blue-400 transition">XML Sitemap</a></li>
+          {/* Column 3: PROPERTY CATEGORIES */}
+          <div className="space-y-3.5 flex flex-col justify-start">
+            <h4 className="text-xs font-black uppercase tracking-widest font-display" style={{ color: "#ffffff" }}>
+              PROPERTY CATEGORIES
+            </h4>
+            <ul className="space-y-2.5 text-xs font-bold" style={{ color: "#94a3b8" }}>
+              <li><Link href="/search?category=Residential" className="hover:text-white transition-colors">2 BHK & 3 BHK Flats</Link></li>
+              <li><Link href="/search?subType=Villa" className="hover:text-white transition-colors">Luxury Villas & Bungalows</Link></li>
+              <li><Link href="/search?category=Commercial" className="hover:text-white transition-colors">GIFT City Commercial Offices</Link></li>
+              <li><Link href="/search?category=PG" className="hover:text-white transition-colors">PG & Co-living Spaces</Link></li>
+              <li><Link href="/search?category=Auction" className="hover:text-white transition-colors">Bank Auction Properties</Link></li>
             </ul>
           </div>
 
-          {/* Column 5: Newsletter Input */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-xs tracking-wider uppercase">Video Alerts</h4>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Subscribe for new property video walkthroughs and RERA project analysis in Gujarat.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="relative flex items-center mt-2">
-              <input
-                type="email"
-                required
-                placeholder="Enter email"
-                className="w-full bg-slate-900 border border-slate-800 text-white rounded-xl pl-3 pr-10 py-2.5 text-xs sm:text-sm placeholder:text-slate-500 focus:outline-none focus:border-orange-500 transition"
-              />
-              <button
-                type="submit"
-                className="absolute right-1 bg-orange-500 hover:bg-orange-600 text-white p-1.5 rounded-lg transition cursor-pointer"
-              >
-                <Send className="w-4 h-4" />
-              </button>
-            </form>
+          {/* Column 4: TOP LOCALITIES */}
+          <div className="space-y-3.5 flex flex-col justify-start">
+            <h4 className="text-xs font-black uppercase tracking-widest font-display" style={{ color: "#ffffff" }}>
+              TOP LOCALITIES
+            </h4>
+            <ul className="space-y-2.5 text-xs font-bold" style={{ color: "#94a3b8" }}>
+              <li><Link href="/search?query=Prahladnagar" className="hover:text-white transition-colors">Prahladnagar, Ahmedabad</Link></li>
+              <li><Link href="/search?query=Bopal" className="hover:text-white transition-colors">Bopal & Shela, Ahmedabad</Link></li>
+              <li><Link href="/search?query=Gota" className="hover:text-white transition-colors">Gota & Sola, Ahmedabad</Link></li>
+              <li><Link href="/search?query=GIFT+City" className="hover:text-white transition-colors">GIFT City, Gandhinagar</Link></li>
+              <li><Link href="/search?query=Sargasan" className="hover:text-white transition-colors">Sargasan & Kudasan, Gandhinagar</Link></li>
+            </ul>
           </div>
 
         </div>
 
-        {/* Footer Bottom copyright strip */}
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 font-medium">
-          <p className="text-center md:text-left">
-            Copyright © 2026 {siteConfig.name}. All rights reserved. RERA Registered Brokerage.
+        {/* Horizontal Divider, Disclaimer & Copyright */}
+        <div 
+          className="mt-12 pt-8 border-t border-slate-800 text-[11px] space-y-4 text-center sm:text-left"
+          style={{ color: "#64748b" }}
+        >
+          <p className="leading-relaxed font-medium">
+            Disclaimer: AddressBox (A Unit of ARDH Realty Services Pvt. Ltd.) is an online real estate platform. All project details, RERA numbers, images, and prices are fetched from authorized developer listings and public GUJRERA records. Users are advised to verify property title documents before entering into financial transactions.
           </p>
-          <div className="flex space-x-5 mt-4 md:mt-0">
-            <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" className="hover:text-white transition" aria-label="YouTube">
-              <svg className="w-4 h-4 text-red-500 fill-current" viewBox="0 0 24 24">
-                <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-            </a>
+
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-bold pt-2" style={{ color: "#94a3b8" }}>
+            <p>© {new Date().getFullYear()} AddressBox. All rights reserved.</p>
+            <div className="flex items-center justify-center space-x-4">
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <span>•</span>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            </div>
           </div>
         </div>
 
